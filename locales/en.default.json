@@ -269,7 +269,11 @@
     "collection_template": {
       "empty": "No products found",
       "title": "Collection",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">clear all<\/a>"
+=======
+      "use_fewer_filters_html": "Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">remove all<\/a>"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "video": {
       "load_video": "Load video: {{ description }}"

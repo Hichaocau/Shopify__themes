@@ -146,7 +146,13 @@
       },
       "view_full_details": "Vis alle detaljer",
       "include_taxes": "Avgift inkludert.",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">Frakt<\/a> beregnes ved kassen."
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt<\/a> beregnes ved kassen.",
+      "choose_options": "Velg alternativer",
+      "choose_product_options": "Velg alternativer for {{ product_name }}"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "modal": {
       "label": "Mediegalleri"
@@ -269,7 +275,11 @@
     "collection_template": {
       "title": "Samling",
       "empty": "Ingen produkter funnet",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Bruk færre filtre eller <a class=\"{{ class }}\" href=\"{{ link }}\">tøm alle<\/a>"
+=======
+      "use_fewer_filters_html": "Bruk færre filtre eller <a class=\"{{ class }}\" href=\"{{ link }}\">fjern alle<\/a>"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "video": {
       "load_video": "Last inn video: {{ description }}"

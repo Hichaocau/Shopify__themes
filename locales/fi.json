@@ -146,7 +146,13 @@
       },
       "view_full_details": "Näytä kaikki tiedot",
       "include_taxes": "Sisältää veron.",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">Toimituskulut<\/a> lasketaan kassalla."
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">Toimituskulut<\/a> lasketaan kassalla.",
+      "choose_options": "Valitse vaihtoehdot",
+      "choose_product_options": "Valitse vaihtoehtoja tuotteelle {{ product_name }}"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "modal": {
       "label": "Mediagalleria"
@@ -269,7 +275,11 @@
     "collection_template": {
       "title": "Kokoelma",
       "empty": "Tuotteita ei löytynyt",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Käytä vähemmän suodattimia tai <a class=\"{{ class }}\" href=\"{{ link }}\">tyhjennä kaikki<\/a>"
+=======
+      "use_fewer_filters_html": "Käytä vähemmän suodattimia tai <a class=\"{{ class }}\" href=\"{{ link }}\">poista kaikki<\/a>"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "video": {
       "load_video": "Lataa video: {{ description }}"

@@ -146,7 +146,13 @@
       },
       "view_full_details": "查看完整详细信息",
       "include_taxes": "含税费。",
+<<<<<<< HEAD
       "shipping_policy_html": "结账时计算的<a href=\"{{ link }}\">运费<\/a>。"
+=======
+      "shipping_policy_html": "结账时计算的<a href=\"{{ link }}\">运费<\/a>。",
+      "choose_options": "选择选项",
+      "choose_product_options": "选择用于 {{ product_name }} 的选项"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "modal": {
       "label": "媒体图库"
@@ -269,7 +275,11 @@
     "collection_template": {
       "title": "收藏",
       "empty": "未找到产品",
+<<<<<<< HEAD
       "use_fewer_filters_html": "减少使用的筛选条件数量或<a class=\"{{ class }}\" href=\"{{ link }}\">清除所有内容<\/a>"
+=======
+      "use_fewer_filters_html": "减少使用的筛选条件数量或<a class=\"{{ class }}\" href=\"{{ link }}\">删除所有筛选条件<\/a>"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "video": {
       "load_video": "加载视频：{{ description }}"

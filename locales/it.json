@@ -146,7 +146,13 @@
       },
       "view_full_details": "Visualizza dettagli completi",
       "include_taxes": "Imposte incluse.",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">Spese di spedizione<\/a> calcolate al check-out."
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">Spese di spedizione<\/a> calcolate al check-out.",
+      "choose_options": "Scegli opzioni",
+      "choose_product_options": "Scegli opzioni per {{ product_name }}"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "modal": {
       "label": "Galleria contenuti multimediali"
@@ -269,7 +275,11 @@
     "collection_template": {
       "title": "Collezione",
       "empty": "Nessun prodotto trovato",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Utilizza meno filtri o <a class=\"{{ class }}\" href=\"{{ link }}\">cancella tutto<\/a>"
+=======
+      "use_fewer_filters_html": "Utilizza meno filtri o <a class=\"{{ class }}\" href=\"{{ link }}\">rimuovi tutto<\/a>"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "video": {
       "load_video": "Carica il video: {{ description }}"

@@ -146,7 +146,13 @@
       },
       "view_full_details": "Visa alla uppgifter",
       "include_taxes": "Skatt ingår.",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">Frakt<\/a> beräknas i kassan."
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt<\/a> beräknas i kassan.",
+      "choose_options": "Välj alternativ",
+      "choose_product_options": "Välj alternativ för {{ product_name }}"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "modal": {
       "label": "Mediagalleri"
@@ -269,7 +275,11 @@
     "collection_template": {
       "title": "Produktserie",
       "empty": "Inga produkter hittades",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Använd färre filter eller <a class=\"{{ class }}\" href=\"{{ link }}\">rensa alla<\/a>"
+=======
+      "use_fewer_filters_html": "Använd färre filter eller <a class=\"{{ class }}\" href=\"{{ link }}\">ta bort alla<\/a>"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "video": {
       "load_video": "Ladda video: {{ description }}"

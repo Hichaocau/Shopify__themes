@@ -148,7 +148,13 @@
       },
       "view_full_details": "Zobrazit veškeré podrobnosti",
       "include_taxes": "Včetně daní.",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">Poštovné<\/a> se vypočítá na pokladně."
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">Poštovné<\/a> se vypočítá na pokladně.",
+      "choose_options": "Výběr možností",
+      "choose_product_options": "Zvolte možnosti pro: {{ product_name }}"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "modal": {
       "label": "Galerie multimédií"
@@ -283,7 +289,11 @@
     "collection_template": {
       "title": "Kolekce",
       "empty": "Nenalezeny žádné produkty",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Můžete použít méně filtrů nebo <a class=\"{{ class }}\" href=\"{{ link }}\">vymazat vše<\/a>."
+=======
+      "use_fewer_filters_html": "Můžete použít méně filtrů nebo <a class=\"{{ class }}\" href=\"{{ link }}\">všechny odebrat<\/a>"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "video": {
       "load_video": "Načíst video: {{ description }}"

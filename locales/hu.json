@@ -146,7 +146,13 @@
       },
       "view_full_details": "Minden részlet megtekintése",
       "include_taxes": "Tartalmazza az adót.",
+<<<<<<< HEAD
       "shipping_policy_html": "A <a href=\"{{ link }}\">szállítási költséget<\/a> a megrendeléskor számítjuk ki."
+=======
+      "shipping_policy_html": "A <a href=\"{{ link }}\">szállítási költséget<\/a> a megrendeléskor számítjuk ki.",
+      "choose_options": "Válassz a lehetőségek közül",
+      "choose_product_options": "Termékváltozatok – {{ product_name }}"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "modal": {
       "label": "Médiatár"
@@ -269,7 +275,11 @@
     "collection_template": {
       "title": "Kollekció",
       "empty": "Nincs találat",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Használj kevesebb szűrőt, vagy <a class=\"{{ class }}\" href=\"{{ link }}\">töröld az összeset<\/a>."
+=======
+      "use_fewer_filters_html": "Használj kevesebb szűrőt, vagy <a class=\"{{ class }}\" href=\"{{ link }}\">távolítsd el az összeset<\/a>."
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "video": {
       "load_video": "Videó betöltése: {{ description }}"

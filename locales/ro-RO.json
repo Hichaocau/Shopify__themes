@@ -147,7 +147,13 @@
       },
       "view_full_details": "Vedeți detaliile complete",
       "include_taxes": "Taxe incluse.",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">Taxele de expediere<\/a> sunt calculate la finalizarea comenzii."
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">Taxele de expediere<\/a> sunt calculate la finalizarea comenzii.",
+      "choose_options": "Alege opțiunile",
+      "choose_product_options": "Alege opțiunile pentru {{ product_name }}"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "modal": {
       "label": "Galerie media"
@@ -276,7 +282,11 @@
     "collection_template": {
       "title": "Colecție",
       "empty": "Nu s-au găsit produse",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Utilizați mai puține filtre sau <a class=\"{{ class }}\" href=\"{{ link }}\">goliți tot<\/a>"
+=======
+      "use_fewer_filters_html": "Folosește mai puține filtre sau <a class=\"{{ class }}\" href=\"{{ link }}\">elimină-le pe toate<\/a>"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "video": {
       "load_video": "Încarcă clipul video: {{ description }}"

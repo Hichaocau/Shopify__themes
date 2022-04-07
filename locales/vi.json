@@ -146,7 +146,13 @@
       },
       "view_full_details": "Xem toàn bộ chi tiết",
       "include_taxes": "Đã bao gồm thuế.",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">Phí vận chuyển<\/a> được tính khi thanh toán."
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">Phí vận chuyển<\/a> được tính khi thanh toán.",
+      "choose_options": "Chọn các tùy chọn",
+      "choose_product_options": "Chọn tùy chọn cho {{ product_name }}"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "modal": {
       "label": "Thư viện phương tiện"

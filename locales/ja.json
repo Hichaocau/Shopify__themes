@@ -146,7 +146,13 @@
       },
       "view_full_details": "詳細を表示する",
       "include_taxes": "税込み。",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">配送料<\/a>はチェックアウト時に計算されます。"
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">配送料<\/a>はチェックアウト時に計算されます。",
+      "choose_options": "オプションを選択",
+      "choose_product_options": "{{ product_name }}のオプションを選択する"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "modal": {
       "label": "メディアギャラリー"
@@ -269,7 +275,11 @@
     "collection_template": {
       "title": "コレクション",
       "empty": "商品が見つかりません",
+<<<<<<< HEAD
       "use_fewer_filters_html": "絞り込みの数を減らす、または<a class=\"{{ class }}\" href=\"{{ link }}\">すべてクリア<\/a>"
+=======
+      "use_fewer_filters_html": "絞り込みの数を減らす、または<a class=\"{{ class }}\" href=\"{{ link }}\">すべて削除する<\/a>"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "video": {
       "load_video": "動画を読み込む: {{ description }}"

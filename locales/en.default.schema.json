@@ -139,7 +139,11 @@
       "settings": {
         "type_header_font": {
           "label": "Font",
+<<<<<<< HEAD
           "info": "Selecting a different font can affect the speed of your store. [Learn more about system fonts.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
+=======
+          "info": "Selecting a different font can affect the speed of your store. [Learn more about system fonts.](https:\/\/help.shopify.com\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "heading_scale": {
           "label": "Font size scale"
@@ -152,7 +156,11 @@
         },
         "type_body_font": {
           "label": "Font",
+<<<<<<< HEAD
           "info": "Selecting a different font can affect the speed of your store. [Learn more about system fonts.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
+=======
+          "info": "Selecting a different font can affect the speed of your store. [Learn more about system fonts.](https:\/\/help.shopify.com\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "body_scale": {
           "label": "Font size scale"
@@ -445,7 +453,11 @@
             },
             "description": {
               "label": "Video alt text",
+<<<<<<< HEAD
               "info": "Describe the video to make it accessible for customers using screen readers."
+=======
+              "info": "Describe the video for customers using screen readers. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/theme-features#video-block)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             }
           }
         }
@@ -471,7 +483,11 @@
           "options__3": {
             "label": "Square"
           },
+<<<<<<< HEAD
           "info": "Add images by editing your collections. [Learn more](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+=======
+          "info": "Add images by editing your collections. [Learn more](https:\/\/help.shopify.com\/manual\/products\/collections)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "columns_desktop": {
           "label": "Number of columns on desktop"
@@ -547,7 +563,11 @@
         },
         "show_image": {
           "label": "Show featured image",
+<<<<<<< HEAD
           "info": "For best results, use an image with a 3:2 aspect ratio. [Learn more](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "For best results, use an image with a 3:2 aspect ratio. [Learn more](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "show_date": {
           "label": "Show date"
@@ -637,7 +657,15 @@
         },
         "show_rating": {
           "label": "Show product rating",
+<<<<<<< HEAD
           "info": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-collection-show-product-rating)"
+=======
+          "info": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/theme-features#featured-collection-show-product-rating)"
+        },
+        "enable_quick_buy": {
+          "label": "Enable quick add button",
+          "info": "Optimal with popup or drawer cart type."
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "header_mobile": {
           "content": "Mobile Layout"
@@ -724,10 +752,17 @@
               "label": "Text"
             },
             "featured_image_info": {
+<<<<<<< HEAD
               "content": "If you include a link in social media posts, the page’s featured image will be shown as the preview image. [Learn more](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)"
             },
             "title_info": {
               "content": "A store title and description are included with the preview image. [Learn more](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
+=======
+              "content": "If you include a link in social media posts, the page’s featured image will be shown as the preview image. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/images\/showing-social-media-thumbnail-images)"
+            },
+            "title_info": {
+              "content": "A store title and description are included with the preview image. [Learn more](https:\/\/help.shopify.com\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             }
           }
         },
@@ -743,7 +778,11 @@
           "name": "Product rating",
           "settings": {
             "paragraph": {
+<<<<<<< HEAD
               "content": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-product-rating)"
+=======
+              "content": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/theme-features#featured-product-rating)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             }
           }
         }
@@ -807,7 +846,11 @@
         },
         "header__1": {
           "content": "Email Signup",
+<<<<<<< HEAD
           "info": "Subscribers added automatically to your “accepted marketing” customer list. [Learn more](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)"
+=======
+          "info": "Subscribers added automatically to your “accepted marketing” customer list. [Learn more](https:\/\/help.shopify.com\/manual\/customers\/manage-customers)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "header__2": {
           "content": "Social media icons",
@@ -916,7 +959,11 @@
           "options__3": {
             "label": "Large"
           },
+<<<<<<< HEAD
           "info": "For best results, use an image with a 3:2 aspect ratio. [Learn more](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "For best results, use an image with a 3:2 aspect ratio. [Learn more](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "desktop_content_position": {
           "options__1": {
@@ -1230,7 +1277,11 @@
               "options__4": {
                 "label": "Large"
               },
+<<<<<<< HEAD
               "info": "For best results, use an image with a 16:9 aspect ratio. [Learn more](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+=======
+              "info": "For best results, use an image with a 16:9 aspect ratio. [Learn more](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             }
           }
         },
@@ -1255,10 +1306,17 @@
               "label": "Text"
             },
             "featured_image_info": {
+<<<<<<< HEAD
               "content": "If you include a link in social media posts, the page’s featured image will be shown as the preview image. [Learn more](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
               "content": "A store title and description are included with the preview image. [Learn more](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+=======
+              "content": "If you include a link in social media posts, the page’s featured image will be shown as the preview image. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
+            },
+            "title_info": {
+              "content": "A store title and description are included with the preview image. [Learn more](https:\/\/help.shopify.com\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             }
           }
         }
@@ -1280,7 +1338,11 @@
           "label": "Show author"
         },
         "paragraph": {
+<<<<<<< HEAD
           "content": "Change excerpts by editing your blog posts. [Learn more](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
+=======
+          "content": "Change excerpts by editing your blog posts. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "layout": {
           "label": "Desktop layout",
@@ -1306,7 +1368,11 @@
           "options__4": {
             "label": "Large"
           },
+<<<<<<< HEAD
           "info": "For best results, use an image with a 3:2 aspect ratio. [Learn more](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "For best results, use an image with a 3:2 aspect ratio. [Learn more](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         }
       }
     },
@@ -1338,14 +1404,22 @@
       "name": "Collection banner",
       "settings": {
         "paragraph": {
+<<<<<<< HEAD
           "content": "Add a description or image by editing your collection. [Learn more](https:\/\/help.shopify.com\/en\/manual\/products\/collections\/collection-layout)"
+=======
+          "content": "Add a description or image by editing your collection. [Learn more](https:\/\/help.shopify.com\/manual\/products\/collections\/collection-layout)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "show_collection_description": {
           "label": "Show collection description"
         },
         "show_collection_image": {
           "label": "Show collection image",
+<<<<<<< HEAD
           "info": "For best results, use an image with a 16:9 aspect ratio. [Learn more](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "For best results, use an image with a 16:9 aspect ratio. [Learn more](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         }
       }
     },
@@ -1361,6 +1435,22 @@
         "enable_filtering": {
           "label": "Enable filtering",
           "info": "Customize [filters](\/admin\/menus)"
+<<<<<<< HEAD
+=======
+        },
+        "filter_type": {
+          "label": "Desktop filter layout",
+          "options__1": {
+            "label": "Horizontal"
+          },
+          "options__2": {
+            "label": "Vertical"
+          },
+          "options__3": {
+            "label": "Drawer"
+          },
+          "info": "Drawer is the default mobile layout."
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "enable_sorting": {
           "label": "Enable sorting"
@@ -1385,7 +1475,11 @@
         },
         "show_rating": {
           "label": "Show product rating",
+<<<<<<< HEAD
           "info": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-grid-show-product-rating)"
+=======
+          "info": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#product-grid-section-settings)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "header__1": {
           "content": "Filtering and sorting"
@@ -1396,6 +1490,13 @@
         "enable_tags": {
           "label": "Enable filtering",
           "info": "[Customize filters](\/admin\/menus)"
+<<<<<<< HEAD
+=======
+        },
+        "enable_quick_buy": {
+          "label": "Enable quick add button",
+          "info": "Optimal with popup or drawer cart type."
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "collapse_on_larger_devices": {
           "label": "Collapse on desktop"
@@ -1452,7 +1553,11 @@
           "options__3": {
             "label": "Square"
           },
+<<<<<<< HEAD
           "info": "Add images by editing your collections. [Learn more](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+=======
+          "info": "Add images by editing your collections. [Learn more](https:\/\/help.shopify.com\/manual\/products\/collections)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "columns_desktop": {
           "label": "Number of columns on desktop"
@@ -1557,10 +1662,17 @@
               "label": "Text"
             },
             "featured_image_info": {
+<<<<<<< HEAD
               "content": "If you include a link in social media posts, the page’s featured image will be shown as the preview image. [Learn more](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
               "content": "A store title and description are included with the preview image. [Learn more](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+=======
+              "content": "If you include a link in social media posts, the page’s featured image will be shown as the preview image. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
+            },
+            "title_info": {
+              "content": "A store title and description are included with the preview image. [Learn more](https:\/\/help.shopify.com\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             }
           }
         },
@@ -1738,7 +1850,11 @@
           "name": "Product rating",
           "settings": {
             "paragraph": {
+<<<<<<< HEAD
               "content": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-rating-block)"
+=======
+              "content": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#product-rating-block)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             }
           }
         }
@@ -1819,7 +1935,11 @@
         },
         "show_rating": {
           "label": "Show product rating",
+<<<<<<< HEAD
           "info": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#search-results-show-product-rating)"
+=======
+          "info": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#search-results-section-settings)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "header__1": {
           "content": "Product card"
@@ -1956,7 +2076,11 @@
           "label": "Make section full width"
         },
         "paragraph": {
+<<<<<<< HEAD
           "content": "Each email subscription creates a customer account. [Learn more](https:\/\/help.shopify.com\/en\/manual\/customers)"
+=======
+          "content": "Each email subscription creates a customer account. [Learn more](https:\/\/help.shopify.com\/manual\/customers)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         }
       },
       "blocks": {
@@ -1988,7 +2112,11 @@
       "name": "Email signup banner",
       "settings": {
         "paragraph": {
+<<<<<<< HEAD
           "content": "Each email subscription creates a customer account. [Learn more](https:\/\/help.shopify.com\/en\/manual\/customers)"
+=======
+          "content": "Each email subscription creates a customer account. [Learn more](https:\/\/help.shopify.com\/manual\/customers)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "image": {
           "label": "Background image"
@@ -2049,7 +2177,11 @@
           "options__4": {
             "label": "Large"
           },
+<<<<<<< HEAD
           "info": "For best results, use an image with a 16:9 aspect ratio. [Learn more](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "For best results, use an image with a 16:9 aspect ratio. [Learn more](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "desktop_content_alignment": {
           "options__1": {
@@ -2080,7 +2212,11 @@
         },
         "show_text_below": {
           "label": "Show content below image on mobile",
+<<<<<<< HEAD
           "info": "For best results, use an image with a 16:9 aspect ratio. [Learn more](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "For best results, use an image with a 16:9 aspect ratio. [Learn more](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         }
       },
       "blocks": {
@@ -2141,7 +2277,11 @@
           "label": "Number of columns on desktop"
         },
         "paragraph__1": {
+<<<<<<< HEAD
           "content": "Dynamic recommendations use order and product information to change and improve over time. [Learn more](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
+=======
+          "content": "Dynamic recommendations use order and product information to change and improve over time. [Learn more](https:\/\/help.shopify.com\/themes\/development\/recommended-products)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "header__2": {
           "content": "Product card"
@@ -2166,7 +2306,11 @@
         },
         "show_rating": {
           "label": "Show product rating",
+<<<<<<< HEAD
           "info": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-recommendations-show-product-rating)"
+=======
+          "info": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#product-recommendations-section-settings)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "header_mobile": {
           "content": "Mobile Layout"
@@ -2241,7 +2385,11 @@
         },
         "description": {
           "label": "Video alt text",
+<<<<<<< HEAD
           "info": "Describe the video to make it accessible for customers using screen readers."
+=======
+          "info": "Describe the video for customers using screen readers. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/theme-features#video)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "image_padding": {
           "label": "Add image padding",

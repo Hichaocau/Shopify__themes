@@ -146,7 +146,13 @@
       },
       "view_full_details": "Προβολή όλων των λεπτομερειών",
       "include_taxes": "Ο φόρος συμπεριλαμβάνεται.",
+<<<<<<< HEAD
       "shipping_policy_html": "Τα <a href=\"{{ link }}\">έξοδα αποστολής<\/a> υπολογίζονται κατά την ολοκλήρωση της αγοράς."
+=======
+      "shipping_policy_html": "Τα <a href=\"{{ link }}\">έξοδα αποστολής<\/a> υπολογίζονται κατά την ολοκλήρωση της αγοράς.",
+      "choose_options": "Ορίστε επιλογές",
+      "choose_product_options": "Ορίστε επιλογές για {{ product_name }}"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "modal": {
       "label": "Συλλογή μέσων"
@@ -269,7 +275,11 @@
     "collection_template": {
       "title": "Συλλογή",
       "empty": "Δεν βρέθηκαν προϊόντα",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Χρησιμοποιήστε λιγότερα φίλτρα ή <a class=\"{{ class }}\" href=\"{{ link }}\">διαγράψτε τα όλα<\/a>"
+=======
+      "use_fewer_filters_html": "Χρησιμοποιήστε λιγότερα φίλτρα ή <a class=\"{{ class }}\" href=\"{{ link }}\">καταργήστε τα όλα<\/a>"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
     },
     "video": {
       "load_video": "Φόρτωση βίντεο: {{ description }}"

@@ -53,7 +53,11 @@
       "settings": {
         "type_header_font": {
           "label": "Skrifttype",
+<<<<<<< HEAD
           "info": "Valget af en anden skrifttype kan påvirke hastigheden i din butik. [Få mere at vide om systemskrifttyper.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
+=======
+          "info": "Valget af en anden skrifttype kan påvirke hastigheden i din butik. [Få mere at vide om systemskrifttyper.](https:\/\/help.shopify.com\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "header__1": {
           "content": "Overskrifter"
@@ -63,7 +67,11 @@
         },
         "type_body_font": {
           "label": "Skrifttype",
+<<<<<<< HEAD
           "info": "Valget af en anden skrifttype kan påvirke hastigheden i din butik. [Få mere at vide om systemskrifttyper.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
+=======
+          "info": "Valget af en anden skrifttype kan påvirke hastigheden i din butik. [Få mere at vide om systemskrifttyper.](https:\/\/help.shopify.com\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "heading_scale": {
           "label": "Størrelsesskala for skrifttype"
@@ -434,7 +442,11 @@
             },
             "description": {
               "label": "Alternativ tekst til video",
+<<<<<<< HEAD
               "info": "Beskriv videoen, så den bliver tilgængelig for kunder med en skærmlæser."
+=======
+              "info": "Beskriv videoen for kunder med en skærmlæser. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/theme-features#video-block)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             }
           }
         }
@@ -460,7 +472,11 @@
           "options__3": {
             "label": "Firkantet"
           },
+<<<<<<< HEAD
           "info": "Tilføj billeder ved at redigere dine kollektioner. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+=======
+          "info": "Tilføj billeder ved at redigere dine kollektioner. [Få mere at vide](https:\/\/help.shopify.com\/manual\/products\/collections)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "swipe_on_mobile": {
           "label": "Aktivér swipe på mobilen"
@@ -533,7 +549,11 @@
         },
         "show_image": {
           "label": "Vis udvalgt billede",
+<<<<<<< HEAD
           "info": "Brug et billede med et højde-bredde-forhold på 3:2 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "Brug et billede med et højde-bredde-forhold på 3:2 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "show_date": {
           "label": "Vis dato"
@@ -587,7 +607,15 @@
         },
         "show_rating": {
           "label": "Vis produktbedømmelser",
+<<<<<<< HEAD
           "info": "Hvis du vil vise bedømmelser, skal du tilføje en app til produktbedømmelse. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-collection-show-product-rating)"
+=======
+          "info": "Hvis du vil vise bedømmelser, skal du tilføje en app til produktbedømmelse. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/theme-features#featured-collection-show-product-rating)"
+        },
+        "enable_quick_buy": {
+          "label": "Aktivér knap til hurtig tilføjelse",
+          "info": "Optimal med indkøbskurv som pop op-vindue eller skuffe."
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "columns_desktop": {
           "label": "Antallet af kolonner på computer"
@@ -685,7 +713,11 @@
         },
         "header__1": {
           "content": "Tilmelding med mail",
+<<<<<<< HEAD
           "info": "Abonnenter, der automatisk er føjet til kundelisten “Accepterer markedsføring”. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)"
+=======
+          "info": "Abonnenter, der automatisk er føjet til kundelisten “Accepterer markedsføring”. [Få mere at vide](https:\/\/help.shopify.com\/manual\/customers\/manage-customers)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "header__2": {
           "content": "Ikoner for sociale medier",
@@ -813,7 +845,11 @@
           "options__3": {
             "label": "Stor"
           },
+<<<<<<< HEAD
           "info": "Brug et billede med et højde-bredde-forhold på 3:2 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "Brug et billede med et højde-bredde-forhold på 3:2 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "desktop_content_position": {
           "options__1": {
@@ -1105,7 +1141,11 @@
               "options__3": {
                 "label": "Medium"
               },
+<<<<<<< HEAD
               "info": "Brug et billede med et højde-bredde-forhold på 16:9 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)",
+=======
+              "info": "Brug et billede med et højde-bredde-forhold på 16:9 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)",
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
               "options__4": {
                 "label": "Stor"
               }
@@ -1130,10 +1170,17 @@
           "name": "Del",
           "settings": {
             "featured_image_info": {
+<<<<<<< HEAD
               "content": "Hvis du inkluderer et link i opslag på sociale medier, vil sidens udvalgte billede blive vist som billedeksempel. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
               "content": "Der er inkluderet en butikstitel og -beskrivelse med billedeksemplet. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+=======
+              "content": "Hvis du inkluderer et link i opslag på sociale medier, vil sidens udvalgte billede blive vist som billedeksempel. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
+            },
+            "title_info": {
+              "content": "Der er inkluderet en butikstitel og -beskrivelse med billedeksemplet. [Få mere at vide](https:\/\/help.shopify.com\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             },
             "text": {
               "label": "Tekst"
@@ -1152,7 +1199,11 @@
           "label": "Vis udvalgt billede"
         },
         "paragraph": {
+<<<<<<< HEAD
           "content": "Skift uddrag ved at redigere dine blogopslag. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
+=======
+          "content": "Skift uddrag ved at redigere dine blogopslag. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "show_date": {
           "label": "Vis dato"
@@ -1184,7 +1235,11 @@
           "options__4": {
             "label": "Stor"
           },
+<<<<<<< HEAD
           "info": "Brug et billede med et højde-bredde-forhold på 3:2 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "Brug et billede med et højde-bredde-forhold på 3:2 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         }
       }
     },
@@ -1216,14 +1271,22 @@
       "name": "Kollektionsbanner",
       "settings": {
         "paragraph": {
+<<<<<<< HEAD
           "content": "Tilføj en beskrivelse eller et billede ved at redigere din kollektion. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/products\/collections\/collection-layout)"
+=======
+          "content": "Tilføj en beskrivelse eller et billede ved at redigere din kollektion. [Få mere at vide](https:\/\/help.shopify.com\/manual\/products\/collections\/collection-layout)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "show_collection_description": {
           "label": "Vis kollektionsbeskrivelse"
         },
         "show_collection_image": {
           "label": "Vis kollektionsbillede",
+<<<<<<< HEAD
           "info": "Brug et billede med et højde-bredde-forhold på 16:9 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "Brug et billede med et højde-bredde-forhold på 16:9 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         }
       }
     },
@@ -1273,7 +1336,15 @@
         },
         "show_rating": {
           "label": "Vis produktbedømmelser",
+<<<<<<< HEAD
           "info": "Hvis du vil vise bedømmelser, skal du tilføje en app til produktbedømmelse. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-grid-show-product-rating)"
+=======
+          "info": "Hvis du vil vise bedømmelser, skal du tilføje en app til produktbedømmelse. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#product-grid-section-settings)"
+        },
+        "enable_quick_buy": {
+          "label": "Aktivér knap til hurtig tilføjelse",
+          "info": "Optimal med indkøbskurv som pop op-vindue eller skuffe."
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "columns_desktop": {
           "label": "Antallet af kolonner på computer"
@@ -1330,7 +1401,11 @@
           "options__3": {
             "label": "Firkantet"
           },
+<<<<<<< HEAD
           "info": "Tilføj billeder ved at redigere dine kollektioner. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+=======
+          "info": "Tilføj billeder ved at redigere dine kollektioner. [Få mere at vide](https:\/\/help.shopify.com\/manual\/products\/collections)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "columns_desktop": {
           "label": "Antallet af kolonner på computer"
@@ -1432,10 +1507,17 @@
           "name": "Del",
           "settings": {
             "featured_image_info": {
+<<<<<<< HEAD
               "content": "Hvis du inkluderer et link i opslag på sociale medier, vil sidens udvalgte billede blive vist som billedeksempel. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
               "content": "Der er inkluderet en butikstitel og -beskrivelse med billedeksemplet. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+=======
+              "content": "Hvis du inkluderer et link i opslag på sociale medier, vil sidens udvalgte billede blive vist som billedeksempel. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
+            },
+            "title_info": {
+              "content": "Der er inkluderet en butikstitel og -beskrivelse med billedeksemplet. [Få mere at vide](https:\/\/help.shopify.com\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             },
             "text": {
               "label": "Tekst"
@@ -1616,7 +1698,11 @@
           "name": "Produktvurdering",
           "settings": {
             "paragraph": {
+<<<<<<< HEAD
               "content": "Hvis du vil vise bedømmelser, skal du tilføje en app til produktbedømmelse. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-rating-block)"
+=======
+              "content": "Hvis du vil vise bedømmelser, skal du tilføje en app til produktbedømmelse. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#product-rating-block)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             }
           }
         }
@@ -1706,7 +1792,11 @@
         },
         "show_rating": {
           "label": "Vis produktbedømmelser",
+<<<<<<< HEAD
           "info": "Hvis du vil vise bedømmelser, skal du tilføje en app til produktbedømmelse. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#search-results-show-product-rating)"
+=======
+          "info": "Hvis du vil vise bedømmelser, skal du tilføje en app til produktbedømmelse. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#search-results-section-settings)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "columns_desktop": {
           "label": "Antallet af kolonner på computer"
@@ -1834,7 +1924,11 @@
           "label": "Gør afsnittet til fuld bredde"
         },
         "paragraph": {
+<<<<<<< HEAD
           "content": "Alle mailabonnementer opretter en kundekonto. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/customers)"
+=======
+          "content": "Alle mailabonnementer opretter en kundekonto. [Få mere at vide](https:\/\/help.shopify.com\/manual\/customers)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         }
       },
       "blocks": {
@@ -1901,11 +1995,19 @@
           "label": "Vis forhandler"
         },
         "paragraph__1": {
+<<<<<<< HEAD
           "content": "Dynamiske anbefalinger bruger ordre- og produktoplysninger til at foretage ændringer og forbedringer med tiden. [Få mere at vide](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
         },
         "show_rating": {
           "label": "Vis produktbedømmelser",
           "info": "Hvis du vil vise bedømmelser, skal du tilføje en app til produktbedømmelse. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-recommendations-show-product-rating)"
+=======
+          "content": "Dynamiske anbefalinger bruger ordre- og produktoplysninger til at foretage ændringer og forbedringer med tiden. [Få mere at vide](https:\/\/help.shopify.com\/themes\/development\/recommended-products)"
+        },
+        "show_rating": {
+          "label": "Vis produktbedømmelser",
+          "info": "Hvis du vil vise bedømmelser, skal du tilføje en app til produktbedømmelse. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#product-recommendations-section-settings)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "columns_desktop": {
           "label": "Antallet af kolonner på computer"
@@ -1997,7 +2099,11 @@
         },
         "description": {
           "label": "Alternativ tekst til video",
+<<<<<<< HEAD
           "info": "Beskriv videoen, så den bliver tilgængelig for kunder med en skærmlæser."
+=======
+          "info": "Beskriv videoen for kunder med en skærmlæser. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/theme-features#video)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "image_padding": {
           "label": "Tilføj billedmargen",
@@ -2073,10 +2179,17 @@
           "name": "Del",
           "settings": {
             "featured_image_info": {
+<<<<<<< HEAD
               "content": "Hvis du inkluderer et link i opslag på sociale medier, vil sidens udvalgte billede blive vist som billedeksempel. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)"
             },
             "title_info": {
               "content": "Der er inkluderet en butikstitel og -beskrivelse med billedeksemplet. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
+=======
+              "content": "Hvis du inkluderer et link i opslag på sociale medier, vil sidens udvalgte billede blive vist som billedeksempel. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/images\/showing-social-media-thumbnail-images)"
+            },
+            "title_info": {
+              "content": "Der er inkluderet en butikstitel og -beskrivelse med billedeksemplet. [Få mere at vide](https:\/\/help.shopify.com\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             },
             "text": {
               "label": "Tekst"
@@ -2095,7 +2208,11 @@
           "name": "Produktbedømmelser",
           "settings": {
             "paragraph": {
+<<<<<<< HEAD
               "content": "Hvis du vil vise bedømmelser, skal du tilføje en app til produktbedømmelse. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-product-rating)"
+=======
+              "content": "Hvis du vil vise bedømmelser, skal du tilføje en app til produktbedømmelse. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/theme-features#featured-product-rating)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             }
           }
         }
@@ -2126,7 +2243,11 @@
       "name": "Banner for tilmelding med mail",
       "settings": {
         "paragraph": {
+<<<<<<< HEAD
           "content": "Alle mailabonnementer opretter en kundekonto. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/customers)"
+=======
+          "content": "Alle mailabonnementer opretter en kundekonto. [Få mere at vide](https:\/\/help.shopify.com\/manual\/customers)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "image": {
           "label": "Baggrundsbillede"
@@ -2145,7 +2266,11 @@
         },
         "show_text_below": {
           "label": "Vis indhold under billede på mobiltelefon",
+<<<<<<< HEAD
           "info": "Brug et billede med et højde-bredde-forhold på 16:9 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "Brug et billede med et højde-bredde-forhold på 16:9 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "image_height": {
           "label": "Bannerhøjde",
@@ -2161,7 +2286,11 @@
           "options__4": {
             "label": "Stor"
           },
+<<<<<<< HEAD
           "info": "Brug et billede med et højde-bredde-forhold på 16:9 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "Brug et billede med et højde-bredde-forhold på 16:9 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "desktop_content_position": {
           "options__4": {
