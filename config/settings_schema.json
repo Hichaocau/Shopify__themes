@@ -1,18 +1,18 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Đạt__helu",
+    "theme_name": "Tien_Dat_helooooo",
     "theme_version": "4.0.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/en\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
         "type": "header",
-        "content": "datdeptrai"
+        "content": "hello"
       },
       {
         "type": "color",
