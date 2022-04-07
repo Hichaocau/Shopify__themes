@@ -35,8 +35,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/How-to-Shop-for-Mens-Clothes-banner.jpg",
-        "image_overlay_opacity": 20,
+        "image": "shopify:\/\/shop_images\/img-heroo.png",
+        "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "bottom-center",
