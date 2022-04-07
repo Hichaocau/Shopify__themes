@@ -53,11 +53,7 @@
       "settings": {
         "type_header_font": {
           "label": "字体",
-<<<<<<< HEAD
-          "info": "选择其他字体可能会影响您商店的速度。[详细了解系统字体。](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
-=======
           "info": "选择其他字体可能会影响您商店的速度。[详细了解系统字体。](https:\/\/help.shopify.com\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "header__1": {
           "content": "标题"
@@ -67,11 +63,7 @@
         },
         "type_body_font": {
           "label": "字体",
-<<<<<<< HEAD
-          "info": "选择其他字体可能会影响您商店的速度。[详细了解系统字体。](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
-=======
           "info": "选择其他字体可能会影响您商店的速度。[详细了解系统字体。](https:\/\/help.shopify.com\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "heading_scale": {
           "label": "字号比例"
@@ -441,11 +433,7 @@
             },
             "description": {
               "label": "视频替代文本",
-<<<<<<< HEAD
-              "info": "为视频提供描述，以便使用屏幕阅读器的客户可访问该视频。"
-=======
               "info": "为使用屏幕阅读器的客户描述视频。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/theme-features#video-block)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             }
           },
           "name": "视频"
@@ -472,11 +460,7 @@
           "options__3": {
             "label": "方形"
           },
-<<<<<<< HEAD
-          "info": "通过编辑产品集合来添加图片。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
-=======
           "info": "通过编辑产品集合来添加图片。[了解详细信息](https:\/\/help.shopify.com\/manual\/products\/collections)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "swipe_on_mobile": {
           "label": "在移动设备上启用刷卡功能"
@@ -549,11 +533,7 @@
         },
         "show_image": {
           "label": "显示配图",
-<<<<<<< HEAD
-          "info": "若要获得最佳效果，请使用纵横比为 3:2 的图片。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
-=======
           "info": "若要获得最佳效果，请使用纵横比为 3:2 的图片。[了解详细信息](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "show_date": {
           "label": "显示日期"
@@ -607,15 +587,11 @@
         },
         "show_rating": {
           "label": "显示产品评分",
-<<<<<<< HEAD
-          "info": "若要显示评分，请添加产品评分应用。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-collection-show-product-rating)"
-=======
           "info": "若要显示评分，请添加产品评分应用。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/theme-features#featured-collection-show-product-rating)"
         },
         "enable_quick_buy": {
           "label": "启用快速添加按钮",
           "info": "通过弹出窗口或抽屉式购物车类型实现优化。"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "columns_desktop": {
           "label": "桌面上的列数"
@@ -712,11 +688,7 @@
           "label": "标题"
         },
         "header__1": {
-<<<<<<< HEAD
-          "info": "订阅者已自动添加到您的“已接受营销”客户列表。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)",
-=======
           "info": "订阅者已自动添加到您的“已接受营销”客户列表。[了解详细信息](https:\/\/help.shopify.com\/manual\/customers\/manage-customers)",
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
           "content": "电子邮件注册信息"
         },
         "header__2": {
@@ -845,11 +817,7 @@
           "options__3": {
             "label": "大"
           },
-<<<<<<< HEAD
-          "info": "若要获得最佳效果，请使用纵横比为 3:2 的图片。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
-=======
           "info": "若要获得最佳效果，请使用纵横比为 3:2 的图片。[了解详细信息](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "desktop_content_position": {
           "options__1": {
@@ -1140,11 +1108,7 @@
               "options__3": {
                 "label": "中"
               },
-<<<<<<< HEAD
-              "info": "若要获得最佳效果，请使用纵横比为 16:9 的图片。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)",
-=======
               "info": "若要获得最佳效果，请使用纵横比为 16:9 的图片。[了解详细信息](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)",
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
               "options__4": {
                 "label": "大"
               }
@@ -1170,17 +1134,10 @@
           "name": "分享",
           "settings": {
             "featured_image_info": {
-<<<<<<< HEAD
-              "content": "如果您在社交媒体帖子中包含链接，该页面的配图将作为预览图片显示。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)。"
-            },
-            "title_info": {
-              "content": "预览图片中包含商店标题和描述。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)。"
-=======
               "content": "如果您在社交媒体帖子中包含链接，该页面的配图将作为预览图片显示。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/images\/showing-social-media-thumbnail-images)。"
             },
             "title_info": {
               "content": "预览图片中包含商店标题和描述。[了解详细信息](https:\/\/help.shopify.com\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)。"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             },
             "text": {
               "label": "文本"
@@ -1199,11 +1156,7 @@
           "label": "显示配图"
         },
         "paragraph": {
-<<<<<<< HEAD
-          "content": "通过编辑博客文章来更改摘录。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
-=======
           "content": "通过编辑博客文章来更改摘录。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "show_date": {
           "label": "显示日期"
@@ -1235,11 +1188,7 @@
           "options__4": {
             "label": "大"
           },
-<<<<<<< HEAD
-          "info": "若要获得最佳效果，请使用纵横比为 3:2 的图片。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
-=======
           "info": "若要获得最佳效果，请使用纵横比为 3:2 的图片。[了解详细信息](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         }
       }
     },
@@ -1271,22 +1220,14 @@
       "name": "产品系列横幅",
       "settings": {
         "paragraph": {
-<<<<<<< HEAD
-          "content": "通过编辑产品系列来添加描述或图片。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/products\/collections\/collection-layout)"
-=======
           "content": "通过编辑产品系列来添加描述或图片。[了解详细信息](https:\/\/help.shopify.com\/manual\/products\/collections\/collection-layout)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "show_collection_description": {
           "label": "显示产品系列描述"
         },
         "show_collection_image": {
           "label": "显示产品系列图片",
-<<<<<<< HEAD
-          "info": "若要获得最佳效果，请使用纵横比为 16:9 的图片。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
-=======
           "info": "若要获得最佳效果，请使用纵横比为 16:9 的图片。[了解详细信息](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         }
       }
     },
@@ -1336,15 +1277,11 @@
         },
         "show_rating": {
           "label": "显示产品评分",
-<<<<<<< HEAD
-          "info": "若要显示评分，请添加产品评分应用。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-grid-show-product-rating)"
-=======
           "info": "若要显示评分，请添加产品评分应用。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#product-grid-section-settings)"
         },
         "enable_quick_buy": {
           "label": "启用快速添加按钮",
           "info": "通过弹出窗口或抽屉式购物车类型实现优化。"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "columns_desktop": {
           "label": "桌面上的列数"
@@ -1360,6 +1297,19 @@
           "options__2": {
             "label": "2 列"
           }
+        },
+        "filter_type": {
+          "label": "台式设备筛选布局",
+          "options__1": {
+            "label": "水平"
+          },
+          "options__2": {
+            "label": "垂直"
+          },
+          "options__3": {
+            "label": "抽屉"
+          },
+          "info": "默认的移动设备布局是抽屉式布局。"
         }
       }
     },
@@ -1401,11 +1351,7 @@
           "options__3": {
             "label": "方形"
           },
-<<<<<<< HEAD
-          "info": "通过编辑产品集合来添加图片。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
-=======
           "info": "通过编辑产品集合来添加图片。[了解详细信息](https:\/\/help.shopify.com\/manual\/products\/collections)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "columns_desktop": {
           "label": "台式设备上的列数"
@@ -1491,17 +1437,10 @@
         "share": {
           "settings": {
             "featured_image_info": {
-<<<<<<< HEAD
-              "content": "如果您在社交媒体帖子中包含链接，该页面的配图便会作为预览图片显示。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)。"
-            },
-            "title_info": {
-              "content": "预览图片中包含商店标题和描述。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)。"
-=======
               "content": "如果您在社交媒体帖子中包含链接，该页面的配图便会作为预览图片显示。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/images\/showing-social-media-thumbnail-images)。"
             },
             "title_info": {
               "content": "预览图片中包含商店标题和描述。[了解详细信息](https:\/\/help.shopify.com\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)。"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             },
             "text": {
               "label": "文本"
@@ -1698,11 +1637,7 @@
           "name": "产品评分",
           "settings": {
             "paragraph": {
-<<<<<<< HEAD
-              "content": "若要显示评分，请添加产品评分应用。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-rating-block)"
-=======
               "content": "若要显示评分，请添加产品评分应用。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#product-rating-block)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             }
           }
         }
@@ -1792,11 +1727,7 @@
         },
         "show_rating": {
           "label": "显示产品评分",
-<<<<<<< HEAD
-          "info": "若要显示评分，请添加产品评分应用。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#search-results-show-product-rating)"
-=======
           "info": "若要显示评分，请添加产品评分应用。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#search-results-section-settings)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "columns_desktop": {
           "label": "桌面上的列数"
@@ -1924,11 +1855,7 @@
           "label": "使分区展示全宽"
         },
         "paragraph": {
-<<<<<<< HEAD
-          "content": "每次电子邮件订阅均会创建一个客户账户。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/customers)"
-=======
           "content": "每次电子邮件订阅均会创建一个客户账户。[了解详细信息](https:\/\/help.shopify.com\/manual\/customers)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         }
       },
       "blocks": {
@@ -1995,19 +1922,11 @@
           "label": "显示厂商"
         },
         "paragraph__1": {
-<<<<<<< HEAD
-          "content": "动态推荐使用订单和产品信息来随着时间而变化和改进。[了解详细信息](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
-        },
-        "show_rating": {
-          "label": "显示产品评分",
-          "info": "若要显示评分，请添加产品评分应用。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-recommendations-show-product-rating)"
-=======
           "content": "动态推荐使用订单和产品信息来随着时间而变化和改进。[了解详细信息](https:\/\/help.shopify.com\/themes\/development\/recommended-products)"
         },
         "show_rating": {
           "label": "显示产品评分",
           "info": "若要显示评分，请添加产品评分应用。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#product-recommendations-section-settings)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "columns_desktop": {
           "label": "桌面上的列数"
@@ -2099,11 +2018,7 @@
         },
         "description": {
           "label": "视频替代文本",
-<<<<<<< HEAD
-          "info": "为视频提供描述，以便使用屏幕阅读器的客户可访问该视频。"
-=======
           "info": "为使用屏幕阅读器的客户描述视频。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/theme-features#video)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "image_padding": {
           "label": "添加图片填充",
@@ -2179,17 +2094,10 @@
           "name": "分享",
           "settings": {
             "featured_image_info": {
-<<<<<<< HEAD
-              "content": "如果您在社交媒体帖子中包含链接，该页面的配图将作为预览图片显示。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)"
-            },
-            "title_info": {
-              "content": "预览图片中包含商店标题和描述。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
-=======
               "content": "如果您在社交媒体帖子中包含链接，该页面的配图将作为预览图片显示。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/images\/showing-social-media-thumbnail-images)"
             },
             "title_info": {
               "content": "预览图片中包含商店标题和描述。[了解详细信息](https:\/\/help.shopify.com\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             },
             "text": {
               "label": "文本"
@@ -2208,11 +2116,7 @@
           "name": "产品评分",
           "settings": {
             "paragraph": {
-<<<<<<< HEAD
-              "content": "若要显示评分，请添加产品评分应用。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-product-rating)"
-=======
               "content": "若要显示评分，请添加产品评分应用。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/theme-features#featured-product-rating)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
             }
           }
         }
@@ -2243,11 +2147,7 @@
       "name": "电子邮件注册横幅",
       "settings": {
         "paragraph": {
-<<<<<<< HEAD
-          "content": "每次电子邮件订阅均会创建一个客户账户。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/customers)"
-=======
           "content": "每次电子邮件订阅均会创建一个客户账户。[了解详细信息](https:\/\/help.shopify.com\/manual\/customers)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "image": {
           "label": "背景图片"
@@ -2266,11 +2166,7 @@
         },
         "show_text_below": {
           "label": "在移动设备上的图片下方显示内容。",
-<<<<<<< HEAD
-          "info": "若要获得最佳效果，请使用纵横比为 16:9 的图片。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
-=======
           "info": "若要获得最佳效果，请使用纵横比为 16:9 的图片。[了解详细信息](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "image_height": {
           "label": "横幅高度",
@@ -2286,11 +2182,7 @@
           "options__4": {
             "label": "大"
           },
-<<<<<<< HEAD
-          "info": "若要获得最佳效果，请使用纵横比为 16:9 的图片。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
-=======
           "info": "若要获得最佳效果，请使用纵横比为 16:9 的图片。[了解详细信息](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
->>>>>>> c5ff73e74806ee2de6a55cb5a2a7e969e91d7246
         },
         "desktop_content_position": {
           "options__4": {
