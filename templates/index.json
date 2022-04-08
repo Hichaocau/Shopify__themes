@@ -10,6 +10,13 @@
             "heading_size": "h0"
           }
         },
+        "heading2": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bengal Vegetable Farm Organic 100%",
+            "heading_size": "h0"
+          }
+        },
         "text": {
           "type": "text",
           "settings": {
@@ -31,6 +38,7 @@
       },
       "block_order": [
         "heading",
+        "heading2",
         "text",
         "button"
       ],
