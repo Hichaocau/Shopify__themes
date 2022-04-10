@@ -4,11 +4,11 @@
 {{ 'style.css' | asset_url | stylesheet_tag }}
 {{ 'responsive-vegetable.css' | asset_url | stylesheet_tag }}
 {{ 'main.js' | asset_url | stylesheet_tag }}
+<script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
 
 {% layout 'theme.dattheme' %}
 
-
-
+<!-- header -->
 <div class="header__wrap transition">
     <div class="header container">
         <div class="header__list-wrap df">
@@ -73,6 +73,66 @@
     </div>
     <!-- hero section end -->
 </div>
+<!-- header end -->
+
+<!-- login section start -->
+<div class="login container__full none">
+    <div class="app">
+        <h1>Login</h1>
+        <form>
+            <div class="form-control">
+                <input type="text" id="username" placeholder="Username" />
+                <span></span>
+            </div>
+
+            <div class="form-control">
+                <input type="email" id="email" placeholder="Email" />
+                <span></span>
+            </div>
+
+            <div class="form-control">
+                <input type="password" id="password" placeholder="Password" />
+                <span></span>
+            </div>
+
+            <input class="login__input" type="submit" value="Login" />
+            <div class="signup_link">Not a member? <a href="#">Signup</a></div>
+        </form>
+    </div>
+</div>
+<!-- login section end -->
+
+<!-- register section start -->
+<div class="register container__full none">
+    <div class="app">
+        <h1>Register</h1>
+        <form>
+            <div class="form-control">
+                <input type="text" placeholder="Username" />
+                <span></span>
+            </div>
+
+            <div class="form-control">
+                <input type="email"  placeholder="Email" />
+                <span></span>
+            </div>
+
+            <div class="form-control">
+                <input type="password" placeholder="Password" />
+                <span></span>
+            </div>
+
+            <div class="form-control">
+                <input type="password" placeholder="Confirm password" />
+                <span></span>
+            </div>
+
+            <input type="submit" class="register__input" value="Sign Up" />
+            <div class="login_link">Sign Up Success....<a href="#">Login</a></div>
+        </form>
+    </div>
+</div>
+<!-- register section end -->
 
 
 
@@ -94,7 +154,7 @@
     "blocks": [
         {
             "type": "image",
-            "name": "Ảnh của bạn đấy",
+            "name": "hero image",
             "settings": [
                 {
                     "type": "image_picker",
