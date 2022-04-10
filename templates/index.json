@@ -1,14 +1,71 @@
 {
   "sections": {
-    "1649598273f69f4c08": {
+    "164959831149ee5ed3": {
       "type": "banner",
       "settings": {
         "heading": "",
         "description": ""
       }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bengal Vegetable Farm Organic 100%",
+            "heading_size": "h0"
+          }
+        },
+        "heading2": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bengal Vegetable Farm Organic 100%",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Shujaa is a mobile platform that enables you to connect with your family and friends anywhere at anytime.",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop now",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "heading2",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img-heroo.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
     }
   },
   "order": [
-    "1649598273f69f4c08"
+    "164959831149ee5ed3",
+    "image_banner"
   ]
 }
