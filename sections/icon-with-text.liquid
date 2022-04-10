@@ -1,0 +1,44 @@
+<h3>{{ section.settings.heading }}</h3>
+<p>{{ section.settings.description }}</p>
+
+{% for block in section.blocks %}
+    <img src="{{ block.settings.image | img_url: '500x500' }}"/>
+{% endfor %}
+
+
+{% schema %}
+  {
+    "name": "create new section by Đạt",
+    "settings":[
+        {
+            "type": "text",
+            "label": "Ghi tiêu đề vào đây",
+            "id": "heading"
+        },
+        {
+            "type": "richtext",
+            "label": "Có gì mô tả thì viết vào đây",
+            "id": "description"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "image",
+            "name": "Ảnh của bạn đấy",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "label": "Bấm vào đây để tải ảnh",
+                    "id": "image"
+                }
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "category": "image",
+            "name": "Slideshow của bạn đấy"
+        }
+    ]
+    }
+{% endschema %}
