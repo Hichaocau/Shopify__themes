@@ -67,7 +67,7 @@
         <div class="hero__img transition">
             <!-- <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/img-heroo.png" alt=""> -->
             {% for block in section.blocks %}
-            <img src="{{ block.settings.image | img_url: '500x500' }}"/>
+            <img src="{{ block.settings.image | img_url: 'master' }}"/>
             {% endfor %}
         </div>
     </div>
