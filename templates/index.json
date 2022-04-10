@@ -265,13 +265,6 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
-    },
-    "16495610127a2e6fef": {
-      "type": "banner",
-      "settings": {
-        "heading": "",
-        "description": ""
-      }
     }
   },
   "order": [
@@ -281,7 +274,6 @@
     "collage",
     "video",
     "multicolumn",
-    "1649324050dc5f6456",
-    "16495610127a2e6fef"
+    "1649324050dc5f6456"
   ]
 }
