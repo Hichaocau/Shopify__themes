@@ -3,8 +3,11 @@
 {{ 'grid-vegetable.css' | asset_url | stylesheet_tag }}
 {{ 'style.css' | asset_url | stylesheet_tag }}
 {{ 'responsive-vegetable.css' | asset_url | stylesheet_tag }}
+{{ 'main.js' | asset_url | stylesheet_tag }}
 
 {% layout 'theme.dattheme' %}
+
+
 
 <div class="header__wrap transition">
     <div class="header container">
@@ -62,11 +65,15 @@
             <a class="btn" href="#shop">Shop now</a>
         </div>
         <div class="hero__img transition">
-            <img src="./assets/imgs/img-heroo.png" alt="">
+            <!-- <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/img-heroo.png" alt=""> -->
+            {% for block in section.blocks %}
+            <img src="{{ block.settings.image | img_url: '500x500' }}"/>
+            {% endfor %}
         </div>
     </div>
     <!-- hero section end -->
 </div>
+
 
 
 {% schema %}
