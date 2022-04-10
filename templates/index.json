@@ -2,6 +2,17 @@
   "sections": {
     "164959831149ee5ed3": {
       "type": "banner",
+      "blocks": {
+        "e367e20f-c241-4f34-b70e-bf0a8a91ca82": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img-heroo.png"
+          }
+        }
+      },
+      "block_order": [
+        "e367e20f-c241-4f34-b70e-bf0a8a91ca82"
+      ],
       "settings": {
         "heading": "",
         "description": ""
