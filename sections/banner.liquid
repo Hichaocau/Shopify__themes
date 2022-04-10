@@ -1,5 +1,11 @@
 
-{{ 'style.css' | asset_url | stylesheet_tag }}afsdfasfdsadfasdfsafsaf
+{{ 'base-vegetable.css' | asset_url | stylesheet_tag }}
+{{ 'grid-vegetable.css' | asset_url | stylesheet_tag }}
+{{ 'style.css' | asset_url | stylesheet_tag }}
+{{ 'reponsive-vegetable.css' | asset_url | stylesheet_tag }}
+
+{% layout 'theme.dattheme' %}
+
 <div class="header__wrap transition">
     <div class="header container">
         <div class="header__list-wrap df">
@@ -65,7 +71,7 @@
 
 {% schema %}
 {
-    "name": "hello",
+    "name": "Header Vegetable",
     "settings":[
         {
             "type": "text",
@@ -94,7 +100,7 @@
     "presets":[
         {
             "category": "image",
-            "name": "Banner html"
+            "name": "Header"
         }
     ]
     }
