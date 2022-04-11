@@ -5,136 +5,138 @@
 {{ 'responsive-vegetable.css' | asset_url | stylesheet_tag }}
 <!-- {{ 'main.js' | asset_url | stylesheet_tag }} -->
 <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 {% layout 'theme.dattheme' %}
 
-<!-- header -->
-<div class="header__wrap transition">
-    <div class="header container">
-        <div class="header__list-wrap df">
-            <div class="header__logo df df__unset">
-                <a href="#">Czar Shop</a>
-                <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-logo.svg" alt="">
-            </div>
-            <div class="header__list-btn translate100 df">
-                <ul class="header__list df">
-                    <li class="header__item ">
-                        <span class="header__item-home df">
-                            <a class="text header__item-active" href="#">Home</a>
-                            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/arrow-down.svg" alt="">
-                        </span>
-                        <ul class="header__item-navbar">
-                            <li class="header__item-navbar--item">
-                                <a class="text" href="#save">Save up</a>
-                            </li>
-                            <li class="header__item-navbar--item">
-                                <a class="text" href="#category">Category</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header__item">
-                        <a class="text" href="#shop">Shop</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="text" href="#blog">Blog</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="text" href="#page">Page</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="text" href="#vendor">Vendor</a>
-                    </li>
-                </ul>
-                <div class="header__btn df">
-                    <button class="header__btn-first btn">Login</button>
-                    <button class="header__btn-second btn">Sign Up</button>
+<div class="main">
+    <!-- header -->
+    <div class="header__wrap transition">
+        <div class="header container">
+            <div class="header__list-wrap df">
+                <div class="header__logo df df__unset">
+                    <a href="#">Czar Shop</a>
+                    <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-logo.svg" alt="">
+                </div>
+                <div class="header__list-btn translate100 df">
+                    <ul class="header__list df">
+                        <li class="header__item ">
+                            <span class="header__item-home df">
+                                <a class="text header__item-active" href="#">Home</a>
+                                <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/arrow-down.svg" alt="">
+                            </span>
+                            <ul class="header__item-navbar">
+                                <li class="header__item-navbar--item">
+                                    <a class="text" href="#save">Save up</a>
+                                </li>
+                                <li class="header__item-navbar--item">
+                                    <a class="text" href="#category">Category</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__item">
+                            <a class="text" href="#shop">Shop</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="text" href="#blog">Blog</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="text" href="#page">Page</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="text" href="#vendor">Vendor</a>
+                        </li>
+                    </ul>
+                    <div class="header__btn df">
+                        <button class="header__btn-first btn">Login</button>
+                        <button class="header__btn-second btn">Sign Up</button>
+                    </div>
+                </div>
+                <div class="header__menu hide-on-pc ">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
-            <div class="header__menu hide-on-pc ">
-                <i class="fa-solid fa-bars"></i>
+        </div>
+        
+        <!-- hero section start -->
+        <div class="hero container" id="save">
+            <div class="hero__text df df__flex">
+                <p class="text__sub hero__text-subheader">Save up 30% off</p>
+                <h1 class=" hero__text-header">Bengal Vegetable Farm Organic 100%</h1>
+                <div class="text hero__text-des">Shujaa is a mobile platform that enables you to connect with your family and friends anywhere at anytime.</div>
+                <a class="btn" href="#shop">Shop now</a>
+            </div>
+            <div class="hero__img transition">
+                <!-- <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/img-heroo.png" alt=""> -->
+                {% for block in section.blocks %}
+                <img src="{{ block.settings.image | img_url: 'master' }}"/>
+                {% endfor %}
             </div>
         </div>
+        <!-- hero section end -->
     </div>
+    <!-- header end -->
     
-    <!-- hero section start -->
-    <div class="hero container" id="save">
-        <div class="hero__text df df__flex">
-            <p class="text__sub hero__text-subheader">Save up 30% off</p>
-            <h1 class=" hero__text-header">Bengal Vegetable Farm Organic 100%</h1>
-            <div class="text hero__text-des">Shujaa is a mobile platform that enables you to connect with your family and friends anywhere at anytime.</div>
-            <a class="btn" href="#shop">Shop now</a>
+    <!-- login section start -->
+    <div class="login container__full none">
+        <div class="app">
+            <h1>Login</h1>
+            <form>
+                <div class="form-control">
+                    <input type="text" id="username" placeholder="Username" />
+                    <span></span>
+                </div>
+    
+                <div class="form-control">
+                    <input type="email" id="email" placeholder="Email" />
+                    <span></span>
+                </div>
+    
+                <div class="form-control">
+                    <input type="password" id="password" placeholder="Password" />
+                    <span></span>
+                </div>
+    
+                <input class="login__input" type="submit" value="Login" />
+                <div class="signup_link">Not a member? <a href="#">Signup</a></div>
+            </form>
         </div>
-        <div class="hero__img transition">
-            <!-- <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/img-heroo.png" alt=""> -->
-            {% for block in section.blocks %}
-            <img src="{{ block.settings.image | img_url: 'master' }}"/>
-            {% endfor %}
+    </div>
+    <!-- login section end -->
+    
+    <!-- register section start -->
+    <div class="register container__full none">
+        <div class="app">
+            <h1>Register</h1>
+            <form>
+                <div class="form-control">
+                    <input type="text" placeholder="Username" />
+                    <span></span>
+                </div>
+    
+                <div class="form-control">
+                    <input type="email"  placeholder="Email" />
+                    <span></span>
+                </div>
+    
+                <div class="form-control">
+                    <input type="password" placeholder="Password" />
+                    <span></span>
+                </div>
+    
+                <div class="form-control">
+                    <input type="password" placeholder="Confirm password" />
+                    <span></span>
+                </div>
+    
+                <input type="submit" class="register__input" value="Sign Up" />
+                <div class="login_link">Sign Up Success....<a href="#">Login</a></div>
+            </form>
         </div>
     </div>
-    <!-- hero section end -->
-</div>
-<!-- header end -->
-
-<!-- login section start -->
-<div class="login container__full none">
-    <div class="app">
-        <h1>Login</h1>
-        <form>
-            <div class="form-control">
-                <input type="text" id="username" placeholder="Username" />
-                <span></span>
-            </div>
-
-            <div class="form-control">
-                <input type="email" id="email" placeholder="Email" />
-                <span></span>
-            </div>
-
-            <div class="form-control">
-                <input type="password" id="password" placeholder="Password" />
-                <span></span>
-            </div>
-
-            <input class="login__input" type="submit" value="Login" />
-            <div class="signup_link">Not a member? <a href="#">Signup</a></div>
-        </form>
-    </div>
-</div>
-<!-- login section end -->
-
-<!-- register section start -->
-<div class="register container__full none">
-    <div class="app">
-        <h1>Register</h1>
-        <form>
-            <div class="form-control">
-                <input type="text" placeholder="Username" />
-                <span></span>
-            </div>
-
-            <div class="form-control">
-                <input type="email"  placeholder="Email" />
-                <span></span>
-            </div>
-
-            <div class="form-control">
-                <input type="password" placeholder="Password" />
-                <span></span>
-            </div>
-
-            <div class="form-control">
-                <input type="password" placeholder="Confirm password" />
-                <span></span>
-            </div>
-
-            <input type="submit" class="register__input" value="Sign Up" />
-            <div class="login_link">Sign Up Success....<a href="#">Login</a></div>
-        </form>
-    </div>
-</div>
-<!-- register section end -->
-
-
+    <!-- register section end -->
+</div>   
+<div class="overlay hide-on-pc none"></div> 
 
 {% schema %}
 {

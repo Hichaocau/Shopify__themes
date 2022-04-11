@@ -1,31 +1,4 @@
 
-// countdown
-function countdownDay() {
-    const countdown  = () => {
-        const countDate = new Date('June 16, 2022 00:00:00').getTime()
-        const now = new Date().getTime()
-        const gap = countDate - now
-    
-        const second = 1000;
-        const minute = second * 60; 
-        const hour = minute * 60; 
-        const day = hour * 24;
-        
-        const textDay = Math.floor(gap / day);
-        const textHour = Math.floor((gap % day) / hour);
-        const textMinute = Math.floor((gap % hour) / minute);
-        const textSecond = Math.floor((gap % minute) / second);
-        
-        document.querySelector('.days').innerHTML = textDay
-        document.querySelector('.hours').innerHTML = textHour
-        document.querySelector('.minutes').innerHTML = textMinute
-        document.querySelector('.seconds').innerHTML = textSecond
-    }
-    
-    setInterval(countdown , 1000)
-}
-
-countdownDay() 
 
 // login
 
@@ -87,6 +60,31 @@ function login(){
 }
 login()
 
+// click icon menu
+function headerMenu(){
+    const iconMenu = document.querySelector('.header__menu i')
+    const navbar = document.querySelector('.header__list-btn')
+    const overlay = document.querySelector('.overlay')
+    
+    iconMenu.addEventListener('click', () => {
+        iconMenu.classList.toggle('fa-xmark')
+        overlay.classList.toggle('none')
+        navbar.style.transition = 'all 0.3s linear'
+        navbar.classList.remove('translate100')
+        navbar.classList.add('translate0')
+    })
+
+    overlay.addEventListener('click', () => {
+        iconMenu.classList.toggle('fa-xmark')
+        overlay.classList.toggle('none')
+        navbar.classList.add('translate100')
+        navbar.classList.remove('translate0')
+    })
+}
+headerMenu()
+
+
+
 // show product
 function showProduct(){
     const productOptions = document.querySelectorAll('.category__list')
@@ -137,27 +135,31 @@ function buyProduct(){
 buyProduct()
 
 
-// click icon menu
-function headerMenu(){
-    const iconMenu = document.querySelector('.header__menu i')
-    const navbar = document.querySelector('.header__list-btn')
-    const overlay = document.querySelector('.overlay')
+// countdown
+function countdownDay() {
+    const countdown  = () => {
+        const countDate = new Date('June 16, 2022 00:00:00').getTime()
+        const now = new Date().getTime()
+        const gap = countDate - now
     
-    iconMenu.addEventListener('click', () => {
-        iconMenu.classList.toggle('fa-xmark')
-        overlay.classList.toggle('none')
-        navbar.style.transition = 'all 0.3s linear'
-        navbar.classList.remove('translate100')
-        navbar.classList.add('translate0')
-    })
-
-    overlay.addEventListener('click', () => {
-        iconMenu.classList.toggle('fa-xmark')
-        overlay.classList.toggle('none')
-        navbar.classList.add('translate100')
-        navbar.classList.remove('translate0')
-    })
+        const second = 1000;
+        const minute = second * 60; 
+        const hour = minute * 60; 
+        const day = hour * 24;
+        
+        const textDay = Math.floor(gap / day);
+        const textHour = Math.floor((gap % day) / hour);
+        const textMinute = Math.floor((gap % hour) / minute);
+        const textSecond = Math.floor((gap % minute) / second);
+        
+        document.querySelector('.days').innerHTML = textDay
+        document.querySelector('.hours').innerHTML = textHour
+        document.querySelector('.minutes').innerHTML = textMinute
+        document.querySelector('.seconds').innerHTML = textSecond
+    }
+    
+    setInterval(countdown , 1000)
 }
-headerMenu()
 
+// countdownDay() 
 
