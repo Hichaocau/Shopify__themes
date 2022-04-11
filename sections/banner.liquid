@@ -15,7 +15,9 @@
         <div class="header container">
             <div class="header__list-wrap df">
                 <div class="header__logo df df__unset">
-                    <a href="#">Czar Shop</a>
+                    <!-- <a href="#">Czar Shop</a> -->
+                    <a href="#">{{ section.settings.nameshop }}</a>
+                    
                     <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-logo.svg" alt="">
                 </div>
                 <div class="header__list-btn translate100 df">
@@ -75,6 +77,7 @@
             </div>
             <div class="hero__img transition">
                 <!-- <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/img-heroo.png" alt=""> -->
+                <!-- render -->
                 {% for block in section.blocks %}
                 <img src="{{ block.settings.image | img_url: 'master' }}"/>
                 {% endfor %}
@@ -152,7 +155,12 @@
     "settings":[
         {
             "type": "text",
-            "label": "Type subheader....",
+            "label": "Type name shop....",
+            "id": "nameshop"
+        },
+        {
+            "type": "text",
+            "label": "Type discount....",
             "id": "subheading"
         },
         {
