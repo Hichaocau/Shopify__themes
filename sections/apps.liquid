@@ -1,4 +1,8 @@
-
+{{ 'base-vegetable.css' | asset_url | stylesheet_tag }}
+{{ 'grid-vegetable.css' | asset_url | stylesheet_tag }}
+{{ 'style.css' | asset_url | stylesheet_tag }}
+{{ 'responsive-vegetable.css' | asset_url | stylesheet_tag }}
+<!-- {{ 'main.js' | asset_url | stylesheet_tag }} -->
 
 <div class="{% if section.settings.include_margins %}page-width{% endif %}">
   {%- for block in section.blocks -%}

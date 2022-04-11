@@ -61,10 +61,17 @@
         <!-- hero section start -->
         <div class="hero container" id="save">
             <div class="hero__text df df__flex">
-                <p class="text__sub hero__text-subheader">Save up 30% off</p>
-                <h1 class=" hero__text-header">Bengal Vegetable Farm Organic 100%</h1>
-                <div class="text hero__text-des">Shujaa is a mobile platform that enables you to connect with your family and friends anywhere at anytime.</div>
-                <a class="btn" href="#shop">Shop now</a>
+                <!-- <p class="text__sub hero__text-subheader">Save up 30% off</p> -->
+                <p class="text__sub hero__text-subheader">{{ section.settings.subheading }}</p>
+
+                <!-- <h1 class=" hero__text-header">Bengal Vegetable Farm Organic 100%</h1> -->
+                <h1 class=" hero__text-header">{{ section.settings.heading }}</h1>
+
+                <!-- <div class="text hero__text-des">Shujaa is a mobile platform that enables you to connect with your family and friends anywhere at anytime.</div> -->
+                <div class="text hero__text-des">{{ section.settings.description }}</div>
+                
+                <!-- <a class="btn" href="#shop">Shop now</a> -->
+                <a class="btn" href="#shop">{{ section.settings.button }}</a>
             </div>
             <div class="hero__img transition">
                 <!-- <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/img-heroo.png" alt=""> -->
@@ -141,16 +148,27 @@
 {% schema %}
 {
     "name": "Header Vegetable",
+    "max_blocks": 3,  //thêm tối đa 3 blocks tên hero image
     "settings":[
         {
             "type": "text",
-            "label": "Ghi tiêu đề vào đây",
+            "label": "Type subheader....",
+            "id": "subheading"
+        },
+        {
+            "type": "text",
+            "label": "Type header....",
             "id": "heading"
         },
         {
             "type": "richtext",
-            "label": "Có gì mô tả thì viết vào đây",
+            "label": "Type description...",
             "id": "description"
+        },
+        {
+            "type": "text",
+            "label": "Type name button....",
+            "id": "button"
         }
     ],
     "blocks": [
