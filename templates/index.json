@@ -8,17 +8,40 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/img-heroo.png"
           }
+        },
+        "2d97a064-72df-465d-a848-3859b749bcc0": {
+          "type": "text",
+          "settings": {
+            "subheading": "Save up 30% off"
+          }
+        },
+        "c8d1cd62-d7ea-43d2-8d9c-25e8e19bd04b": {
+          "type": "heading",
+          "settings": {
+            "heading": "Type header"
+          }
+        },
+        "cc96ebc2-14d4-4541-8b26-41f8f0f7cca0": {
+          "type": "richtext",
+          "settings": {
+            "description": ""
+          }
+        },
+        "145ecac1-5858-4781-85fa-f9fbf95d2e13": {
+          "type": "button",
+          "settings": {
+            "button": "Shop now"
+          }
         }
       },
       "block_order": [
-        "d010f12c-dfb3-4fed-8f2a-0817fbe7bc49"
+        "d010f12c-dfb3-4fed-8f2a-0817fbe7bc49",
+        "2d97a064-72df-465d-a848-3859b749bcc0",
+        "c8d1cd62-d7ea-43d2-8d9c-25e8e19bd04b",
+        "cc96ebc2-14d4-4541-8b26-41f8f0f7cca0",
+        "145ecac1-5858-4781-85fa-f9fbf95d2e13"
       ],
       "settings": {
-        "nameshop": "",
-        "subheading": "Save up 30% off",
-        "heading": "Bengal Vegetable Farm Organic 100 %",
-        "description": "<p>Shujaa is a mobile platform that enables you to connect with your family and friends anywhere at anytime.<\/p>",
-        "button": "Shop now"
       }
     }
   },
