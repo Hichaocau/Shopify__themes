@@ -98,6 +98,7 @@ main{
     position: absolute;
     top: 0;
     right: 20px;
+    max-width: 720px;
 }
 
 .hero__img img{
@@ -132,6 +133,7 @@ main{
 .hero__text a{
     width: 170px;
     background-color: #099ECE;
+    margin-bottom: 20px;
 }
 
 .category{

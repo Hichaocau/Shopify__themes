@@ -19,7 +19,9 @@
                         <li class="header__item ">
                             <span class="header__item-home df">
                                 <a class="text" href="{{ link.url }}">{{ link.title }}</a>
-                                <!-- <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/arrow-down.svg" alt=""> -->
+                                {% if link.links.size > 0 %}
+                                <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/arrow-down.svg" alt="">
+                                {% endif %}
                             </span>
                             {% if link.links.size > 0 %}
                             <ul class="header__item-navbar">
@@ -63,13 +65,14 @@
         {
             "type": "text",
             "label": "Type name shop",
+            "default": "Name Shop",
             "id": "nameshop"
         },
         {
-        "type": "link_list",
-        "id": "menu",
-        "default": "main-menu",
-        "label": "t:sections.header.settings.menu.label"
+            "type": "link_list",
+            "id": "menu",
+            "default": "main-menu",
+            "label": "t:sections.header.settings.menu.label"
         }
     ],
     "presets":[

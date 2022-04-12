@@ -14,22 +14,49 @@
     <div class="hero container" id="save">
         <div class="hero__text df df__flex">
             <!-- <p class="text__sub hero__text-subheader">Save up 30% off</p> -->
-            <p class="text__sub hero__text-subheader">{{ section.settings.subheading }}</p>
+            <!-- <p class="text__sub hero__text-subheader">{{ section.settings.subheading }}</p> -->
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'text' %}
+                <p class="text__sub hero__text-subheader">{{ block.settings.subheading }}</p>
+                {% endcase %}
+            {% endfor %}
 
             <!-- <h1 class=" hero__text-header">Bengal Vegetable Farm Organic 100%</h1> -->
-            <h1 class=" hero__text-header">{{ section.settings.heading }}</h1>
+            <!-- <h1 class=" hero__text-header">{{ section.settings.heading }}</h1> -->
+            {% for block in section.blocks %}
+                 {% case block.type %}
+                   {% when 'heading' %}
+                <p class="hero__text-header">{{ block.settings.heading }}</p>
+                {% endcase %}
+            {% endfor %}
 
             <!-- <div class="text hero__text-des">Shujaa is a mobile platform that enables you to connect with your family and friends anywhere at anytime.</div> -->
-            <div class="text hero__text-des">{{ section.settings.description }}</div>
+            <!-- <div class="text hero__text-des">{{ section.settings.description }}</div> -->
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'richtext' %}
+                <div class="text hero__text-des">{{ block.settings.description }}</div>
+                 {% endcase %}
+            {% endfor %}
             
             <!-- <a class="btn" href="#shop">Shop now</a> -->
-            <a class="btn" href="#shop">{{ section.settings.button }}</a>
+            <!-- <a class="btn" href="#shop">{{ section.settings.button }}</a> -->
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'button' %}
+                <a class="btn">{{ block.settings.button }}</a>
+                 {% endcase %}
+            {% endfor %}
         </div>
         <div class="hero__img transition">
             <!-- <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/img-heroo.png" alt=""> -->
             <!-- render -->
             {% for block in section.blocks %}
-            <img src="{{ block.settings.image | img_url: 'master' }}"/>
+                {% case block.type %}
+                    {% when 'image' %}
+                        <img src="{{ block.settings.image | img_url: 'master' }}"/>
+                {% endcase %}
             {% endfor %}
         </div>
     </div>
@@ -37,53 +64,93 @@
     
 {% schema %}
 {
-    "name": "Header Vegetable",
+    "name": "Banner Vegetable",
     "class": "header__wrap",
-    "settings":[
-        {
-            "type": "text",
-            "label": "Type name shop",
-            "id": "nameshop"
-        },
-        {
-            "type": "text",
-            "label": "Type discount",
-            "id": "subheading"
-        },
-        {
-            "type": "text",
-            "label": "Type header",
-            "id": "heading"
-        },
-        {
-            "type": "richtext",
-            "label": "Type description",
-            "id": "description"
-        },
-        {
-            "type": "text",
-            "label": "Type name button",
-            "id": "button"
-        }
+    "settings":[ 
+        
     ],
     "blocks": [
         {
             "type": "image",
-            "name": "hero image",
+            "name": "banner image",
             "settings": [
                 {
                     "type": "image_picker",
-                    "label": "Bấm vào đây để tải ảnh",
+                    "label": "upload image",
                     "id": "image"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "name": "Discount Banner",
+            "settings": [
+                {
+                    "type": "text",
+                    "label": "Type discount",
+                    "default": "Type discount",
+                    "id": "subheading"
+                }
+            ]
+        },
+        {
+            "type": "heading",
+            "name": "Heading Banner",
+            "settings": [
+                {
+                    "type": "text",
+                    "label": "Type header",
+                    "default": "Type header",
+                    "id": "heading"                  
+                }
+            ]
+        },
+        {
+            "type": "richtext",
+            "name": "Description Banner",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "label": "Type description",
+                 
+                    "id": "description"                  
+                }
+            ]
+        },
+        {
+            "type": "button",
+            "name": "Button Banner",
+            "settings": [
+            {
+                    "type": "text",
+                    "label": "Type button",
+                    "default": "Shop now",
+                    "id": "button"             
                 }
             ]
         }
     ],
     "presets":[
         {
-            "category": "image",
-            "name": "Banner Vegetable"
+            "name": "Banner Vegetable",
+            "blocks": [
+                {
+                    "type": "image"
+                },
+                {
+                    "type": "text"
+                },
+                {
+                    "type": "heading"
+                },
+                {
+                    "type": "richtext"
+                },
+                {
+                    "type": "button"
+                }
+            ]
         }
     ]
-    }
+}
 {% endschema %}
