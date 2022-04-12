@@ -10,102 +10,35 @@
 <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- hero section start -->
+    <div class="hero container" id="save">
+        <div class="hero__text df df__flex">
+            <!-- <p class="text__sub hero__text-subheader">Save up 30% off</p> -->
+            <p class="text__sub hero__text-subheader">{{ section.settings.subheading }}</p>
 
-<div class="main">
-    <!-- header -->
-    <div class="header__wrap transition">
-        <!-- hero section start -->
-        <div class="hero container" id="save">
-            <div class="hero__text df df__flex">
-                <!-- <p class="text__sub hero__text-subheader">Save up 30% off</p> -->
-                <p class="text__sub hero__text-subheader">{{ section.settings.subheading }}</p>
+            <!-- <h1 class=" hero__text-header">Bengal Vegetable Farm Organic 100%</h1> -->
+            <h1 class=" hero__text-header">{{ section.settings.heading }}</h1>
 
-                <!-- <h1 class=" hero__text-header">Bengal Vegetable Farm Organic 100%</h1> -->
-                <h1 class=" hero__text-header">{{ section.settings.heading }}</h1>
-
-                <!-- <div class="text hero__text-des">Shujaa is a mobile platform that enables you to connect with your family and friends anywhere at anytime.</div> -->
-                <div class="text hero__text-des">{{ section.settings.description }}</div>
-                
-                <!-- <a class="btn" href="#shop">Shop now</a> -->
-                <a class="btn" href="#shop">{{ section.settings.button }}</a>
-            </div>
-            <div class="hero__img transition">
-                <!-- <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/img-heroo.png" alt=""> -->
-                <!-- render -->
-                {% for block in section.blocks %}
-                <img src="{{ block.settings.image | img_url: 'master' }}"/>
-                {% endfor %}
-            </div>
+            <!-- <div class="text hero__text-des">Shujaa is a mobile platform that enables you to connect with your family and friends anywhere at anytime.</div> -->
+            <div class="text hero__text-des">{{ section.settings.description }}</div>
+            
+            <!-- <a class="btn" href="#shop">Shop now</a> -->
+            <a class="btn" href="#shop">{{ section.settings.button }}</a>
         </div>
-        <!-- hero section end -->
-    </div>
-    <!-- header end -->
-    
-    <!-- login section start -->
-    <div class="login container__full none">
-        <div class="app">
-            <h1>Login</h1>
-            <form>
-                <div class="form-control">
-                    <input type="text" id="username" placeholder="Username" />
-                    <span></span>
-                </div>
-    
-                <div class="form-control">
-                    <input type="email" id="email" placeholder="Email" />
-                    <span></span>
-                </div>
-    
-                <div class="form-control">
-                    <input type="password" id="password" placeholder="Password" />
-                    <span></span>
-                </div>
-    
-                <input class="login__input" type="submit" value="Login" />
-                <div class="signup_link">Not a member? <a href="#">Signup</a></div>
-            </form>
+        <div class="hero__img transition">
+            <!-- <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/img-heroo.png" alt=""> -->
+            <!-- render -->
+            {% for block in section.blocks %}
+            <img src="{{ block.settings.image | img_url: 'master' }}"/>
+            {% endfor %}
         </div>
     </div>
-    <!-- login section end -->
+    <!-- hero section end -->
     
-    <!-- register section start -->
-    <div class="register container__full none">
-        <div class="app">
-            <h1>Register</h1>
-            <form>
-                <div class="form-control">
-                    <input type="text" placeholder="Username" />
-                    <span></span>
-                </div>
-    
-                <div class="form-control">
-                    <input type="email"  placeholder="Email" />
-                    <span></span>
-                </div>
-    
-                <div class="form-control">
-                    <input type="password" placeholder="Password" />
-                    <span></span>
-                </div>
-    
-                <div class="form-control">
-                    <input type="password" placeholder="Confirm password" />
-                    <span></span>
-                </div>
-    
-                <input type="submit" class="register__input" value="Sign Up" />
-                <div class="login_link">Sign Up Success....<a href="#">Login</a></div>
-            </form>
-        </div>
-    </div>
-    <!-- register section end -->
-</div>   
-<div class="overlay hide-on-pc none"></div> 
-
 {% schema %}
 {
     "name": "Header Vegetable",
-    "max_blocks": 3,  //thêm tối đa 3 blocks tên hero image
+    "class": "header__wrap",
     "settings":[
         {
             "type": "text",
