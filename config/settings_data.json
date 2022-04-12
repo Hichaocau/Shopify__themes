@@ -183,6 +183,13 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "header-dat": {
+        "type": "header-dat",
+        "settings": {
+          "nameshop": "Hichaocau",
+          "menu": "main-menu"
+        }
       }
     },
     "content_for_index": [
