@@ -1,0 +1,108 @@
+
+
+{{ 'base-vegetable.css' | asset_url | stylesheet_tag }}
+{{ 'grid-vegetable.css' | asset_url | stylesheet_tag }}
+{{ 'style.css' | asset_url | stylesheet_tag }}
+{{ 'responsive-vegetable.css' | asset_url | stylesheet_tag }}
+
+<div class="header container">
+    <div class="header__list-wrap df">
+        <div class="header__logo df df__unset">
+            <!-- <a href="#">Czar Shop</a> -->
+            <a href="#">{{ section.settings.nameshop }}</a>
+            
+            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-logo.svg" alt="">
+        </div>
+        <div class="header__list-btn translate100 df">
+            <ul class="header__list df">
+                {% for link in section.settings.menu.links %}
+                    <li class="header__item ">
+                        <span class="header__item-home df">
+                            <a class="text" href="{{ link.url }}">{{ link.title }}</a>
+                            <!-- <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/arrow-down.svg" alt=""> -->
+                        </span>
+                        {% if link.links.size > 0 %}
+                        <ul class="header__item-navbar">
+                            {% for child_link in link.links %}
+                            <li class="header__item-navbar--item"">
+                                <a class="text" href="{{ child_link.url }}">{{ child_link.title }}</a>
+                
+                                {% if child_link.links.size > 0 %}
+                                <!-- <ul class="menu dropdown-grandchild">
+                                    {% for grandchild_link in child_link.links %}
+                                    <li class="header__item">
+                                        <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
+                                    </li>
+                                    {% endfor %}
+                                </ul> -->
+                                {% endif %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+
+              <!-- <ul class="menu df header__list">
+                {% for link in section.settings.menu.links %}
+                  <li class="header__item">
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+              
+                    {% if link.links.size > 0 %}
+                      <ul class="menu dropdown-child">
+                        {% for child_link in link.links %}
+                          <li class="header__item">
+                            <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+              
+                            {% if child_link.links.size > 0 %}
+                              <ul class="menu dropdown-grandchild">
+                                {% for grandchild_link in child_link.links %}
+                                  <li class="header__item">
+                                    <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
+                                  </li>
+                                {% endfor %}
+                              </ul>
+                            {% endif %}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul> -->
+            <div class="header__btn df">
+                <button class="header__btn-first btn">Login</button>
+                <button class="header__btn-second btn">Sign Up</button>
+            </div>
+        </div>
+        <div class="header__menu hide-on-pc ">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Header Dat",
+    "settings":[
+        {
+            "type": "text",
+            "label": "Type name shop",
+            "id": "nameshop"
+        },
+        {
+        "type": "link_list",
+        "id": "menu",
+        "default": "main-menu",
+        "label": "t:sections.header.settings.menu.label"
+        }
+    ],
+    "presets":[
+        {
+            "category": "image",
+            "name": "Header Vegetable"
+        }
+    ]
+    }
+{% endschema %}

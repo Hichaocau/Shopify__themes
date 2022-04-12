@@ -1,65 +1,19 @@
 
+
 {{ 'base-vegetable.css' | asset_url | stylesheet_tag }}
 {{ 'grid-vegetable.css' | asset_url | stylesheet_tag }}
 {{ 'style.css' | asset_url | stylesheet_tag }}
 {{ 'responsive-vegetable.css' | asset_url | stylesheet_tag }}
+
 <!-- {{ 'main.js' | asset_url | stylesheet_tag }} -->
+
 <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-{% layout 'theme.dattheme' %}
 
 <div class="main">
     <!-- header -->
     <div class="header__wrap transition">
-        <div class="header container">
-            <div class="header__list-wrap df">
-                <div class="header__logo df df__unset">
-                    <!-- <a href="#">Czar Shop</a> -->
-                    <a href="#">{{ section.settings.nameshop }}</a>
-                    
-                    <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-logo.svg" alt="">
-                </div>
-                <div class="header__list-btn translate100 df">
-                    <ul class="header__list df">
-                        <li class="header__item ">
-                            <span class="header__item-home df">
-                                <a class="text header__item-active" href="#">Home</a>
-                                <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/arrow-down.svg" alt="">
-                            </span>
-                            <ul class="header__item-navbar">
-                                <li class="header__item-navbar--item">
-                                    <a class="text" href="#save">Save up</a>
-                                </li>
-                                <li class="header__item-navbar--item">
-                                    <a class="text" href="#category">Category</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__item">
-                            <a class="text" href="#shop">Shop</a>
-                        </li>
-                        <li class="header__item">
-                            <a class="text" href="#blog">Blog</a>
-                        </li>
-                        <li class="header__item">
-                            <a class="text" href="#page">Page</a>
-                        </li>
-                        <li class="header__item">
-                            <a class="text" href="#vendor">Vendor</a>
-                        </li>
-                    </ul>
-                    <div class="header__btn df">
-                        <button class="header__btn-first btn">Login</button>
-                        <button class="header__btn-second btn">Sign Up</button>
-                    </div>
-                </div>
-                <div class="header__menu hide-on-pc ">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
-        </div>
-        
         <!-- hero section start -->
         <div class="hero container" id="save">
             <div class="hero__text df df__flex">
@@ -155,27 +109,27 @@
     "settings":[
         {
             "type": "text",
-            "label": "Type name shop....",
+            "label": "Type name shop",
             "id": "nameshop"
         },
         {
             "type": "text",
-            "label": "Type discount....",
+            "label": "Type discount",
             "id": "subheading"
         },
         {
             "type": "text",
-            "label": "Type header....",
+            "label": "Type header",
             "id": "heading"
         },
         {
             "type": "richtext",
-            "label": "Type description...",
+            "label": "Type description",
             "id": "description"
         },
         {
             "type": "text",
-            "label": "Type name button....",
+            "label": "Type name button",
             "id": "button"
         }
     ],
@@ -195,7 +149,7 @@
     "presets":[
         {
             "category": "image",
-            "name": "Header"
+            "name": "Banner Vegetable"
         }
     ]
     }

@@ -8,7 +8,10 @@
       <link rel="canonical" href="{{ canonical_url }}">
       <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
       
-      
+      {{ 'base-vegetable.css' | asset_url | stylesheet_tag }}
+      {{ 'grid-vegetable.css' | asset_url | stylesheet_tag }}
+      {{ 'style.css' | asset_url | stylesheet_tag }}
+      {{ 'responsive-vegetable.css' | asset_url | stylesheet_tag }}
   
       {%- if settings.favicon != blank -%}
         <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -217,6 +220,7 @@
         {{ "accessibility.skip_to_text" | t }}
       </a>
   
+      {% section 'header' %}
       <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
         {{ content_for_layout }}
       </main>
