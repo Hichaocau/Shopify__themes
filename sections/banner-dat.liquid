@@ -1,5 +1,3 @@
-
-
 {{ 'base-vegetable.css' | asset_url | stylesheet_tag }}
 {{ 'grid-vegetable.css' | asset_url | stylesheet_tag }}
 {{ 'style.css' | asset_url | stylesheet_tag }}
@@ -13,51 +11,21 @@
     <!-- hero section start -->
     <div class="hero container" id="save">
         <div class="hero__text df df__flex">
-            <!-- <p class="text__sub hero__text-subheader">Save up 30% off</p> -->
-            <!-- <p class="text__sub hero__text-subheader">{{ section.settings.subheading }}</p> -->
             {% for block in section.blocks %}
                 {% case block.type %}
                     {% when 'text' %}
-                <p class="text__sub hero__text-subheader">{{ block.settings.subheading }}</p>
-                {% endcase %}
-            {% endfor %}
-
-            <!-- <h1 class=" hero__text-header">Bengal Vegetable Farm Organic 100%</h1> -->
-            <!-- <h1 class=" hero__text-header">{{ section.settings.heading }}</h1> -->
-            {% for block in section.blocks %}
-                 {% case block.type %}
-                   {% when 'heading' %}
-                <p class="hero__text-header">{{ block.settings.heading }}</p>
-                {% endcase %}
-            {% endfor %}
-
-            <!-- <div class="text hero__text-des">Shujaa is a mobile platform that enables you to connect with your family and friends anywhere at anytime.</div> -->
-            <!-- <div class="text hero__text-des">{{ section.settings.description }}</div> -->
-            {% for block in section.blocks %}
-                {% case block.type %}
+                         <p class="text__sub hero__text-subheader">{{ block.settings.subheading }}</p>
+                    {% when 'heading' %}
+                        <p class="hero__text-header">{{ block.settings.heading }}</p>
                     {% when 'richtext' %}
-                <div class="text hero__text-des">{{ block.settings.description }}</div>
-                 {% endcase %}
-            {% endfor %}
-            
-            <!-- <a class="btn" href="#shop">Shop now</a> -->
-            <!-- <a class="btn" href="#shop">{{ section.settings.button }}</a> -->
-            {% for block in section.blocks %}
-                {% case block.type %}
+                        <div class="text hero__text-des">{{ block.settings.description }}</div>
                     {% when 'button' %}
-                <a class="btn">{{ block.settings.button }}</a>
-                 {% endcase %}
+                        <a class="btn">{{ block.settings.button }}</a>
+                {% endcase %}
             {% endfor %}
         </div>
         <div class="hero__img transition">
-            <!-- <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/img-heroo.png" alt=""> -->
-            <!-- render -->
-            {% for block in section.blocks %}
-                {% case block.type %}
-                    {% when 'image' %}
-                        <img src="{{ block.settings.image | img_url: 'master' }}"/>
-                {% endcase %}
-            {% endfor %}
+            <img src="{{ section.settings.image | img_url: 'master' }}"/>
         </div>
     </div>
     <!-- hero section end -->
@@ -67,20 +35,13 @@
     "name": "Banner Vegetable",
     "class": "header__wrap",
     "settings":[ 
-        
+        {
+            "type": "image_picker",
+            "label": "Upload image",
+            "id": "image"
+        }
     ],
     "blocks": [
-        {
-            "type": "image",
-            "name": "banner image",
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "label": "upload image",
-                    "id": "image"
-                }
-            ]
-        },
         {
             "type": "text",
             "name": "Discount Banner",
@@ -134,9 +95,6 @@
         {
             "name": "Banner Vegetable",
             "blocks": [
-                {
-                    "type": "image"
-                },
                 {
                     "type": "text"
                 },

@@ -122,14 +122,13 @@ main{
     line-height: 1.303;
     color: var(--header-color);
     margin-bottom: 24px;
-    z-index: 3;
 }
 
 .hero__text-des{
     color: var(--des-color);
     margin-bottom: 20px;
     max-width: 492px;
-
+    z-index: 3;
 }
 
 .hero__text a{
