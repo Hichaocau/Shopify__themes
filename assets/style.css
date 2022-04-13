@@ -2,6 +2,7 @@ main{
     width: 100%;
 }
 
+
 .main{
     width: 100%;
     background-color: #FDF6FE;
@@ -122,6 +123,18 @@ main{
     line-height: 1.303;
     color: var(--header-color);
     margin-bottom: 24px;
+}
+
+.hero__text-header.h2{
+    font-size: 4rem;
+}
+
+.hero__text-header.h1{
+    font-size: 5.5rem;
+}
+
+.hero__text-header.h0{
+    font-size: 7rem;
 }
 
 .hero__text-des{

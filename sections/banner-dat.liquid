@@ -1,12 +1,3 @@
-{{ 'base-vegetable.css' | asset_url | stylesheet_tag }}
-{{ 'grid-vegetable.css' | asset_url | stylesheet_tag }}
-{{ 'style.css' | asset_url | stylesheet_tag }}
-{{ 'responsive-vegetable.css' | asset_url | stylesheet_tag }}
-
-<!-- {{ 'main.js' | asset_url | stylesheet_tag }} -->
-
-<script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- hero section start -->
     <div class="hero container" id="save">
@@ -16,7 +7,7 @@
                     {% when 'text' %}
                         <p class="text__sub hero__text-subheader">{{ block.settings.subheading }}</p>
                     {% when 'heading' %}
-                        <p class="hero__text-header">{{ block.settings.heading }}</p>
+                        <p class="hero__text-header {{ block.settings.heading_size }}">{{ block.settings.heading }}</p>
                     {% when 'richtext' %}
                         <div class="text hero__text-des">{{ block.settings.description }}</div>
                     {% when 'button' %}
@@ -63,6 +54,29 @@
                     "label": "Type header",
                     "default": "Type header",
                     "id": "heading"                  
+                },
+                {
+                    "type": "select",
+                    "id": "heading_size",
+                    "options": [
+                        {
+                            "value": "h2",
+                            //"label": "t:sections.all.heading_size.options__1.label"
+                            "label": "Small"
+                        },
+                        {
+                            "value": "h1",
+                            //"label": "t:sections.all.heading_size.options__2.label"
+                            "label": "Medium"
+                        },
+                        {
+                            "value": "h0",
+                            //"label": "t:sections.all.heading_size.options__3.label"
+                            "label": "Large"
+                        }
+                    ],
+                    "default": "h1",
+                    "label": "t:sections.all.heading_size.label"
                 }
             ]
         },

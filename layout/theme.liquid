@@ -8,11 +8,6 @@
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
-    {{ 'slick.css' | asset_url | stylesheet_tag }}
-    {{ 'grid-vegetable.css' | asset_url | stylesheet_tag }}
-    {{ 'base-vegetable.css' | asset_url | stylesheet_tag }}
-    {{ 'style.css' | asset_url | stylesheet_tag }}
-    {{ 'responsive-vegetable.css' | asset_url | stylesheet_tag }}
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -201,6 +196,12 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    
+    {{ 'slick.css' | asset_url | stylesheet_tag }}
+    {{ 'grid-vegetable.css' | asset_url | stylesheet_tag }}
+    {{ 'base-vegetable.css' | asset_url | stylesheet_tag }}
+    {{ 'style.css' | asset_url | stylesheet_tag }}
+    {{ 'responsive-vegetable.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
