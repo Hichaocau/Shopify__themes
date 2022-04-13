@@ -14,7 +14,7 @@
             {% for block in section.blocks %}
                 {% case block.type %}
                     {% when 'text' %}
-                         <p class="text__sub hero__text-subheader">{{ block.settings.subheading }}</p>
+                        <p class="text__sub hero__text-subheader">{{ block.settings.subheading }}</p>
                     {% when 'heading' %}
                         <p class="hero__text-header">{{ block.settings.heading }}</p>
                     {% when 'richtext' %}

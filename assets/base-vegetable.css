@@ -38,6 +38,9 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%; 
+    background: #FDF6FE !important;
+    position: relative;
 }
 
 .text{
