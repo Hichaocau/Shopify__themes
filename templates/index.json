@@ -37,9 +37,15 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/img-heroo.png"
       }
+    },
+    "16498185186957769a": {
+      "type": "category-dat",
+      "settings": {
+      }
     }
   },
   "order": [
-    "1649736272f23022e9"
+    "1649736272f23022e9",
+    "16498185186957769a"
   ]
 }
