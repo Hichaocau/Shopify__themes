@@ -116,6 +116,18 @@ main{
     color: #18A95C;
 }
 
+.hero__text-subheader.h2{
+    font-size: 1.5rem;
+}
+
+.hero__text-subheader.h1{
+    font-size: 1.8rem;
+}
+
+.hero__text-subheader.h0{
+    font-size: 2.2rem;
+}
+
 .hero__text-header{
     max-width: 520px;
     font-weight: 500;
@@ -144,6 +156,18 @@ main{
     z-index: 3;
 }
 
+.hero__text-des.h2{
+    font-size: 1rem;
+}
+
+.hero__text-des.h1{
+    font-size: 1.4rem;
+}
+
+.hero__text-des.h0{
+    font-size: 2rem;
+}
+
 .hero__text a{
     width: 170px;
     background-color: #099ECE;
@@ -152,7 +176,7 @@ main{
 
 .category{
     padding-top: 100px;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     overflow: hidden;
 }
 

@@ -62,6 +62,22 @@ body{
     color: var(--header-color);
 }
 
+.text__header.h2{
+    font-size: 3rem;
+}
+
+.text__header.h1{
+    font-size: 3.6rem;
+}
+
+.text__header.h0{
+    font-size: 4rem;
+}
+
+/* .category__item-img .card__content{
+    display: none;
+} */
+
 .text__des{
     font-weight: 500;
     font-size: 2rem;

@@ -5,11 +5,11 @@
             {% for block in section.blocks %}
                 {% case block.type %}
                     {% when 'text' %}
-                        <p class="text__sub hero__text-subheader">{{ block.settings.subheading }}</p>
+                        <p class="text__sub hero__text-subheader {{ block.settings.subheading_size }}">{{ block.settings.subheading }}</p>
                     {% when 'heading' %}
                         <p class="hero__text-header {{ block.settings.heading_size }}">{{ block.settings.heading }}</p>
                     {% when 'richtext' %}
-                        <div class="text hero__text-des">{{ block.settings.description }}</div>
+                        <div class="text hero__text-des {{ block.settings.description_size }}">{{ block.settings.description }}</div>
                     {% when 'button' %}
                         <a class="btn">{{ block.settings.button }}</a>
                 {% endcase %}
@@ -42,6 +42,26 @@
                     "label": "Type discount",
                     "default": "Type discount",
                     "id": "subheading"
+                },
+                {
+                    "type": "select",
+                    "id": "subheading_size",
+                    "default": "h1",
+                    "label": "Subheading size",
+                    "options": [
+                        {
+                            "value": "h2",
+                            "label": "Small"
+                        },
+                        {
+                            "value": "h1",
+                            "label": "Medium"
+                        },
+                        {
+                            "value": "h0",
+                            "label": "Large"
+                        }
+                    ]
                 }
             ]
         },
@@ -58,6 +78,9 @@
                 {
                     "type": "select",
                     "id": "heading_size",
+                    "default": "h1",
+                    //"label": "t:sections.all.heading_size.label",
+                    "label": "Heading size",
                     "options": [
                         {
                             "value": "h2",
@@ -74,9 +97,7 @@
                             //"label": "t:sections.all.heading_size.options__3.label"
                             "label": "Large"
                         }
-                    ],
-                    "default": "h1",
-                    "label": "t:sections.all.heading_size.label"
+                    ]
                 }
             ]
         },
@@ -87,8 +108,28 @@
                 {
                     "type": "richtext",
                     "label": "Type description",
-                 
+                    "default": "<p>Type description</p>",
                     "id": "description"                  
+                },
+                {
+                    "type": "select",
+                    "id": "description_size",
+                    "label": "Description size",
+                    "default": "h1",
+                    "options":[
+                        {
+                            "value": "h2",
+                            "label": "Small"
+                        },
+                        {
+                            "value": "h1",
+                            "label": "Medium"
+                        },
+                        {
+                            "value": "h0",
+                            "label": "Large"
+                        }
+                    ]
                 }
             ]
         },
