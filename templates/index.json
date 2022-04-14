@@ -79,6 +79,13 @@
             "collection": "frontpage",
             "link": "shopify:\/\/collections\/frontpage"
           }
+        },
+        "681fd4aa-1964-4d33-abad-d7867ec954b6": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "expert-trainers",
+            "link": "shopify:\/\/collections\/expert-trainers"
+          }
         }
       },
       "block_order": [
@@ -86,7 +93,8 @@
         "16499053652ea19a5a-1",
         "16499053652ea19a5a-2",
         "22484ed5-bd65-4e58-875e-a0a8f2155e39",
-        "7a6213d0-25b9-4d8e-bcb2-67fe436f65e8"
+        "7a6213d0-25b9-4d8e-bcb2-67fe436f65e8",
+        "681fd4aa-1964-4d33-abad-d7867ec954b6"
       ],
       "settings": {
         "category_header": "Search by Category",
