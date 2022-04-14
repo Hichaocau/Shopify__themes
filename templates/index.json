@@ -138,12 +138,53 @@
         "feauted_header": "Feauted Product",
         "collection": "frontpage"
       }
+    },
+    "16499424586de0af00": {
+      "type": "sale-dat",
+      "blocks": {
+        "1649942458ff41c02d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Save",
+            "discount": "40%",
+            "subheading": "Off"
+          }
+        },
+        "1649942458ff41c02d-1": {
+          "type": "description",
+          "settings": {
+            "description": "Your daily dose of nutrition. No added suger. No Preservatives. No flavour & colour"
+          }
+        },
+        "1649942458ff41c02d-2": {
+          "type": "time",
+          "settings": {
+          }
+        },
+        "1649942458ff41c02d-3": {
+          "type": "text",
+          "settings": {
+            "button": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1649942458ff41c02d-0",
+        "1649942458ff41c02d-1",
+        "1649942458ff41c02d-2",
+        "1649942458ff41c02d-3"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner.png"
+      }
     }
   },
   "order": [
     "1649736272f23022e9",
     "164990536522a17df0",
     "164992222476fbeceb",
-    "16499280843afd5942"
+    "16499280843afd5942",
+    "16499424586de0af00"
   ]
 }
