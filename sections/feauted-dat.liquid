@@ -1,0 +1,81 @@
+<!-- feauted section start -->
+<div class="feauted container">
+    <div class="feauted__header category__header">
+        <h2 class="text__header">{{ section.settings.feauted_header }}</h2>
+    </div>
+    <div class="feauted__list">
+        <div class="row category__list-slider">
+            {% for product in section.settings.collection.products %}
+            <div class="col l-3 m-3 c-3">
+                <div class="feauted__item-wrap">
+                    <div class="category__item feauted__item">
+                        <div class="category__item-img feauted__item-img">
+                            <img src="{{ product.featured_image | image_url: width: 300 }}">
+                        </div>    
+                        <div class="feauted__item-sale">
+                            <span class="text">30%</span>
+                        </div>
+                    </div>
+                    <div class="modal__cart-wrap df">
+                        <div class="modal__cart df">
+                            <button class="modal__cart-item modal__cart-plus df">
+                                <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/plus.svg" alt="">
+                            </button>
+                            <input type="text" class="modal__cart-input df modal__cart-item text__sub" placeholder="1">
+                            <button class="modal__cart-item modal__cart-minus df">
+                                <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/minus.svg" alt="">
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+                <div class="feauted__item-info">
+                    <h3 class="feauted__info-name text__sub">{{ product.title }}</h3>
+                    <div class="feauted__info-star--wrap df__center df">
+                        <div class="feauted__info-star--list df">
+                            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-star.svg" alt="">
+                            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-star.svg" alt="">
+                            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-star.svg" alt="">
+                            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-star.svg" alt="">
+                            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-star.svg" alt="">
+                        </div>
+                        <span class="text">(121)</span>
+                    </div>
+                    <div class="feauted__info-price df__center df">
+                        <p class="text__style feauted__info-price--sale">{{ product.price | money }}</p>
+                        <p class="text__style feauted__info-price--old">{{ product.compare_at_price | money }}</p>
+                    </div>
+                    <a href="{{ routes.cart_update_url }}" class="feauted__info-btn df__center df">
+                        <span class="text__style">Add to Cart</span>
+                        <img src="./assets/imgs/icon-cart.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- feauted section end -->
+
+{% schema %}
+{
+    "name": "Feauted Vegetable",
+    "settings": [
+        {
+            "type": "text",
+            "label": "Heading",
+            "id": "feauted_header",
+            "default": "Feauted Product"
+        },
+        {
+            "type": "collection",
+            "id": "collection",
+            "label": "Select collection"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Feauted Vegetable"
+        }
+    ]
+}
+{% endschema %}
