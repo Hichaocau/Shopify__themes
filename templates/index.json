@@ -41,9 +41,69 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/img-heroo.png"
       }
+    },
+    "1649945473b5978ead": {
+      "type": "Vegetable-category",
+      "blocks": {
+        "16499454737c32bda7-0": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "frontpage",
+            "link": "shopify:\/\/collections\/frontpage"
+          }
+        },
+        "16499454737c32bda7-1": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "expert-trainers",
+            "link": "shopify:\/\/collections\/expert-trainers"
+          }
+        },
+        "16499454737c32bda7-2": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "frontpage",
+            "link": "shopify:\/\/collections\/frontpage"
+          }
+        },
+        "16499454737c32bda7-3": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "expert-trainers",
+            "link": "shopify:\/\/collections\/frontpage"
+          }
+        },
+        "1d06bc37-13a5-4c65-be46-70a7e193347a": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "frontpage",
+            "link": "shopify:\/\/collections\/frontpage"
+          }
+        },
+        "5f1e4bf4-fbcb-4f61-a517-d53211ea4dbe": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "expert-trainers",
+            "link": "shopify:\/\/collections\/expert-trainers"
+          }
+        }
+      },
+      "block_order": [
+        "16499454737c32bda7-0",
+        "16499454737c32bda7-1",
+        "16499454737c32bda7-2",
+        "16499454737c32bda7-3",
+        "1d06bc37-13a5-4c65-be46-70a7e193347a",
+        "5f1e4bf4-fbcb-4f61-a517-d53211ea4dbe"
+      ],
+      "settings": {
+        "category_header": "Search by Category",
+        "category_header_size": "h1"
+      }
     }
   },
   "order": [
-    "1649945462b78d5a91"
+    "1649945462b78d5a91",
+    "1649945473b5978ead"
   ]
 }
