@@ -131,11 +131,19 @@
       ],
       "settings": {
       }
+    },
+    "16499280843afd5942": {
+      "type": "feauted-dat",
+      "settings": {
+        "feauted_header": "Feauted Product",
+        "collection": "frontpage"
+      }
     }
   },
   "order": [
     "1649736272f23022e9",
     "164990536522a17df0",
-    "164992222476fbeceb"
+    "164992222476fbeceb",
+    "16499280843afd5942"
   ]
 }
