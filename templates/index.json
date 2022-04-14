@@ -6,19 +6,22 @@
         "2d97a064-72df-465d-a848-3859b749bcc0": {
           "type": "text",
           "settings": {
-            "subheading": "Save up 30% off"
+            "subheading": "Save up 30% off",
+            "subheading_size": "h1"
           }
         },
         "c8d1cd62-d7ea-43d2-8d9c-25e8e19bd04b": {
           "type": "heading",
           "settings": {
-            "heading": "Bengal Vegetable Farm Organic 100%"
+            "heading": "Bengal Vegetable Farm Organic 100%",
+            "heading_size": "h1"
           }
         },
         "cc96ebc2-14d4-4541-8b26-41f8f0f7cca0": {
           "type": "richtext",
           "settings": {
-            "description": "<p>Shujaa is a mobile platform that enables you to connect with your family and friends anywhere at anytime.<\/p>"
+            "description": "<p>Shujaa is a mobile platform that enables you to connect with your family and friends anywhere at anytime.<\/p>",
+            "description_size": "h1"
           }
         },
         "145ecac1-5858-4781-85fa-f9fbf95d2e13": {
@@ -41,11 +44,41 @@
     "16498185186957769a": {
       "type": "category-dat",
       "settings": {
+        "category_header": "Search by Category",
+        "category_header_size": "h1",
+        "collection": "frontpage"
+      }
+    },
+    "164989861443f9cf29": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "1649736272f23022e9",
-    "16498185186957769a"
+    "16498185186957769a",
+    "164989861443f9cf29"
   ]
 }
