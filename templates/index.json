@@ -138,12 +138,53 @@
         "feauted_header": "Feauted Product",
         "collection": "frontpage"
       }
+    },
+    "164994584943af4bf1": {
+      "type": "Vegetable-sale",
+      "blocks": {
+        "1649945849cec84981-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Save",
+            "discount": "40%",
+            "subheading": "Off"
+          }
+        },
+        "1649945849cec84981-1": {
+          "type": "description",
+          "settings": {
+            "description": "Your daily dose of nutrition. No added suger. No Preservatives. No flavour & colour"
+          }
+        },
+        "1649945849cec84981-2": {
+          "type": "time",
+          "settings": {
+          }
+        },
+        "1649945849cec84981-3": {
+          "type": "text",
+          "settings": {
+            "button": "Shop now",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "1649945849cec84981-0",
+        "1649945849cec84981-1",
+        "1649945849cec84981-2",
+        "1649945849cec84981-3"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner.png"
+      }
     }
   },
   "order": [
     "1649945462b78d5a91",
     "1649945473b5978ead",
     "164994570694a4301a",
-    "1649945799bb558150"
+    "1649945799bb558150",
+    "164994584943af4bf1"
   ]
 }
