@@ -178,6 +178,38 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/banner.png"
       }
+    },
+    "164994445143b2b937": {
+      "type": "delivery-dat",
+      "blocks": {
+        "1649944451d626bc8a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Free Home Delivery in 24h"
+          }
+        },
+        "1649944451d626bc8a-1": {
+          "type": "description",
+          "settings": {
+            "description": "Nam commodo suscipit quam. Nunc nulla. Aenean ut eros et nisl sagittis"
+          }
+        },
+        "1649944451d626bc8a-2": {
+          "type": "text",
+          "settings": {
+            "button": "Learn more",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1649944451d626bc8a-0",
+        "1649944451d626bc8a-1",
+        "1649944451d626bc8a-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img-delivery.png"
+      }
     }
   },
   "order": [
@@ -185,6 +217,7 @@
     "164990536522a17df0",
     "164992222476fbeceb",
     "16499280843afd5942",
-    "16499424586de0af00"
+    "16499424586de0af00",
+    "164994445143b2b937"
   ]
 }
