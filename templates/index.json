@@ -165,7 +165,7 @@
           "type": "text",
           "settings": {
             "button": "Shop now",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
