@@ -1,0 +1,92 @@
+<!-- delivery section start -->
+<div class="delivery container__full" id="vendor" style="background-image: url('{{ section.settings.image.src | img_url: 'master' }}');">
+    <div class="delivery__info-wrap container">
+        <div class="delivery__info">
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'heading' %}
+                        <h2 class="delivery__info-header">{{ block.settings.heading }}</h2>
+                    {% when 'description' %}
+                        <p class="delivery__info-des text__style">{{ block.settings.description }}</p>
+                    {% when 'text' %}
+                        <a href=" {{ block.settings.button_link }} " class="text__style delivery__info-btn">
+                            {{ block.settings.button }}
+                        </a>
+                {% endcase %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- delivery section end -->
+
+{% schema %}
+{
+    "name": "Delivery Vegetable",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "heading",
+            "name": "Heading",
+            "settings":[
+                {
+                    "type": "text",
+                    "label": "Heading",
+                    "id": "heading",
+                    "default": "Free Home Delivery in 24h"
+                }
+            ]
+        },
+        {
+            "type": "description",
+            "name": "Description",
+            "settings":[
+                {
+                    "type": "text",
+                    "label": "Description",
+                    "id": "description",
+                    "default": "Nam commodo suscipit quam. Nunc nulla. Aenean ut eros et nisl sagittis"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "name": "Button",
+            "settings": [
+                {
+                    "type": "text",
+                    "label": "Type button",
+                    "default": "Learn more",
+                    "id": "button"             
+                },
+                {
+                    "type": "url",
+                    "id": "button_link",
+                    "label": "link"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Delivery Vegetable",
+            "blocks": [
+                {
+                    "type": "heading"
+                },
+                {
+                    "type": "description"
+                },
+                {
+                    "type": "text"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
