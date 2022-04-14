@@ -13,7 +13,9 @@
                 <div class="col l-3 m-3 c-6">
                     <div class="category__item mb40">
                         <div class="category__item-img">
-                            <img src="{{ block.settings.collection.image | img_url: 'master' }}"/>
+                            <a href="{{ block.settings.link }}">
+                                <img src="{{ block.settings.collection.image | img_url: 'master' }}"/>
+                            </a>
                         </div>
                         <a class="category__item-name text__sub" href="{{block.settings.link}}">{{ block.settings.collection.title }}</a>
                     </div>

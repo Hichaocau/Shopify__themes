@@ -11,7 +11,7 @@
                     <div class="category__fresh-item--text">
                         <span class="text">{{ block.settings.heading }}</span>
                         <p class="text__des">{{ block.settings.description_text }}</p>
-                        <a class="text" href="#shop">{{ block.settings.button }}</a>   
+                        <a class="text" href="{{ block.settings.link }}">{{ block.settings.button }}</a>   
                     </div>
                 </div>
             </div>
@@ -23,11 +23,14 @@
 {% schema %}
 {
     "name": "Subcategory Vegetables",
+    "settings": [
+       
+    ],
     "blocks": [
         {
-            "type": "Subcategory",
             "name": "Collection",
-            "limit": 2,
+            "type": "Subcategory",
+            "limit": 4,
             "settings": [
                 {
                     "type": "image_picker",
@@ -37,19 +40,23 @@
                 {
                     "type": "text",
                     "label": "heading",
-                    "id": "heading",
-                    "default": "Type heading"
+                    "id": "heading"
                 },
                 {
-                    "type": "richtext",
+                    "type": "text",
                     "label": "description",
                     "id": "description_text"
                 },
                 {
-                    "type": "textarea",
-                    "label": "button",
+                    "type": "text",
+                    "label": "button title",
                     "id": "button",
                     "default": "Shop now"
+                },
+                {   
+                    "type": "url",
+                    "label": "button link",
+                    "id": "link"
                 }
             ]
         }
