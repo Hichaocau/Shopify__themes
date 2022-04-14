@@ -44,10 +44,11 @@
                         <p class="text__style feauted__info-price--sale">{{ product.price | money }}</p>
                         <p class="text__style feauted__info-price--old">{{ product.compare_at_price | money }}</p>
                     </div>
-                    <a href="{{ routes.cart_update_url }}" class="feauted__info-btn df__center df">
+                    <button class="feauted__info-btn df__center df">
                         <span class="text__style">Add to Cart</span>
-                        <img src="./assets/imgs/icon-cart.svg" alt="">
-                    </a>
+                        <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-cart.svg" alt="">
+                    </button>
+                    <!-- 271 featured-product -->
                 </div>
             </div>
             {% endfor %}

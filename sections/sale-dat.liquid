@@ -1,0 +1,136 @@
+<!-- sale section start -->
+<div class="sale container__full" id="page" style="background-image: url('{{ section.settings.image.src | img_url: 'master' }}');">
+    <div class="sale__info-wrap container">
+        <div class="sale__info ">
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'heading' %}
+                    <p class="sale__info-header">
+                        {{ block.settings.heading }}
+                        <span>{{ block.settings.discount }}</span> 
+                        {{ block.settings.subheading }}
+                    </p>
+                    {% when 'description' %}
+                    <p class="sale__info-des text__des">{{ block.settings.description }}</p>
+                    {% when 'time' %}
+                    <div class="sale__info-time">
+                        <ul class="sale__info-time--list df df__unset countdown">
+                            <li class="sale__info-time--item sale__days">
+                                <div class="sale__info-number text__des days">68</div>
+                                <span class="text">Days</span>
+                            </li>
+                            <li class="sale__info-time--item sale__hours">
+                                <div class="sale__info-number text__des hours">03</div>
+                                <span class="text">Hours</span>
+                            </li>
+                            <li class="sale__info-time--item sale__minutes">
+                                <div class="sale__info-number text__des minutes">35</div>
+                                <span class="text">Mins</span>
+                            </li>
+                            <li class="sale__info-time--item sale__seconds">
+                                <div class="sale__info-number text__des seconds">57</div>
+                                <span class="text">Secs</span>
+                            </li>
+                        </ul>
+                    </div>
+                    {% when 'text' %}
+                    <a class="sale__info-btn text__style"  href="#shop">
+                        {{ block.settings.button }}
+                    </a>
+                {% endcase %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- sale section end -->
+
+{% schema %}
+{
+    "name": "Sale Vegetable",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "heading",
+            "name": "Heading",
+            "settings":[
+                {
+                    "type": "text",
+                    "label": "Heading",
+                    "id": "heading",
+                    "default": "Save"
+                },
+                {
+                    "type": "text",
+                    "label": "Discount",
+                    "id": "discount",
+                    "default": "40%"
+                },
+                {
+                    "type": "text",
+                    "label": "Subheading",
+                    "id": "subheading",
+                    "default": "Off"
+                }
+            ]
+        },
+        {
+            "type": "description",
+            "name": "Description",
+            "settings":[
+                {
+                    "type": "text",
+                    "label": "Description",
+                    "id": "description",
+                    "default": "Your daily dose of nutrition. No added suger. No Preservatives. No flavour & colour"
+                }
+            ]
+        },
+        {
+            "type": "time",
+            "name": "Time"
+        },
+        {
+            "type": "text",
+            "name": "Button",
+            "settings": [
+                {
+                    "type": "text",
+                    "label": "Type button",
+                    "default": "Shop now",
+                    "id": "button"             
+                },
+                {
+                    "type": "url",
+                    "id": "button_link",
+                    "label": "link"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Sale Vegetable",
+            "blocks": [
+                {
+                    "type": "heading"
+                },
+                {
+                    "type": "description"
+                },
+                {
+                    "type": "time"
+                },
+                {
+                    "type": "text"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
