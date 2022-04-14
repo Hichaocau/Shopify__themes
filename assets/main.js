@@ -85,24 +85,24 @@
 
 
 
-// // show product
-// function showProduct(){
-//     const productOptions = document.querySelectorAll('.category__list')
-//     const productList = document.querySelectorAll('.product__options-item')
-//     productList.forEach( (product, index) =>{
-//         product.addEventListener('click', () =>{
-//             document.querySelector('.product__options-item.product__options-item--border').classList.remove('product__options-item--border')
-//             product.classList.add('product__options-item--border')
+// show product
+function showProduct(){
+    const productOptions = document.querySelectorAll('.category__list')
+    const productList = document.querySelectorAll('.product__options-item')
+    productList.forEach( (product, index) =>{
+        product.addEventListener('click', () =>{
+            document.querySelector('.product__options-item.product__options-item--border').classList.remove('product__options-item--border')
+            product.classList.add('product__options-item--border')
 
-//             productOptions.forEach( option => {
-//                 option.classList.add('none')
-//             })
-//             productOptions[index].classList.remove('none')
-//         })
-//     })
-// }
+            productOptions.forEach( option => {
+                option.classList.add('none')
+            })
+            productOptions[index].classList.remove('none')
+        })
+    })
+}
 
-// showProduct()
+showProduct()
 
 // buy product
 function buyProduct(){
