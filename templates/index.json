@@ -27,7 +27,8 @@
         "145ecac1-5858-4781-85fa-f9fbf95d2e13": {
           "type": "button",
           "settings": {
-            "button": "Shop now"
+            "button": "Shop now",
+            "button_link": ""
           }
         }
       },
@@ -91,10 +92,42 @@
         "category_header": "Search by Category",
         "category_header_size": "h1"
       }
+    },
+    "164992222476fbeceb": {
+      "type": "Subcategory-dat",
+      "blocks": {
+        "16499222246c09ee2f-0": {
+          "type": "Subcategory",
+          "settings": {
+            "Subcategory_image": "shopify:\/\/shop_images\/cateimg1.jpg",
+            "heading": "Fresh Fruit",
+            "description_text": "Fresh Summer With Just $200.99",
+            "button": "Shop now",
+            "link": "shopify:\/\/products\/ao-phong-nam"
+          }
+        },
+        "16499222246c09ee2f-1": {
+          "type": "Subcategory",
+          "settings": {
+            "Subcategory_image": "shopify:\/\/shop_images\/cateimg2.jpg",
+            "heading": "Tasty Healthy",
+            "description_text": "Fresh Vegetables",
+            "button": "Shop now",
+            "link": "shopify:\/\/products\/ao-phong-nam-thun-cổ-tron"
+          }
+        }
+      },
+      "block_order": [
+        "16499222246c09ee2f-0",
+        "16499222246c09ee2f-1"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "1649736272f23022e9",
-    "164990536522a17df0"
+    "164990536522a17df0",
+    "164992222476fbeceb"
   ]
 }
