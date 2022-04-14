@@ -1,6 +1,7 @@
 
 
 <!-- category section start -->
+
 <div class="category container" id="category">
     <div class="category__header">
         <!-- <h2 class="text__header">Search by Category</h2> -->
@@ -8,17 +9,16 @@
     </div>
     <div class="category__list-wrap bd">
         <div class="row category__list-slider mb60">
-            {% for product in section.settings.collection.products %}
+            {% for block in section.blocks %}
                 <div class="col l-3 m-3 c-6">
                     <div class="category__item mb40">
                         <div class="category__item-img">
-                            {% render 'card-product',card_product: product %}
+                            <img src="{{ block.settings.collection.image | img_url: 'master' }}"/>
                         </div>
-                        <!-- <a href="" class="category__item-name text__sub">Groceries</a> -->
+                        <a class="category__item-name text__sub" href="{{block.settings.link}}">{{ block.settings.collection.title }}</a>
                     </div>
                 </div>
             {% endfor %}
-
         </div>       
     </div>
 </div>
@@ -55,17 +55,40 @@
                     "label": "Large"
                 }
             ]
-        },
+        }
+    ],
+    "blocks": [
+    {
+      "type": "collection_item",
+      "name": "Collection",
+      "settings": [
         {
             "type": "collection",
             "id": "collection",
-            "label": "t:sections.featured-collection.settings.collection.label"
-            //"label": "collection"
+            "label": "Select collection"
+        },
+        {   
+            "type": "url",
+            "label": "collection_link",
+            "id": "link"
         }
+      ]
+    }
     ],
     "presets":[
         {
-            "name": "Category Vegetable"
+            "name": "Category Vegetable",
+            "blocks":[
+                {
+                    "type": "collection_item"
+                },
+                {
+                    "type": "collection_item"
+                },
+                {
+                    "type": "collection_item"
+                }
+            ]
         }
     ]
 }
