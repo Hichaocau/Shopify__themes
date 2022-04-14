@@ -184,10 +184,10 @@
           "color_scheme": "background-1"
         }
       },
-      "header-dat": {
-        "type": "header-dat",
+      "Vegetable-header": {
+        "type": "Vegetable-header",
         "settings": {
-          "nameshop": "Hichaocau",
+          "nameshop": "Czar Shop",
           "menu": "main-menu"
         }
       }

@@ -1,168 +1,31 @@
 {
   "sections": {
-    "1649736272f23022e9": {
-      "type": "banner-dat",
+    "1649945462b78d5a91": {
+      "type": "Vegetable-banner",
       "blocks": {
-        "2d97a064-72df-465d-a848-3859b749bcc0": {
+        "1649945462d4afe667-0": {
           "type": "text",
           "settings": {
             "subheading": "Save up 30% off",
             "subheading_size": "h1"
           }
         },
-        "c8d1cd62-d7ea-43d2-8d9c-25e8e19bd04b": {
+        "1649945462d4afe667-1": {
           "type": "heading",
           "settings": {
             "heading": "Bengal Vegetable Farm Organic 100%",
             "heading_size": "h1"
           }
         },
-        "cc96ebc2-14d4-4541-8b26-41f8f0f7cca0": {
+        "1649945462d4afe667-2": {
           "type": "richtext",
           "settings": {
             "description": "<p>Shujaa is a mobile platform that enables you to connect with your family and friends anywhere at anytime.<\/p>",
             "description_size": "h1"
           }
         },
-        "145ecac1-5858-4781-85fa-f9fbf95d2e13": {
+        "1649945462d4afe667-3": {
           "type": "button",
-          "settings": {
-            "button": "Shop now",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "2d97a064-72df-465d-a848-3859b749bcc0",
-        "c8d1cd62-d7ea-43d2-8d9c-25e8e19bd04b",
-        "cc96ebc2-14d4-4541-8b26-41f8f0f7cca0",
-        "145ecac1-5858-4781-85fa-f9fbf95d2e13"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/img-heroo.png"
-      }
-    },
-    "164990536522a17df0": {
-      "type": "category-dat",
-      "blocks": {
-        "16499053652ea19a5a-0": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "frontpage",
-            "link": "shopify:\/\/collections\/frontpage"
-          }
-        },
-        "16499053652ea19a5a-1": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "expert-trainers",
-            "link": "shopify:\/\/collections\/expert-trainers"
-          }
-        },
-        "16499053652ea19a5a-2": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "frontpage",
-            "link": "shopify:\/\/collections\/frontpage"
-          }
-        },
-        "22484ed5-bd65-4e58-875e-a0a8f2155e39": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "expert-trainers",
-            "link": "shopify:\/\/collections\/expert-trainers"
-          }
-        },
-        "7a6213d0-25b9-4d8e-bcb2-67fe436f65e8": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "frontpage",
-            "link": "shopify:\/\/collections\/frontpage"
-          }
-        },
-        "681fd4aa-1964-4d33-abad-d7867ec954b6": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "expert-trainers",
-            "link": "shopify:\/\/collections\/expert-trainers"
-          }
-        }
-      },
-      "block_order": [
-        "16499053652ea19a5a-0",
-        "16499053652ea19a5a-1",
-        "16499053652ea19a5a-2",
-        "22484ed5-bd65-4e58-875e-a0a8f2155e39",
-        "7a6213d0-25b9-4d8e-bcb2-67fe436f65e8",
-        "681fd4aa-1964-4d33-abad-d7867ec954b6"
-      ],
-      "settings": {
-        "category_header": "Search by Category",
-        "category_header_size": "h1"
-      }
-    },
-    "164992222476fbeceb": {
-      "type": "Subcategory-dat",
-      "blocks": {
-        "16499222246c09ee2f-0": {
-          "type": "Subcategory",
-          "settings": {
-            "Subcategory_image": "shopify:\/\/shop_images\/cateimg1.jpg",
-            "heading": "Fresh Fruit",
-            "description_text": "Fresh Summer With Just $200.99",
-            "button": "Shop now",
-            "link": "shopify:\/\/products\/ao-phong-nam"
-          }
-        },
-        "16499222246c09ee2f-1": {
-          "type": "Subcategory",
-          "settings": {
-            "Subcategory_image": "shopify:\/\/shop_images\/cateimg2.jpg",
-            "heading": "Tasty Healthy",
-            "description_text": "Fresh Vegetables",
-            "button": "Shop now",
-            "link": "shopify:\/\/products\/ao-phong-nam-thun-cổ-tron"
-          }
-        }
-      },
-      "block_order": [
-        "16499222246c09ee2f-0",
-        "16499222246c09ee2f-1"
-      ],
-      "settings": {
-      }
-    },
-    "16499280843afd5942": {
-      "type": "feauted-dat",
-      "settings": {
-        "feauted_header": "Feauted Product",
-        "collection": "frontpage"
-      }
-    },
-    "16499424586de0af00": {
-      "type": "sale-dat",
-      "blocks": {
-        "1649942458ff41c02d-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Save",
-            "discount": "40%",
-            "subheading": "Off"
-          }
-        },
-        "1649942458ff41c02d-1": {
-          "type": "description",
-          "settings": {
-            "description": "Your daily dose of nutrition. No added suger. No Preservatives. No flavour & colour"
-          }
-        },
-        "1649942458ff41c02d-2": {
-          "type": "time",
-          "settings": {
-          }
-        },
-        "1649942458ff41c02d-3": {
-          "type": "text",
           "settings": {
             "button": "Shop now",
             "button_link": "shopify:\/\/collections\/all"
@@ -170,54 +33,17 @@
         }
       },
       "block_order": [
-        "1649942458ff41c02d-0",
-        "1649942458ff41c02d-1",
-        "1649942458ff41c02d-2",
-        "1649942458ff41c02d-3"
+        "1649945462d4afe667-0",
+        "1649945462d4afe667-1",
+        "1649945462d4afe667-2",
+        "1649945462d4afe667-3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner.png"
-      }
-    },
-    "164994445143b2b937": {
-      "type": "delivery-dat",
-      "blocks": {
-        "1649944451d626bc8a-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Free Home Delivery in 24h"
-          }
-        },
-        "1649944451d626bc8a-1": {
-          "type": "description",
-          "settings": {
-            "description": "Nam commodo suscipit quam. Nunc nulla. Aenean ut eros et nisl sagittis"
-          }
-        },
-        "1649944451d626bc8a-2": {
-          "type": "text",
-          "settings": {
-            "button": "Learn more",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1649944451d626bc8a-0",
-        "1649944451d626bc8a-1",
-        "1649944451d626bc8a-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/img-delivery.png"
+        "image": "shopify:\/\/shop_images\/img-heroo.png"
       }
     }
   },
   "order": [
-    "1649736272f23022e9",
-    "164990536522a17df0",
-    "164992222476fbeceb",
-    "16499280843afd5942",
-    "16499424586de0af00",
-    "164994445143b2b937"
+    "1649945462b78d5a91"
   ]
 }
