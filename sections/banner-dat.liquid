@@ -11,7 +11,7 @@
                     {% when 'richtext' %}
                         <div class="text hero__text-des {{ block.settings.description_size }}">{{ block.settings.description }}</div>
                     {% when 'button' %}
-                        <a class="btn">{{ block.settings.button }}</a>
+                        <a class="btn" href="{{ block.settings.button_link}}">{{ block.settings.button }}</a>
                 {% endcase %}
             {% endfor %}
         </div>
@@ -137,11 +137,16 @@
             "type": "button",
             "name": "Button Banner",
             "settings": [
-            {
+                {
                     "type": "text",
                     "label": "Type button",
                     "default": "Shop now",
                     "id": "button"             
+                },
+                {
+                    "type": "url",
+                    "id": "button_link",
+                    "label": "link"
                 }
             ]
         }

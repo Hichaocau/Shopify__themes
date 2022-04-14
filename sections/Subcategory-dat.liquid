@@ -1,0 +1,71 @@
+
+<div class="category container pt0" id="category">
+    <div class="category__fresh">
+        <div class="row">
+            {% for block in section.blocks %}
+            <div class="col l-6 m-12 c-12 aos-init aos-animate" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="category__fresh-item">
+                    <div class="category__fresh-item--img">
+                        <img src="{{ block.settings.Subcategory_image | img_url: 'master' }}"/>
+                    </div>
+                    <div class="category__fresh-item--text">
+                        <span class="text">{{ block.settings.heading }}</span>
+                        <p class="text__des">{{ block.settings.description_text }}</p>
+                        <a class="text" href="#shop">{{ block.settings.button }}</a>   
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Subcategory Vegetables",
+    "blocks": [
+        {
+            "type": "Subcategory",
+            "name": "Collection",
+            "limit": 2,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "label": "Upload image",
+                    "id": "Subcategory_image"
+                },
+                {
+                    "type": "text",
+                    "label": "heading",
+                    "id": "heading",
+                    "default": "Type heading"
+                },
+                {
+                    "type": "richtext",
+                    "label": "description",
+                    "id": "description_text"
+                },
+                {
+                    "type": "textarea",
+                    "label": "button",
+                    "id": "button",
+                    "default": "Shop now"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Subcategory Vegetables",
+            "blocks": [
+                {
+                    "type": "Subcategory"
+                },
+                {
+                    "type": "Subcategory"
+                }
+            ] 
+        }
+    ]
+}
+{% endschema %}

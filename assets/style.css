@@ -248,6 +248,10 @@ main{
     display: block;
 }
 
+.pt0{
+    padding-top: 0;
+}
+
 .category__fresh-item{
     position: relative;
 }
@@ -257,6 +261,7 @@ main{
 }
 
 .category__fresh-item--text{
+    max-width: 80%;
     position: absolute;
     left: 42px;
     bottom: 55px;
