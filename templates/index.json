@@ -100,10 +100,42 @@
         "category_header": "Search by Category",
         "category_header_size": "h1"
       }
+    },
+    "164994570694a4301a": {
+      "type": "Vegetable-subcategory",
+      "blocks": {
+        "1649945706616c01f6-0": {
+          "type": "Subcategory",
+          "settings": {
+            "Subcategory_image": "shopify:\/\/shop_images\/cateimg1.jpg",
+            "heading": "Fresh Fruit",
+            "description_text": "Fresh Summer With Just $200.99",
+            "button": "Shop now",
+            "link": "shopify:\/\/collections\/all"
+          }
+        },
+        "1649945706616c01f6-1": {
+          "type": "Subcategory",
+          "settings": {
+            "Subcategory_image": "shopify:\/\/shop_images\/cateimg2.jpg",
+            "heading": "Tasty Healthy",
+            "description_text": "Fresh Vegetables",
+            "button": "Shop now",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1649945706616c01f6-0",
+        "1649945706616c01f6-1"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "1649945462b78d5a91",
-    "1649945473b5978ead"
+    "1649945473b5978ead",
+    "164994570694a4301a"
   ]
 }
