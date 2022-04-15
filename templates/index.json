@@ -48,43 +48,43 @@
         "16499454737c32bda7-0": {
           "type": "collection_item",
           "settings": {
-            "collection": "frontpage",
-            "link": "shopify:\/\/collections\/frontpage"
+            "collection": "groceries",
+            "link": "shopify:\/\/collections\/groceries"
           }
         },
         "16499454737c32bda7-1": {
           "type": "collection_item",
           "settings": {
-            "collection": "expert-trainers",
-            "link": "shopify:\/\/collections\/expert-trainers"
+            "collection": "fish",
+            "link": "shopify:\/\/collections\/fish"
           }
         },
         "16499454737c32bda7-2": {
           "type": "collection_item",
           "settings": {
-            "collection": "frontpage",
-            "link": "shopify:\/\/collections\/frontpage"
+            "collection": "vegetables",
+            "link": "shopify:\/\/collections\/vegetables"
           }
         },
         "16499454737c32bda7-3": {
           "type": "collection_item",
           "settings": {
-            "collection": "expert-trainers",
-            "link": "shopify:\/\/collections\/frontpage"
+            "collection": "groceries-1",
+            "link": "shopify:\/\/collections\/groceries-1"
           }
         },
         "1d06bc37-13a5-4c65-be46-70a7e193347a": {
           "type": "collection_item",
           "settings": {
-            "collection": "frontpage",
-            "link": "shopify:\/\/collections\/frontpage"
+            "collection": "vegetables",
+            "link": "shopify:\/\/collections\/vegetables"
           }
         },
         "5f1e4bf4-fbcb-4f61-a517-d53211ea4dbe": {
           "type": "collection_item",
           "settings": {
-            "collection": "expert-trainers",
-            "link": "shopify:\/\/collections\/expert-trainers"
+            "collection": "groceries",
+            "link": "shopify:\/\/collections\/groceries"
           }
         }
       },
@@ -179,67 +179,6 @@
         "image": "shopify:\/\/shop_images\/banner.png"
       }
     },
-    "1650005520fcdb4117": {
-      "type": "Vegetable-product",
-      "blocks": {
-        "16500055209af07d2d-0": {
-          "type": "text",
-          "settings": {
-            "title": "All",
-            "collection": "expert-trainers",
-            "collection_link": "",
-            "discount": "30%"
-          }
-        },
-        "16500055209af07d2d-1": {
-          "type": "text",
-          "settings": {
-            "title": "Beverages",
-            "collection": "frontpage",
-            "collection_link": "",
-            "discount": "30%"
-          }
-        },
-        "16500055209af07d2d-2": {
-          "type": "text",
-          "settings": {
-            "title": "Dried",
-            "collection": "expert-trainers",
-            "collection_link": "",
-            "discount": "30%"
-          }
-        },
-        "16500055209af07d2d-3": {
-          "type": "text",
-          "settings": {
-            "title": "Food",
-            "collection": "frontpage",
-            "collection_link": "",
-            "discount": "30%"
-          }
-        },
-        "16500055209af07d2d-4": {
-          "type": "text",
-          "settings": {
-            "title": "Fruits",
-            "collection": "expert-trainers",
-            "collection_link": "",
-            "discount": "30%"
-          }
-        }
-      },
-      "block_order": [
-        "16500055209af07d2d-0",
-        "16500055209af07d2d-1",
-        "16500055209af07d2d-2",
-        "16500055209af07d2d-3",
-        "16500055209af07d2d-4"
-      ],
-      "settings": {
-        "heading": "Hot Product",
-        "button_link": ""
-      }
-    },
     "165000794423b17b38": {
       "type": "Vegetable-delivery",
       "blocks": {
@@ -279,7 +218,6 @@
     "164994570694a4301a",
     "1649945799bb558150",
     "164994584943af4bf1",
-    "1650005520fcdb4117",
     "165000794423b17b38"
   ]
 }
