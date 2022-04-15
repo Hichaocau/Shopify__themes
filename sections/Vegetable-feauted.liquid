@@ -44,11 +44,15 @@
                         <p class="text__style feauted__info-price--sale">{{ product.price | money }}</p>
                         <p class="text__style feauted__info-price--old">{{ product.compare_at_price | money }}</p>
                     </div>
-                    <button class="feauted__info-btn df__center df">
-                        <span class="text__style">Add to Cart</span>
-                        <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-cart.svg" alt="">
-                    </button>
-                    <!-- 271 featured-product -->
+                    <!-- form add to cart -->
+                    <form method="post" action="/cart/add">
+                        <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                        <input class="none" min="1" type="number" id="quantity" name="quantity" value="1"/>
+                        <button type="submit" name="add" class="feauted__info-btn df__center df">
+                            <span class="text__style">Add to Cart</span>
+                            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-cart.svg" alt="">
+                        </button>
+                    </form>
                 </div>
             </div>
             {% endfor %}

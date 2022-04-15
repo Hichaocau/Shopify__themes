@@ -89,6 +89,8 @@
 function showProduct(){
     const productOptions = document.querySelectorAll('.category__list')
     const productList = document.querySelectorAll('.product__options-item')
+    productList[0].classList.add('product__options-item--border')
+    productOptions[0].classList.remove('none')
     productList.forEach( (product, index) =>{
         product.addEventListener('click', () =>{
             document.querySelector('.product__options-item.product__options-item--border').classList.remove('product__options-item--border')
