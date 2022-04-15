@@ -2,7 +2,7 @@
 <div class="product feauted container" id="shop">
     <div class="product__header category__header df">
         <h2 class="text__header">{{ section.settings.heading }}</h2>
-        <a href="{{ section.settings.icon_link }}" class="product__shop df">
+        <a href="{{ section.settings.button_link }}" class="product__shop df">
             <span class="text__style">Shop all</span>
             <button class="product__shop-icon df">
                 <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/arrow-right.svg" alt="">
@@ -87,6 +87,11 @@
             "label": "heading",
             "id": "heading",
             "default": "Hot Product"
+        },
+        {
+            "type": "url",
+            "label": "link",
+            "id": "button_link"
         }
     ],
     "blocks": [
@@ -104,6 +109,11 @@
                     "type": "collection",
                     "id": "collection",
                     "label": "Collection"
+                },
+                {
+                    "type": "url",
+                    "id": "collection_link",
+                    "label": "collection_link"
                 },
                 {
                     "type": "text",
