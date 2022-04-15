@@ -179,6 +179,62 @@
         "image": "shopify:\/\/shop_images\/banner.png"
       }
     },
+    "16500119915fdc25d3": {
+      "type": "vegetable-product-hot",
+      "blocks": {
+        "16500119910b892ed3-0": {
+          "type": "text",
+          "settings": {
+            "title": "All",
+            "collection": "all",
+            "discount": "30%"
+          }
+        },
+        "16500119910b892ed3-1": {
+          "type": "text",
+          "settings": {
+            "title": "Beverages",
+            "collection": "vegetables",
+            "discount": "30%"
+          }
+        },
+        "16500119910b892ed3-2": {
+          "type": "text",
+          "settings": {
+            "title": "Dried",
+            "collection": "dried",
+            "discount": "30%"
+          }
+        },
+        "16500119910b892ed3-3": {
+          "type": "text",
+          "settings": {
+            "title": "Food",
+            "collection": "food",
+            "discount": "30%"
+          }
+        },
+        "16500119910b892ed3-4": {
+          "type": "text",
+          "settings": {
+            "title": "Fruits",
+            "collection": "fruits",
+            "discount": "30%"
+          }
+        }
+      },
+      "block_order": [
+        "16500119910b892ed3-0",
+        "16500119910b892ed3-1",
+        "16500119910b892ed3-2",
+        "16500119910b892ed3-3",
+        "16500119910b892ed3-4"
+      ],
+      "settings": {
+        "heading": "Hot Product",
+        "button_link": ""
+      }
+    },
     "165000794423b17b38": {
       "type": "Vegetable-delivery",
       "blocks": {
@@ -218,6 +274,7 @@
     "164994570694a4301a",
     "1649945799bb558150",
     "164994584943af4bf1",
+    "16500119915fdc25d3",
     "165000794423b17b38"
   ]
 }
