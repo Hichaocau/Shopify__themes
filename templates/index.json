@@ -178,6 +178,61 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/banner.png"
       }
+    },
+    "1650005520fcdb4117": {
+      "type": "Vegetable-product",
+      "blocks": {
+        "16500055209af07d2d-0": {
+          "type": "text",
+          "settings": {
+            "title": "All",
+            "collection": "expert-trainers",
+            "discount": "30%"
+          }
+        },
+        "16500055209af07d2d-1": {
+          "type": "text",
+          "settings": {
+            "title": "Beverages",
+            "collection": "frontpage",
+            "discount": "30%"
+          }
+        },
+        "16500055209af07d2d-2": {
+          "type": "text",
+          "settings": {
+            "title": "Dried",
+            "collection": "expert-trainers",
+            "discount": "30%"
+          }
+        },
+        "16500055209af07d2d-3": {
+          "type": "text",
+          "settings": {
+            "title": "Food",
+            "collection": "frontpage",
+            "discount": "30%"
+          }
+        },
+        "16500055209af07d2d-4": {
+          "type": "text",
+          "settings": {
+            "title": "Fruits",
+            "collection": "expert-trainers",
+            "discount": "30%"
+          }
+        }
+      },
+      "block_order": [
+        "16500055209af07d2d-0",
+        "16500055209af07d2d-1",
+        "16500055209af07d2d-2",
+        "16500055209af07d2d-3",
+        "16500055209af07d2d-4"
+      ],
+      "settings": {
+        "heading": "Hot Product"
+      }
     }
   },
   "order": [
@@ -185,6 +240,7 @@
     "1649945473b5978ead",
     "164994570694a4301a",
     "1649945799bb558150",
-    "164994584943af4bf1"
+    "164994584943af4bf1",
+    "1650005520fcdb4117"
   ]
 }
