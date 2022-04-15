@@ -136,7 +136,7 @@
       "type": "Vegetable-feauted",
       "settings": {
         "feauted_header": "Feauted Product",
-        "collection": "frontpage"
+        "collection": "feauted-product"
       }
     },
     "164994584943af4bf1": {
