@@ -1,5 +1,5 @@
 <!-- product section start -->
-<div class="product feauted container" id="shop">
+<div class="product feauted container">
     <div class="product__header category__header df">
         <h2 class="text__header">{{ section.settings.heading }}</h2>
         <a href="{{ section.settings.button_link }}" class="product__shop df">
@@ -76,6 +76,8 @@
             </div>
         </div>
     {% endfor %}
+</div>
+
 <!-- product section end -->
 
 {% schema %}
@@ -87,6 +89,11 @@
             "label": "heading",
             "id": "heading",
             "default": "Hot Product"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "button_link"
         }
     ],
     "blocks": [
@@ -104,11 +111,6 @@
                     "type": "collection",
                     "id": "collection",
                     "label": "Collection"
-                },
-                {
-                    "type": "url",
-                    "id": "collection_link",
-                    "label": "collection_link"
                 },
                 {
                     "type": "text",
