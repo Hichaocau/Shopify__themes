@@ -187,6 +187,7 @@
           "settings": {
             "title": "All",
             "collection": "expert-trainers",
+            "collection_link": "",
             "discount": "30%"
           }
         },
@@ -195,6 +196,7 @@
           "settings": {
             "title": "Beverages",
             "collection": "frontpage",
+            "collection_link": "",
             "discount": "30%"
           }
         },
@@ -203,6 +205,7 @@
           "settings": {
             "title": "Dried",
             "collection": "expert-trainers",
+            "collection_link": "",
             "discount": "30%"
           }
         },
@@ -211,6 +214,7 @@
           "settings": {
             "title": "Food",
             "collection": "frontpage",
+            "collection_link": "",
             "discount": "30%"
           }
         },
@@ -219,6 +223,7 @@
           "settings": {
             "title": "Fruits",
             "collection": "expert-trainers",
+            "collection_link": "",
             "discount": "30%"
           }
         }
@@ -231,7 +236,40 @@
         "16500055209af07d2d-4"
       ],
       "settings": {
-        "heading": "Hot Product"
+        "heading": "Hot Product",
+        "button_link": ""
+      }
+    },
+    "165000794423b17b38": {
+      "type": "Vegetable-delivery",
+      "blocks": {
+        "16500079442f83cabd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Free Home Delivery in 24h"
+          }
+        },
+        "16500079442f83cabd-1": {
+          "type": "description",
+          "settings": {
+            "description": "Nam commodo suscipit quam. Nunc nulla. Aenean ut eros et nisl sagittis"
+          }
+        },
+        "16500079442f83cabd-2": {
+          "type": "text",
+          "settings": {
+            "button": "Learn more",
+            "button_link": "shopify:\/\/policies\/shipping-policy"
+          }
+        }
+      },
+      "block_order": [
+        "16500079442f83cabd-0",
+        "16500079442f83cabd-1",
+        "16500079442f83cabd-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img-delivery.png"
       }
     }
   },
@@ -241,6 +279,7 @@
     "164994570694a4301a",
     "1649945799bb558150",
     "164994584943af4bf1",
-    "1650005520fcdb4117"
+    "1650005520fcdb4117",
+    "165000794423b17b38"
   ]
 }
