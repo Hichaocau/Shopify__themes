@@ -198,21 +198,21 @@
             "type": "Column",
             "settings": {
               "Column_heading": "CATEGORIES",
-              "menu": "main-menu"
+              "menu": "footer"
             }
           },
           "c700ab02-2f56-4d91-a497-834a4c02c252": {
             "type": "Column",
             "settings": {
-              "Column_heading": "CATEGORIES",
-              "menu": "main-menu"
+              "Column_heading": "CUSTOMER",
+              "menu": "footer-second"
             }
           },
           "36b594d0-372c-4948-bdc1-7506526338ce": {
             "type": "Column",
             "settings": {
-              "Column_heading": "CATEGORIES",
-              "menu": "main-menu"
+              "Column_heading": "MY ACCOUNT",
+              "menu": "footer-third"
             }
           }
         },
