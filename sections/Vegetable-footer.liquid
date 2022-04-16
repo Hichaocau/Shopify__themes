@@ -48,27 +48,16 @@
                                 {% for block in section.blocks %}
                                     <div class="footer__info-item">
                                         <h3 class="text__sub">{{ block.settings.Column_heading }}</h3>
-                                        <ul class="footer__info-item--wrap">
-                                            <!-- <li class="footer__info-item--wrap">
+                                        <!-- <ul class="footer__info-item--wrap">
+                                            <li class="footer__info-item--wrap">
                                                 <a class="text" href="">{{ block.settings.Column_subheading }}</a>
-                                            </li> -->
-                                        </ul>
+                                            </li>
+                                        </ul> -->
 
                                         <ul class="footer__info-item--wrap">
-                                            {% for link in section.settings.menu.links %}
-                                                <li class="footer__info-item--wrap" ">
-                                                    <span class="header__item-home df">
-                                                        <a class="text" href="{{ link.url }}">{{ link.title }}</a>
-                                                    </span>
-                                                    {% if link.links.size > 0 %}
-                                                    <ul class="header__item-navbar">
-                                                        {% for child_link in link.links %}
-                                                        <li class="header__item-navbar--item">
-                                                            <a class="text" href="{{ child_link.url }}">{{ child_link.title }}</a>
-                                                        </li>
-                                                        {% endfor %}
-                                                    </ul>
-                                                    {% endif %}
+                                            {% for link in block.settings.menu.links %}
+                                                <li class="footer__info-item--link" ">
+                                                    <a class="text" href="{{ link.url }}">{{ link.title }}</a>
                                                 </li>
                                             {% endfor %}
                                         </ul>
@@ -180,7 +169,18 @@
     ],
     "presets": [
         {
-            "name": "Footer Vegetable"
+            "name": "Footer Vegetable",
+            "blocks": [
+                {
+                    "type": "Column"
+                },
+                {
+                    "type": "Column"
+                },
+                {
+                    "type": "Column"
+                }
+            ]
         }
     ]
 }
