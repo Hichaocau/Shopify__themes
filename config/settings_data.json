@@ -193,6 +193,34 @@
       },
       "Vegetable-footer": {
         "type": "Vegetable-footer",
+        "blocks": {
+          "470c3104-a84f-4df5-b220-c6b5f768235b": {
+            "type": "Column",
+            "settings": {
+              "Column_heading": "CATEGORIES",
+              "menu": "main-menu"
+            }
+          },
+          "c700ab02-2f56-4d91-a497-834a4c02c252": {
+            "type": "Column",
+            "settings": {
+              "Column_heading": "CATEGORIES",
+              "menu": "main-menu"
+            }
+          },
+          "36b594d0-372c-4948-bdc1-7506526338ce": {
+            "type": "Column",
+            "settings": {
+              "Column_heading": "CATEGORIES",
+              "menu": "main-menu"
+            }
+          }
+        },
+        "block_order": [
+          "470c3104-a84f-4df5-b220-c6b5f768235b",
+          "c700ab02-2f56-4d91-a497-834a4c02c252",
+          "36b594d0-372c-4948-bdc1-7506526338ce"
+        ],
         "settings": {
           "heading": "Name shop",
           "description": "We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...",
