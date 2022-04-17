@@ -290,7 +290,7 @@ main{
 
 .category__fresh-item--text a:hover{
     background-color: var(--style-color);
-    border: 1px solid var(--style-color);
+    border: 1px solid var(--style-color)!important;
 }
 
 .category__fresh-item--text-second{
@@ -301,6 +301,11 @@ main{
     border: 1px solid #131022;
     color: var(--header-color);
     display: block;
+}
+
+.category__fresh .row .category__fresh-item:nth-child(2) {
+    /* color: var(--header-color); */
+    top: 100px;
 }
 
 .feauted__item{
@@ -329,7 +334,7 @@ main{
 }
 
 .feauted .feauted__list .slick-arrow{
-    top: -18%;
+    top: -14%;
 }
 
 .feauted__item-info{
@@ -371,7 +376,7 @@ main{
 }
 
 .feauted__info-btn{
-    width: 61.1%;
+    padding: 0 23px;
     border: 1px solid var(--type-color);
     box-sizing: border-box;
     border-radius: 16px;

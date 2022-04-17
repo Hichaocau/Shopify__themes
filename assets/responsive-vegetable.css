@@ -107,6 +107,7 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
+    
     .customer__list .slick-arrow{
         top: -18%;
     }
@@ -243,6 +244,12 @@
         left: 35%;
         width: 30%;
     }
+    .slick-arrow{
+        top: -15%;
+    }
+    .feauted .feauted__list .slick-arrow{
+        top: -11%;
+    }
     
 }
 
@@ -299,6 +306,19 @@
     }
     .hero__img{
         top: 45%;
+    }
+    .category{
+        padding-bottom: 0;
+    }
+    .all__list-slider,
+    .feauted__list .category__list-slider{
+        margin-bottom: 40px;
+    }
+    .feauted__info-btn{
+        padding: 0 12px;
+    }
+    .feauted__info-price{
+        margin: 15px 0;
     }
     
 }
