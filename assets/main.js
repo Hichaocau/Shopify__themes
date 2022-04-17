@@ -1,89 +1,103 @@
+// login
 
-
-// // login
-
-// function login(){
-//     const loginBtn = document.querySelector('.header__btn-first')
-//     const registerBtn = document.querySelector('.header__btn-second')
-//     const login = document.querySelector('.login')
-//     const register = document.querySelector('.register')
+function login(){
+    const loginBtn = document.querySelector('.header__btn-first')
+    const registerBtn = document.querySelector('.header__btn-second')
+    const login = document.querySelector('.login')
+    const register = document.querySelector('.register')
     
-//     const loginInput = document.querySelector('.login__input')
-//     const registerInput = document.querySelector('.register__input')
+    const loginInput = document.querySelector('.login__input')
+    const registerInput = document.querySelector('.register__input')
 
-//     // click login
-//     loginBtn.addEventListener('click', () =>{
-//         login.classList.remove('none')
-//     })
+    // click login
+    loginBtn.addEventListener('click', () =>{
+        login.classList.remove('none')
+    })
 
-//     loginInput.addEventListener('click', () =>{
-//         login.classList.add('none')
-//     })
+    loginInput.addEventListener('click', () =>{
+        login.classList.add('none')
+    })
 
-//     // click register
-//     registerBtn.addEventListener('click', () =>{
-//         register.classList.remove('none')
-//     })
+    // click register
+    registerBtn.addEventListener('click', () =>{
+        register.classList.remove('none')
+    })
 
-//     registerInput.addEventListener('click', () =>{
-//         register.classList.add('none')
-//     })
+    registerInput.addEventListener('click', () =>{
+        register.classList.add('none')
+    })
 
-//     // click login open register
+    // click login open register
 
-//     const loginSpan = document.querySelector('.signup_link')
-//     const registerSpan = document.querySelector('.login_link')
+    const loginSpan = document.querySelector('.signup_link')
+    const registerSpan = document.querySelector('.login_link')
 
-//     loginSpan.addEventListener('click', () =>{
-//         login.classList.add('none')
-//         register.classList.remove('none')
-//     })
+    loginSpan.addEventListener('click', () =>{
+        login.classList.add('none')
+        register.classList.remove('none')
+    })
 
-//     registerSpan.addEventListener('click', () =>{
-//         register.classList.add('none')
-//         login.classList.remove('none')
-//     })
+    registerSpan.addEventListener('click', () =>{
+        register.classList.add('none')
+        login.classList.remove('none')
+    })
 
-//     // click modal none all
+    // click modal none all
 
-//     login.addEventListener('click', (e) =>{
-//         if(e.target === e.currentTarget) {
-//             login.classList.toggle('none')
-//         }
-//     })
+    login.addEventListener('click', (e) =>{
+        if(e.target === e.currentTarget) {
+            login.classList.toggle('none')
+        }
+    })
 
-//     register.addEventListener('click', (e) =>{
-//         if(e.target === e.currentTarget) {
-//             register.classList.toggle('none')
-//         }
-//     })
-// }
-// login()
+    register.addEventListener('click', (e) =>{
+        if(e.target === e.currentTarget) {
+            register.classList.toggle('none')
+        }
+    })
+}
+login()
 
-// // click icon menu
-// function headerMenu(){
-//     const iconMenu = document.querySelector('.header__menu i')
-//     const navbar = document.querySelector('.header__list-btn')
-//     const overlay = document.querySelector('.overlay')
+// click item li
+function hoverItem() {
+    const itemLi = document.querySelector('.header__item--wrap')
+    const iconArrow = document.querySelector('.header__item--wrap img')
+    const navbar = document.querySelector('.header__item-navbar')
+
+    iconArrow.addEventListener('click', () => {
+        navbar.classList.toggle('opacity1')
+        navbar.classList.toggle('db')
+    })
+}
+hoverItem()
+
+
+
+
+
+
+// click icon menu
+function headerMenu(){
+    const iconMenu = document.querySelector('.header__menu i')
+    const navbar = document.querySelector('.header__list-btn')
+    const overlay = document.querySelector('.overlay')
     
-//     iconMenu.addEventListener('click', () => {
-//         iconMenu.classList.toggle('fa-xmark')
-//         overlay.classList.toggle('none')
-//         navbar.style.transition = 'all 0.3s linear'
-//         navbar.classList.remove('translate100')
-//         navbar.classList.add('translate0')
-//     })
+    iconMenu.addEventListener('click', () => {
+        iconMenu.classList.toggle('fa-xmark')
+        overlay.classList.toggle('none')
+        navbar.style.transition = 'all 0.3s linear'
+        navbar.classList.remove('translate100')
+        navbar.classList.add('translate0')
+    })
 
-//     overlay.addEventListener('click', () => {
-//         iconMenu.classList.toggle('fa-xmark')
-//         overlay.classList.toggle('none')
-//         navbar.classList.add('translate100')
-//         navbar.classList.remove('translate0')
-//     })
-// }
-// headerMenu()
-
-
+    overlay.addEventListener('click', () => {
+        iconMenu.classList.toggle('fa-xmark')
+        overlay.classList.toggle('none')
+        navbar.classList.add('translate100')
+        navbar.classList.remove('translate0')
+    })
+}
+headerMenu()
 
 // show product
 function showProduct(){
@@ -164,4 +178,5 @@ function countdownDay() {
 }
 
 countdownDay() 
+
 

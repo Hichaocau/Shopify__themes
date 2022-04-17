@@ -3,19 +3,19 @@
     <div class="header container">
         <div class="header__list-wrap df">
             <div class="header__logo df df__unset">
-                <!-- <a href="#">Czar Shop</a> -->
-                <a href="#">{{ section.settings.nameshop }}</a>
+                
+                <a href="{{ section.settings.menu.links[0].url }}">{{ section.settings.nameshop }}</a>
                 
                 <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-logo.svg" alt="">
             </div>
             <div class="header__list-btn translate100 df">
                 <ul class="header__list df">
                     {% for link in section.settings.menu.links %}
-                        <li class="header__item ">
+                        <li class="header__item header__item--wrap">
                             <span class="header__item-home df">
                                 <a class="text" href="{{ link.url }}">{{ link.title }}</a>
                                 {% if link.links.size > 0 %}
-                                <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/arrow-down.svg" alt="">
+                                    <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/arrow-down.svg" alt="">
                                 {% endif %}
                             </span>
                             {% if link.links.size > 0 %}

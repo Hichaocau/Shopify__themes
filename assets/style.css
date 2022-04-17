@@ -766,15 +766,19 @@ main{
 
 .header__item:hover .header__item-home img{
     transform: rotate(180deg);
-    transition-delay: 0.3s;
+    transition-delay: 0.3s;     
 }
 
 .header__item-navbar a{
     display: block;
 }
 
-.header__item-navbar li:nth-child(2){
+.header__item-navbar li{
     margin-top: 8px;
+}
+
+.header__item-navbar li:nth-child(1){
+    margin-top: 0;
 }
 
 .register,
