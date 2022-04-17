@@ -1,0 +1,117 @@
+<!-- customer section start -->
+<div class="customer__wrap container" id="blog">
+    <div class="customer__header">
+        <h2 class="text__header">{{ section.settings.heading }}</h2>
+    </div>
+    <div class="customer__list">
+        <div class="row customer__list-slider">
+            {% for block in section.blocks %}
+                <div class="col l-4 m-4 c-4">
+                    <div class="customer__item">
+                        <div class="customer__item-icon">
+                            <img alt="" src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-twitch.svg">
+                            <div class="customer__item-icon--star df">
+                                <img alt="" src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-star.svg">
+                                <img alt="" src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-star.svg">
+                                <img alt="" src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-star.svg">
+                                <img alt="" src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-star.svg">
+                                <img alt="" src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-star.svg">
+                            </div>
+                        </div>
+                        <div class="customer__item-des">
+                            <p class="text">{{ block.settings.description }}</p>
+                        </div>
+                        <div class="customer__item-user df df__unset">
+                            <img alt="" src="{{block.settings.img | img_url: 'compact'}}">
+                            <div class="customer__item-user--name df df__flex">
+                                <span class="text">{{ block.settings.name }}</span>
+                                <span class="text">{{ block.settings.career }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- customer section end -->
+
+{% schema %}
+{
+    "name": "Customer Vegetable",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Why customer love us ?"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Review",
+            "type": "block",
+            "settings": [
+                {
+                    "type": "text",
+                    "label": "Description",
+                    "id": "description",
+                    "default": "Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray yawn. Contagious cough diabetes mellitus..."
+                },
+                {
+                    "type": "image_picker",
+                    "label": "Customer's photo",
+                    "id": "img"
+                },
+                {
+                    "type": "text",
+                    "label": "Name customer",
+                    "id": "name",
+                    "default": "Ann Smith"
+                },
+                {
+                    "type": "text",
+                    "label": "Career",
+                    "id": "career",
+                    "default": "Photographer"
+                },
+                {
+                    "type": "radio",
+                    "label": "star",
+                    "id": "star",
+                    "options": [
+                    {
+                        "value": " 1_star",
+                        "label" : "1 star"
+                    },
+                    {
+                        "value": " 2_star",
+                        "label" : "2 star"
+                    },
+                    {
+                        "value": " 3_star",
+                        "label" : "3 star"
+                    }
+                ]
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Customer Vegetable",
+            "blocks":[
+                {
+                    "type": "block"
+                },
+                {
+                    "type": "block"
+                },
+                {
+                    "type": "block"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

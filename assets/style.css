@@ -598,7 +598,7 @@ main{
     color: #EF4444;
 }
 
-.customer{
+.customer__wrap{
     padding-top: 102px;
     padding-bottom: 60px;
     overflow: hidden;

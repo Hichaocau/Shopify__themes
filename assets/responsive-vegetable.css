@@ -29,12 +29,18 @@
         text-align: center;
         align-items: center;
     }
+    .hero__text-header.h2,
+    .hero__text-header.h1,
+    .hero__text-header.h0,
     .hero__text-header{
         font-size: 3.5rem;
     }
     .header__logo a{
         margin-top: 0;
         font-size: 1.8em;
+    }
+    .mb60{
+        margin-bottom: 0;
     }
     .category{
         padding-top: 40px;
@@ -51,6 +57,9 @@
     .category__item {
         padding: 7px 16px;
     }
+    .text__header.h0,
+    .text__header.h2,
+    .text__header.h1,
     .text__header{
         font-size: 2rem;
     }
@@ -94,7 +103,7 @@
         margin: 40px -17px 40px 0;
         max-width: 360px;
     }
-    .customer{
+    .customer__wrap{
         padding-top: 40px;
         padding-bottom: 40px;
     }
@@ -189,6 +198,9 @@
         bottom: 0;
         background-color: #00000057;
     }    
+    .category__fresh{
+        padding-bottom: 0;
+    }
     
 }
 
