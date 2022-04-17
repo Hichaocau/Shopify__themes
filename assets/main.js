@@ -56,7 +56,7 @@ function login(){
         }
     })
 }
-login()
+// login()
 
 // click item li
 function hoverItem() {
@@ -70,11 +70,6 @@ function hoverItem() {
     })
 }
 hoverItem()
-
-
-
-
-
 
 // click icon menu
 function headerMenu(){

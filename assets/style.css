@@ -781,7 +781,7 @@ main{
     margin-top: 0;
 }
 
-.register,
+/* .register,
 .login{
     position: absolute;
     z-index: 10;
@@ -790,7 +790,7 @@ main{
     left: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.34);
-}
+} */
 
 .modal__cart-wrap{
     position: absolute;
