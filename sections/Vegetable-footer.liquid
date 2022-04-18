@@ -3,88 +3,105 @@
             <div class="footer container__large">
                 <div class="row">
                     <div class="col l-6 m-12 c-12">
-                        <div class="footer__contact">
-                            <div class="header__logo df df__unset">
-                                <a href="#">{{ section.settings.heading }}</a>
-                                <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-logo.svg" alt="">
-                            </div>
-                            <div class="footer__contact-des">
-                                <p class="text">
-                                    {{ section.settings.description }}
-                                    <a href="{{ section.settings.more_link }}" class="text">
-                                        {{ section.settings.more }}
-                                    </a>
-                                </p>
-                            </div>
-                            <ul class="footer__contact-list">
-                                <li class="footer__contact-item df df__unset">
-                                    <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/phone.svg" alt="">
-                                    <div class="footer__contact-item--details df df__flex">
-                                        <p class="text__style">Have a question?</p>
-                                        <a class="text__style" href="tel:{{ section.settings.phone }}">{{ section.settings.phone }}</a>
+                        {% for block in section.blocks %}
+                            {% case block.type %}
+                                {% when "info" %}
+                                <div class="footer__contact">
+                                    <div class="header__logo df df__unset">
+                                        <a href="#">{{ block.settings.heading }}</a>
+                                        <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-logo.svg" alt="">
                                     </div>
-                                </li>
-                                <li class="footer__contact-item df df__unset">
-                                    <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/mail.svg" alt="">
-                                    <div class="footer__contact-item--details df df__flex">
-                                        <p class="text__style">Contact us at</p>
-                                        <a class="text__style" href="mailto: {{ section.settings.email }}">{{ section.settings.email }}</a>
+                                    <div class="footer__contact-des">
+                                        <p class="text">
+                                            {{ block.settings.description }}
+                                            <a href="{{ block.settings.more_link }}" class="text">
+                                                {{ block.settings.more }}
+                                            </a>
+                                        </p>
                                     </div>
-                                </li>
-                                <li class="footer__contact-item df df__unset">
-                                    <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/map.svg" alt="">
-                                    <div class="footer__contact-item--details df df__flex">
-                                        <p class="text__style">Address</p>
-                                        <a class="text__style" href="">{{ section.settings.location }}</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                                    <ul class="footer__contact-list">
+                                        <li class="footer__contact-item df df__unset">
+                                            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/phone.svg" alt="">
+                                            <div class="footer__contact-item--details df df__flex">
+                                                <p class="text__style">Have a question?</p>
+                                                <a class="text__style" href="tel:{{ block.settings.phone }}">{{ block.settings.phone }}</a>
+                                            </div>
+                                        </li>
+                                        <li class="footer__contact-item df df__unset">
+                                            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/mail.svg" alt="">
+                                            <div class="footer__contact-item--details df df__flex">
+                                                <p class="text__style">Contact us at</p>
+                                                <a class="text__style" href="mailto: {{ block.settings.email }}">{{ block.settings.email }}</a>
+                                            </div>
+                                        </li>
+                                        <li class="footer__contact-item df df__unset">
+                                            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/map.svg" alt="">
+                                            <div class="footer__contact-item--details df df__flex">
+                                                <p class="text__style">Address</p>
+                                                <a class="text__style" href="">{{ block.settings.location }}</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                {% endcase %}
+                            {% endfor %}
                     </div>
                     <div class="col l-6 m-12 c-12">
                         <div class="footer__info">
                             <div class="footer__info-list df">   
 
                                 {% for block in section.blocks %}
-                                    <div class="footer__info-item">
-                                        <h3 class="text__sub">{{ block.settings.Column_heading }}</h3>
-                                        <!-- <ul class="footer__info-item--wrap">
-                                            <li class="footer__info-item--wrap">
-                                                <a class="text" href="">{{ block.settings.Column_subheading }}</a>
-                                            </li>
-                                        </ul> -->
-
-                                        <ul class="footer__info-item--wrap">
-                                            {% for link in block.settings.menu.links %}
-                                                <li class="footer__info-item--link" ">
-                                                    <a class="text" href="{{ link.url }}">{{ link.title }}</a>
-                                                </li>
-                                            {% endfor %}
-                                        </ul>
-                                    </div> 
+                                    {% case block.type %}
+                                        {% when "Column" %}
+                                        <div class="footer__info-item">
+                                            <h3 class="text__sub">{{ block.settings.Column_heading }}</h3>
+                                            <ul class="footer__info-item--wrap">
+                                                {% for link in block.settings.menu.links %}
+                                                    <li class="footer__info-item--link" ">
+                                                        <a class="text" href="{{ link.url }}">{{ link.title }}</a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div> 
+                                    {% endcase %}
                                 {% endfor %}
                             </div>
                             <div class="footer__info-socials df">
                                 <div class="footer__info-socials--icon df">
-                                    <a href="">
-                                        <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/facebook.svg" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/twitter.svg" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/dribbble.svg" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/instagram.svg" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/figma.svg" alt="">
-                                    </a>
+                                    {%- if settings.social_facebook_link != blank -%}
+                                        <a href="{{ settings.social_facebook_link | escape }}">
+                                            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/facebook.svg" alt="">
+                                        </a>
+                                    {%- endif -%}
+
+                                    {%- if settings.social_twitter_link != blank -%}
+                                        <a href="{{ settings.social_twitter_link | escape }}">
+                                            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/twitter.svg" alt="">
+                                        </a>
+                                    {%- endif -%}
+
+                                    {%- if settings.social_pinterest_link != blank -%}
+                                        <a href="{{ settings.social_pinterest_link | escape }}">
+                                            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/dribbble.svg" alt="">
+                                        </a>
+                                    {%- endif -%}
+
+                                    {%- if settings.social_instagram_link != blank -%}
+                                        <a href="{{ settings.social_instagram_link | escape }}">
+                                            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/instagram.svg" alt="">
+                                        </a>
+                                    {%- endif -%}
+
+                                    {%- if settings.social_youtube_link != blank -%}
+                                        <a href="{{ settings.social_youtube_link | escape }}">
+                                            <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/figma.svg" alt="">
+                                        </a>
+                                    {%- endif -%}
+
                                 </div>
                                 <div class="footer__info-socials--text">
-                                    <p class="text">{{ section.settings.domain }}</p>
-                                </div>
+                                    <p class="text">© 2022, All Rights Reserved</p>
+                                </div> 
                             </div>
                         </div>
                     </div>
@@ -93,60 +110,65 @@
         </div>
         <!-- footer section end -->
 
+        <!-- overlay section start -->
+        <div class="overlay hide-on-pc none"></div>
+        <!-- overlay section end -->
+
 {% schema %}
 {
     "name": "Footer Vegetable",
     "class": "main",
     "settings": [
-        {
-            "type": "text",
-            "id": "heading",
-            "label": "Name shop",
-            "default": "Name shop"
-        },
-        {
-            "type": "text",
-            "id": "description",
-            "label": "Description",
-            "default": "We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..."
-        },
-        {
-            "type": "text",
-            "id": "more",
-            "label": "Read more",
-            "default": "Read more"
-        },
-        {
-            "type": "url",
-            "id": "more_link",
-            "label": "Link"
-        },
-        {
-            "type": "text",
-            "id": "phone",
-            "label": "Phone",
-            "default": "305-246-9248"
-        },
-        {
-            "type": "text",
-            "id": "email",
-            "label": "Email",
-            "default": "czarshop@gmail.com"
-        },
-        {
-            "type": "text",
-            "id": "location",
-            "label": " Location",
-            "default": "301 Campfire Meriden Uk"
-        },
-        {
-            "type": "text",
-            "id": "domain",
-            "label": " domain",
-            "default": "© 2022, All Rights Reserved"
-        }
+        
     ],
     "blocks": [
+        {
+          "type": "info",
+          "name": "Information",
+          "settings":[
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Name shop",
+                    "default": "Name shop"
+                },
+                {
+                    "type": "text",
+                    "id": "description",
+                    "label": "Description",
+                    "default": "We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..."
+                },
+                {
+                    "type": "text",
+                    "id": "more",
+                    "label": "Read more",
+                    "default": "Read more"
+                },
+                {
+                    "type": "url",
+                    "id": "more_link",
+                    "label": "Link"
+                },
+                {
+                    "type": "text",
+                    "id": "phone",
+                    "label": "Phone",
+                    "default": "305-246-9248"
+                },
+                {
+                    "type": "text",
+                    "id": "email",
+                    "label": "Email",
+                    "default": "czarshop@gmail.com"
+                },
+                {
+                    "type": "text",
+                    "id": "location",
+                    "label": " Location",
+                    "default": "301 Campfire Meriden Uk"
+                }
+            ]  
+        },
         {
             "type": "Column",
             "name": "Column",
@@ -171,6 +193,9 @@
         {
             "name": "Footer Vegetable",
             "blocks": [
+                {
+                    "type": "info"
+                },
                 {
                     "type": "Column"
                 },

@@ -16,7 +16,12 @@
             {% endfor %}
         </div>
         <div class="hero__img transition">
-            <img src="{{ section.settings.image | img_url: 'master' }}"/>
+            {%- if section.settings.image != blank -%}
+                <img src="{{ section.settings.image | img_url: 'master' }}"/>
+            {%- elsif section.settings.image == blank -%}
+                {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+
         </div>
     </div>
     <!-- hero section end -->

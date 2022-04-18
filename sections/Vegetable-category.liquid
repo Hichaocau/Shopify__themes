@@ -13,8 +13,12 @@
                 <div class="col l-3 m-3 c-6">
                     <div class="category__item mb40">
                         <div class="category__item-img">
-                            <a href="{{ block.settings.link }}">
-                                <img src="{{ block.settings.collection.image | img_url: 'master' }}"/>
+                            <a href="{{ block.settings.collection.url }}">
+                                {%- if block.settings.collection.image != blank -%}
+                                    <img src="{{ block.settings.collection.image | img_url: 'master' }}"/>
+                                {%- elsif section.settings.image == blank -%}
+                                    {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg' }}
+                            {%- endif -%}
                             </a>
                         </div>
                         <a class="category__item-name text__sub" href="{{block.settings.link}}">{{ block.settings.collection.title }}</a>
@@ -68,11 +72,6 @@
             "type": "collection",
             "id": "collection",
             "label": "Select collection"
-        },
-        {   
-            "type": "url",
-            "label": "collection_link",
-            "id": "link"
         }
       ]
     }

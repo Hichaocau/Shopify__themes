@@ -30,7 +30,7 @@
                                 <img src="{{ product.featured_media| image_url: width: 300 }}">
                             </div>    
                             <div class="feauted__item-sale">
-                                <span class="text">{{ block.settings.discount }}</span>
+                                <span class="text">{{  product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price }}%</span>
                             </div>
                         </div>
                         <div class="modal__cart-wrap df">
@@ -86,14 +86,14 @@
     "settings":[
         {
             "type": "text",
-            "label": "heading",
+            "label": "Heading",
             "id": "heading",
             "default": "Hot Product"
         },
         {
             "type": "url",
             "id": "button_link",
-            "label": "button_link"
+            "label": "Button_link"
         }
     ],
     "blocks": [
@@ -111,12 +111,6 @@
                     "type": "collection",
                     "id": "collection",
                     "label": "Collection"
-                },
-                {
-                    "type": "text",
-                    "id": "discount",
-                    "label": "Discount",
-                    "default": "30%"
                 }
             ]
         }

@@ -101,6 +101,7 @@ main{
     right: 20px;
     max-width: 720px;
     z-index: 1;
+    width: 100%;
 }
 
 .hero__img img{
@@ -258,17 +259,14 @@ main{
 
 .category__fresh-item{
     position: relative;
-}
-
-.category__fresh-item--img img{
-    width: 100%;
+    background: url(../imgs/banner.png) no-repeat center / cover;
+    padding-top: 16%;
 }
 
 .category__fresh-item--text{
     max-width: 80%;
-    position: absolute;
-    left: 42px;
-    bottom: 55px;
+    padding-bottom: 42px;
+    padding-left: 55px;
     color: var(--white-color);
 }
 
@@ -504,10 +502,12 @@ main{
     background: var(--white-color);
     border-radius: 16px;
     display: inline-block;
+    color: var(--header-color);
 }
 
 .delivery__info-btn:hover{
     background-color: var(--style-color);
+    color: var(--white-color);
 }
 
 .delivery__info-btn:hover a{
@@ -657,13 +657,14 @@ main{
 
 .footer__wrap{
     background-color: #F9FAFB;
-    padding: 45px 0;
+    padding-top: 45px;
     overflow: hidden;
 }
 
 .footer__contact{
     max-width: 457px;
     padding-top: 11px;
+    margin-bottom: 40px;
 }
 
 .footer__contact .header__logo{
@@ -722,6 +723,7 @@ main{
 
 .footer__info-item--link a{
     color: var(--footer-color);
+    display: block;
 }
 
 .footer__info-item--link a:hover{
