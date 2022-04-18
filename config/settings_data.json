@@ -214,22 +214,27 @@
               "Column_heading": "MY ACCOUNT",
               "menu": "footer-third"
             }
+          },
+          "2ce0f52d-b436-4f98-ae45-9eb07fdbbd66": {
+            "type": "info",
+            "settings": {
+              "heading": "Name shop",
+              "description": "We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...",
+              "more": "Read more",
+              "more_link": "",
+              "phone": "305-246-9248",
+              "email": "czarshop@gmail.com",
+              "location": "301 Campfire Meriden Uk"
+            }
           }
         },
         "block_order": [
           "470c3104-a84f-4df5-b220-c6b5f768235b",
           "c700ab02-2f56-4d91-a497-834a4c02c252",
-          "36b594d0-372c-4948-bdc1-7506526338ce"
+          "36b594d0-372c-4948-bdc1-7506526338ce",
+          "2ce0f52d-b436-4f98-ae45-9eb07fdbbd66"
         ],
         "settings": {
-          "heading": "Name shop",
-          "description": "We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...",
-          "more": "Read more",
-          "more_link": "shopify:\/\/policies\/terms-of-service",
-          "phone": "305-246-9248",
-          "email": "czarshop@gmail.com",
-          "location": "301 Campfire Meriden Uk",
-          "domain": "© 2022, All Rights Reserved"
         }
       }
     },
