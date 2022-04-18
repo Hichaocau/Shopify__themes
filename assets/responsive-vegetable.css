@@ -320,6 +320,9 @@
     .feauted__info-price{
         margin: 15px 0;
     }
+    .footer__info-item h3{
+        font-size: 1.4rem;
+    }
     
 }
 
