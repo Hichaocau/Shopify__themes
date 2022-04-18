@@ -81,7 +81,7 @@
     .feauted__info-star--list{
         margin-right: 2px;
     }
-    .feauted__info-star--list img {
+    .feauted__info-star--list svg {
         transform: scale(0.8);
         margin-right: 0;
     }
@@ -114,7 +114,7 @@
     .customer__header{
         margin-bottom: 40px;
     }
-    .customer__item-icon--star img{
+    .customer__item-icon--star svg{
         transform: scale(0.8);
         margin-right: 2px;
     }

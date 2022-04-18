@@ -118,11 +118,11 @@ countdownDay()
 // color text Subcategory
 function colorText(){
     const item = document.querySelectorAll('.category__fresh-item')
-    item[1].querySelector('.category__fresh-item--text').style.color = "#131022"
+    item[0].querySelector('.category__fresh-item--text').style.color = "#FFFFFF"
     
-    const itemTagA = item[1].querySelector('.category__fresh-item--text a')
-    itemTagA.style.border = "1px solid #131022"
-    itemTagA.style.color = "#131022"
+    const itemTagA = item[0].querySelector('.category__fresh-item--text a')
+    itemTagA.style.border = "1px solid #FFFFFF"
+    itemTagA.style.color = "#FFFFFF"
     // itemTagA.addEventListener('mouseover', (e) => {
     //     itemTagA.style.border = "1px solid #0D6EFD"
     // })

@@ -4,17 +4,27 @@
         <div class="row">
             {% for block in section.blocks %}
             <div class="col l-6 m-12 c-12 aos-init aos-animate" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                {%- if block.settings.Subcategory_image != blank -%}
-                    <div class="category__fresh-item" style= "background-image: url('{{ block.settings.Subcategory_image.src | img_url: 'master' }}');">
+                <div class="category__fresh-item" >
+                    {%- if block.settings.Subcategory_image != blank -%}
+                        <div class="category__fresh-item--img">
+                            <img src="{{ block.settings.Subcategory_image| img_url: 'master' }}" alt="">
+                        </div>                 
                         <div class="category__fresh-item--text">
                             <span class="text">{{ block.settings.heading }}</span>
                             <p class="text__des">{{ block.settings.description_text }}</p>
                             <a class="text" href="{{ block.settings.link }}">{{ block.settings.button }}</a>   
                         </div>
-                    </div>           
-                {%- elsif block.settings.Subcategory_image == blank -%}
-                    {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-                {%- endif -%}
+                    {%- elsif block.settings.Subcategory_image == blank -%}
+                        <div class="category__fresh-item--img">
+                            {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+                        </div> 
+                        <div class="category__fresh-item--text">
+                            <span class="text">{{ block.settings.heading }}</span>
+                            <p class="text__des">{{ block.settings.description_text }}</p>
+                            <a class="text" href="{{ block.settings.link }}">{{ block.settings.button }}</a>   
+                        </div>
+                    {%- endif -%}
+                </div>           
             </div>
             {% endfor %}
         </div>
