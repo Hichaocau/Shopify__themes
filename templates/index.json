@@ -48,43 +48,37 @@
         "16499454737c32bda7-0": {
           "type": "collection_item",
           "settings": {
-            "collection": "groceries",
-            "link": "shopify:\/\/collections\/groceries"
+            "collection": "groceries"
           }
         },
         "16499454737c32bda7-1": {
           "type": "collection_item",
           "settings": {
-            "collection": "fish",
-            "link": "shopify:\/\/collections\/fish"
+            "collection": "fish"
           }
         },
         "16499454737c32bda7-2": {
           "type": "collection_item",
           "settings": {
-            "collection": "vegetables",
-            "link": "shopify:\/\/collections\/vegetables"
+            "collection": "vegetables"
           }
         },
         "16499454737c32bda7-3": {
           "type": "collection_item",
           "settings": {
-            "collection": "groceries-1",
-            "link": "shopify:\/\/collections\/groceries-1"
+            "collection": "groceries-1"
           }
         },
         "1d06bc37-13a5-4c65-be46-70a7e193347a": {
           "type": "collection_item",
           "settings": {
-            "collection": "vegetables",
-            "link": "shopify:\/\/collections\/vegetables"
+            "collection": "vegetables"
           }
         },
         "5f1e4bf4-fbcb-4f61-a517-d53211ea4dbe": {
           "type": "collection_item",
           "settings": {
-            "collection": "groceries",
-            "link": "shopify:\/\/collections\/groceries"
+            "collection": "groceries"
           }
         }
       },
@@ -186,40 +180,35 @@
           "type": "text",
           "settings": {
             "title": "All",
-            "collection": "all",
-            "discount": "30%"
+            "collection": "all"
           }
         },
         "16500119910b892ed3-1": {
           "type": "text",
           "settings": {
             "title": "Beverages",
-            "collection": "vegetables",
-            "discount": "30%"
+            "collection": "vegetables"
           }
         },
         "16500119910b892ed3-2": {
           "type": "text",
           "settings": {
             "title": "Dried",
-            "collection": "dried",
-            "discount": "30%"
+            "collection": "dried"
           }
         },
         "16500119910b892ed3-3": {
           "type": "text",
           "settings": {
             "title": "Food",
-            "collection": "food",
-            "discount": "30%"
+            "collection": "food"
           }
         },
         "16500119910b892ed3-4": {
           "type": "text",
           "settings": {
             "title": "Fruits",
-            "collection": "fruits",
-            "discount": "30%"
+            "collection": "fruits"
           }
         }
       },
@@ -276,8 +265,7 @@
             "description": "Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray yawn. Contagious cough diabetes mellitus...",
             "img": "shopify:\/\/shop_images\/user.jpg",
             "name": "Ann Smith",
-            "career": "Photographer",
-            "star": "1_star"
+            "career": "Photographer"
           }
         },
         "16501852751fa80d9b-1": {
@@ -286,8 +274,7 @@
             "description": "Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray yawn. Contagious cough diabetes mellitus...",
             "img": "shopify:\/\/shop_images\/user.jpg",
             "name": "Ann Smith",
-            "career": "Photographer",
-            "star": "1_star"
+            "career": "Photographer"
           }
         },
         "16501852751fa80d9b-2": {
@@ -296,8 +283,7 @@
             "description": "Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray yawn. Contagious cough diabetes mellitus...",
             "img": "shopify:\/\/shop_images\/user.jpg",
             "name": "Ann Smith",
-            "career": "Photographer",
-            "star": "1_star"
+            "career": "Photographer"
           }
         },
         "038e60f4-f4ae-4e16-8ad2-60c2fc894e7e": {
@@ -306,8 +292,7 @@
             "description": "Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray yawn. Contagious cough diabetes mellitus...",
             "img": "shopify:\/\/shop_images\/user.jpg",
             "name": "Ann Smith",
-            "career": "Photographer",
-            "star": "1_star"
+            "career": "Photographer"
           }
         },
         "957c91f2-9d79-4a3a-adf9-8ac7701a3c83": {
@@ -316,8 +301,7 @@
             "description": "Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray yawn. Contagious cough diabetes mellitus...",
             "img": "shopify:\/\/shop_images\/user.jpg",
             "name": "Ann Smith",
-            "career": "Photographer",
-            "star": "1_star"
+            "career": "Photographer"
           }
         }
       },
@@ -331,6 +315,122 @@
       "settings": {
         "heading": "Why customer love us ?"
       }
+    },
+    "16502773140b2826c8": {
+      "type": "Vegetable-header",
+      "settings": {
+        "nameshop": "Name Shop",
+        "menu": "main-menu"
+      }
+    },
+    "1650277335fb28b187": {
+      "type": "Vegetable-banner",
+      "blocks": {
+        "1650277335461dc4cb-0": {
+          "type": "text",
+          "settings": {
+            "subheading": "Type discount",
+            "subheading_size": "h1"
+          }
+        },
+        "1650277335461dc4cb-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Type header",
+            "heading_size": "h1"
+          }
+        },
+        "1650277335461dc4cb-2": {
+          "type": "richtext",
+          "settings": {
+            "description": "<p>Type description<\/p>",
+            "description_size": "h1"
+          }
+        },
+        "1650277335461dc4cb-3": {
+          "type": "button",
+          "settings": {
+            "button": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1650277335461dc4cb-0",
+        "1650277335461dc4cb-1",
+        "1650277335461dc4cb-2",
+        "1650277335461dc4cb-3"
+      ],
+      "settings": {
+      }
+    },
+    "1650277344a8851df1": {
+      "type": "Vegetable-category",
+      "blocks": {
+        "165027734457a32273-0": {
+          "type": "collection_item",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "165027734457a32273-1": {
+          "type": "collection_item",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "165027734457a32273-2": {
+          "type": "collection_item",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "165027734457a32273-3": {
+          "type": "collection_item",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "165027734457a32273-0",
+        "165027734457a32273-1",
+        "165027734457a32273-2",
+        "165027734457a32273-3"
+      ],
+      "settings": {
+        "category_header": "Search by Category",
+        "category_header_size": "h1"
+      }
+    },
+    "16502773644c7e8df9": {
+      "type": "Vegetable-subcategory",
+      "blocks": {
+        "16502773642795de04-0": {
+          "type": "Subcategory",
+          "settings": {
+            "heading": "Fresh Fruit",
+            "description_text": "Fresh Summer With Just $200.99",
+            "button": "Shop now",
+            "link": ""
+          }
+        },
+        "16502773642795de04-1": {
+          "type": "Subcategory",
+          "settings": {
+            "heading": "Fresh Fruit",
+            "description_text": "Fresh Summer With Just $200.99",
+            "button": "Shop now",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16502773642795de04-0",
+        "16502773642795de04-1"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -341,6 +441,10 @@
     "164994584943af4bf1",
     "16500119915fdc25d3",
     "165000794423b17b38",
-    "16501852764b8757fd"
+    "16501852764b8757fd",
+    "16502773140b2826c8",
+    "1650277335fb28b187",
+    "1650277344a8851df1",
+    "16502773644c7e8df9"
   ]
 }
