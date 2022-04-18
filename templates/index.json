@@ -431,6 +431,13 @@
       ],
       "settings": {
       }
+    },
+    "16502775020c67fafa": {
+      "type": "Vegetable-feauted",
+      "settings": {
+        "feauted_header": "Feauted Product",
+        "collection": ""
+      }
     }
   },
   "order": [
@@ -445,6 +452,7 @@
     "16502773140b2826c8",
     "1650277335fb28b187",
     "1650277344a8851df1",
-    "16502773644c7e8df9"
+    "16502773644c7e8df9",
+    "16502775020c67fafa"
   ]
 }
