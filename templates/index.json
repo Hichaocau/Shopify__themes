@@ -515,6 +515,43 @@
       ],
       "settings": {
       }
+    },
+    "1650354205d09cb10e": {
+      "type": "Vegetable-customer",
+      "blocks": {
+        "16503542057a9b84e0-0": {
+          "type": "block",
+          "settings": {
+            "description": "Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray yawn. Contagious cough diabetes mellitus...",
+            "name": "Ann Smith",
+            "career": "Photographer"
+          }
+        },
+        "16503542057a9b84e0-1": {
+          "type": "block",
+          "settings": {
+            "description": "Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray yawn. Contagious cough diabetes mellitus...",
+            "name": "Ann Smith",
+            "career": "Photographer"
+          }
+        },
+        "16503542057a9b84e0-2": {
+          "type": "block",
+          "settings": {
+            "description": "Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray yawn. Contagious cough diabetes mellitus...",
+            "name": "Ann Smith",
+            "career": "Photographer"
+          }
+        }
+      },
+      "block_order": [
+        "16503542057a9b84e0-0",
+        "16503542057a9b84e0-1",
+        "16503542057a9b84e0-2"
+      ],
+      "settings": {
+        "heading": "Why customer love us ?"
+      }
     }
   },
   "order": [
@@ -532,6 +569,7 @@
     "16502773644c7e8df9",
     "16502775020c67fafa",
     "16503541674cc7f6b0",
-    "1650354185adba0ccc"
+    "1650354185adba0ccc",
+    "1650354205d09cb10e"
   ]
 }
