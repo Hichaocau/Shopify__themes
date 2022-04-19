@@ -318,11 +318,15 @@
     .product__options-item{
         padding: 2px 13px;
     }
+    .category__list-slider .col{
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 425px){
     .hero__img{
         top: 65%;
+        left: 0%;
     }
     .hero{
         padding-bottom: 148px;

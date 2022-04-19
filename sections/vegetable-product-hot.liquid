@@ -14,7 +14,7 @@
     <div class="product__options">
         <ul class="product__options-list df">
             {% for block in section.blocks %}
-            <li class="product__options-item
+            <li class="product__options-item">
                 <span class="text">{{ block.settings.title }}</span>
             </li>
             {% endfor %}
@@ -26,7 +26,7 @@
             <div class="row all__list-slider">
                 {%- if block.settings.collection.products == blank -%}
                 {%- for i in (1..5) -%}
-                    <div class="col l-3 m-3 c-3">
+                    <div class="col l-3 m-3 c-6">
                         <div class="feauted__item-wrap">
                             <div class="category__item category__item-blank feauted__item">
                                 <div class="category__item-img feauted__item-img">
