@@ -516,6 +516,57 @@
       "settings": {
       }
     },
+    "165036163975b49edd": {
+      "type": "vegetable-product-hot",
+      "blocks": {
+        "16503616396f185b69-0": {
+          "type": "text",
+          "settings": {
+            "title": "Name",
+            "collection": ""
+          }
+        },
+        "16503616396f185b69-1": {
+          "type": "text",
+          "settings": {
+            "title": "Name",
+            "collection": ""
+          }
+        },
+        "16503616396f185b69-2": {
+          "type": "text",
+          "settings": {
+            "title": "Name",
+            "collection": ""
+          }
+        },
+        "16503616396f185b69-3": {
+          "type": "text",
+          "settings": {
+            "title": "Name",
+            "collection": ""
+          }
+        },
+        "16503616396f185b69-4": {
+          "type": "text",
+          "settings": {
+            "title": "Name",
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "16503616396f185b69-0",
+        "16503616396f185b69-1",
+        "16503616396f185b69-2",
+        "16503616396f185b69-3",
+        "16503616396f185b69-4"
+      ],
+      "settings": {
+        "heading": "Hot Product",
+        "button_link": ""
+      }
+    },
     "1650354205d09cb10e": {
       "type": "Vegetable-customer",
       "blocks": {
@@ -570,6 +621,7 @@
     "16502775020c67fafa",
     "16503541674cc7f6b0",
     "1650354185adba0ccc",
+    "165036163975b49edd",
     "1650354205d09cb10e"
   ]
 }
