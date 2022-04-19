@@ -316,13 +316,6 @@
         "heading": "Why customer love us ?"
       }
     },
-    "16502773140b2826c8": {
-      "type": "Vegetable-header",
-      "settings": {
-        "nameshop": "Name Shop",
-        "menu": "main-menu"
-      }
-    },
     "1650277335fb28b187": {
       "type": "Vegetable-banner",
       "blocks": {
@@ -614,7 +607,6 @@
     "16500119915fdc25d3",
     "165000794423b17b38",
     "16501852764b8757fd",
-    "16502773140b2826c8",
     "1650277335fb28b187",
     "16503540671209dd00",
     "16502773644c7e8df9",
