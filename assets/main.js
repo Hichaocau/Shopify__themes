@@ -36,14 +36,17 @@ function headerMenu(){
 headerMenu()
 
 // show product
-function showProduct(){
-    const productOptions = document.querySelectorAll('.category__list')
-    const productList = document.querySelectorAll('.product__options-item')
+function showProduct(container){
+    console.log(container)
+
+    const productOptions = document.querySelectorAll(`#shopify-section-${container} .category__list`)
+    const productList = document.querySelectorAll(`#shopify-section-${container} .product__options-item`)
     productList[0].classList.add('product__options-item--border')
+
     productOptions[0].classList.remove('none')
     productList.forEach( (product, index) =>{
         product.addEventListener('click', () =>{
-            document.querySelector('.product__options-item.product__options-item--border').classList.remove('product__options-item--border')
+            document.querySelector(`#shopify-section-${container} .product__options-item.product__options-item--border`).classList.remove('product__options-item--border')
             product.classList.add('product__options-item--border')
 
             productOptions.forEach( option => {
@@ -54,7 +57,7 @@ function showProduct(){
     })
 }
 
-showProduct()
+// showProduct()
 
 // buy product
 function buyProduct(){

@@ -104,6 +104,11 @@ main{
     width: 100%;
 }
 
+.hero__img svg{
+    background: teal;
+    opacity: 0.7;
+}
+
 .hero__img img{
     width: 100%;
     cursor: pointer;
@@ -203,7 +208,11 @@ main{
 .dried__list-slider,
 .beverages__list-slider{
     padding-top: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
+}
+
+.category__list-slider .col{
+    margin-bottom: 40px;
 }
 
 .all__list-slider{
@@ -230,11 +239,6 @@ main{
     border-radius: 8px;
 }
 
-.category__item-blank{
-    background: teal;
-    opacity: 0.7;
-}
-
 .category__list-slider .category__item-blank a{
     color: var(--white-color)
 }
@@ -244,13 +248,18 @@ main{
 }
 
 .mb60{
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .category__item-img img{
     width: 100%;
     object-fit: cover;
     margin-bottom: 16px;
+}
+
+.category__item-img svg{
+    opacity: 0.7;
+    background: teal;
 }
 
 .category__item a{
@@ -657,6 +666,7 @@ main{
 
 .product__options-item {
     padding: 2px 16px;
+    cursor: pointer;
 }
 
 .product__options-item span{
@@ -708,7 +718,9 @@ main{
 }
 
 .customer__item-user svg{
-    background: #b3a8b5;
+    background: teal;
+    opacity: 0.7;
+    width: 100px;
 }
 
 .customer__item-user--name{

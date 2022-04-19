@@ -14,7 +14,7 @@
     <div class="product__options">
         <ul class="product__options-list df">
             {% for block in section.blocks %}
-            <li class="product__options-item">
+            <li class="product__options-item
                 <span class="text">{{ block.settings.title }}</span>
             </li>
             {% endfor %}
@@ -24,13 +24,60 @@
     {% for block in section.blocks %}
         <div class="category__list none">
             <div class="row all__list-slider">
+                {%- if block.settings.collection.products == blank -%}
+                {%- for i in (1..5) -%}
+                    <div class="col l-3 m-3 c-3">
+                        <div class="feauted__item-wrap">
+                            <div class="category__item category__item-blank feauted__item">
+                                <div class="category__item-img feauted__item-img">
+                                    {{ 'collection-4' | placeholder_svg_tag: 'placeholder-svg' }}
+                                </div>
+                                <div class="feauted__item-sale">
+                                    <span class="text">Sale</span>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="feauted__item-info">
+                            <h3 class="feauted__info-name text__sub">Product Name</h3>
+                            <div class="feauted__info-star--wrap df__center df">
+                                <div class="feauted__info-star--list df">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span class="text">(Num)</span>
+                            </div>
+                            <div class="feauted__info-price df__center df">
+                                <p class="text__style feauted__info-price--sale">$New</p>
+                                <p class="text__style feauted__info-price--old">$Old</p>
+                            </div>
+                            <button class="feauted__info-btn df__center df">
+                                <span class="text__style">Add to Cart</span>
+                            </button>
+                        </div>
+                    </div>
+                {%- endfor -%}
+
+                {%- elsif block.settings.collection.products != blank -%}         
                 {% for product in block.settings.collection.products %}
                 <div class="col l-3 m-3 c-6">
                     <div class="feauted__item-wrap">
                         <div class="category__item feauted__item">
                             <div class="category__item-img feauted__item-img">
                                 <img src="{{ product.featured_media| image_url: width: 300 }}">
-                            </div>    
+                            </div>
                             <div class="feauted__item-sale">
                                 <span class="text">{{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price }}%</span>
                             </div>
@@ -94,10 +141,17 @@
                     </div>
                 </div>
                 {% endfor %}
+                {%- endif -%}
+
             </div>
         </div>
     {% endfor %}
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        showProduct(`{{ section.id }}`)
+    })
+</script>
 
 <!-- product section end -->
 
@@ -126,7 +180,8 @@
                 {
                     "type": "text",
                     "id": "title",
-                    "label": "title"
+                    "label": "Title",
+                    "default": "Name"
                 },
                 {
                     "type": "collection",

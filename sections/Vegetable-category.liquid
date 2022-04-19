@@ -10,13 +10,13 @@
         <div class="row category__list-slider mb60">
             {% for block in section.blocks %}
                 <div class="col l-3 m-3 c-6">
-                    <div class="category__item mb40">
+                    <div class="category__item category__item-bgc mb40">
                         <div class="category__item-img">
                             <a href="{{ block.settings.collection.url }}">
                                 {%- if block.settings.collection != blank -%}
                                     <img src="{{ block.settings.collection.image | img_url: 'master' }}"/>
                                 {%- else -%}
-                                    {{ 'collection-4' | placeholder_svg_tag: 'placeholder-svg' }}
+                                    {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
                                 {%- endif -%}
                             </a>
                         </div>
