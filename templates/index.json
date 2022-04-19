@@ -364,45 +364,6 @@
       "settings": {
       }
     },
-    "1650277344a8851df1": {
-      "type": "Vegetable-category",
-      "blocks": {
-        "165027734457a32273-0": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "groceries"
-          }
-        },
-        "165027734457a32273-1": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "fish"
-          }
-        },
-        "165027734457a32273-2": {
-          "type": "collection_item",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "165027734457a32273-3": {
-          "type": "collection_item",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "165027734457a32273-0",
-        "165027734457a32273-1",
-        "165027734457a32273-2",
-        "165027734457a32273-3"
-      ],
-      "settings": {
-        "category_header": "Search by Category",
-        "category_header_size": "h1"
-      }
-    },
     "16502773644c7e8df9": {
       "type": "Vegetable-subcategory",
       "blocks": {
@@ -438,6 +399,52 @@
         "feauted_header": "Feauted Product",
         "collection": ""
       }
+    },
+    "16503540671209dd00": {
+      "type": "Vegetable-category",
+      "blocks": {
+        "1650354067e1be2779-0": {
+          "type": "collection_item",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1650354067e1be2779-1": {
+          "type": "collection_item",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1650354067e1be2779-2": {
+          "type": "collection_item",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1650354067e1be2779-3": {
+          "type": "collection_item",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1650354067e1be2779-4": {
+          "type": "collection_item",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1650354067e1be2779-0",
+        "1650354067e1be2779-1",
+        "1650354067e1be2779-2",
+        "1650354067e1be2779-3",
+        "1650354067e1be2779-4"
+      ],
+      "settings": {
+        "category_header": "Search by Category",
+        "category_header_size": "h1"
+      }
     }
   },
   "order": [
@@ -451,8 +458,8 @@
     "16501852764b8757fd",
     "16502773140b2826c8",
     "1650277335fb28b187",
-    "1650277344a8851df1",
     "16502773644c7e8df9",
-    "16502775020c67fafa"
+    "16502775020c67fafa",
+    "16503540671209dd00"
   ]
 }
