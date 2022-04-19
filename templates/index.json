@@ -484,6 +484,37 @@
       ],
       "settings": {
       }
+    },
+    "1650354185adba0ccc": {
+      "type": "Vegetable-delivery",
+      "blocks": {
+        "16503541857c8c5f20-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Free Home Delivery in 24h"
+          }
+        },
+        "16503541857c8c5f20-1": {
+          "type": "description",
+          "settings": {
+            "description": "Nam commodo suscipit quam. Nunc nulla. Aenean ut eros et nisl sagittis"
+          }
+        },
+        "16503541857c8c5f20-2": {
+          "type": "text",
+          "settings": {
+            "button": "Learn more",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16503541857c8c5f20-0",
+        "16503541857c8c5f20-1",
+        "16503541857c8c5f20-2"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -500,6 +531,7 @@
     "16503540671209dd00",
     "16502773644c7e8df9",
     "16502775020c67fafa",
-    "16503541674cc7f6b0"
+    "16503541674cc7f6b0",
+    "1650354185adba0ccc"
   ]
 }
