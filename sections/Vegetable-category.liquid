@@ -4,37 +4,30 @@
 
 <div class="category container" id="category">
     <div class="category__header">
-        <!-- <h2 class="text__header">Search by Category</h2> -->
         <h2 class="text__header {{ section.settings.category_header_size }}">{{ section.settings.category_header }}</h2>
     </div>
     <div class="category__list-wrap bd">
         <div class="row category__list-slider mb60">
-            {%- if section.settings.collection.products == blank -%}
-                {%- for i in (1..5) -%}
-                    <div class="col l-3 m-3 c-6">
-                        <div class="category__item mb40 category__item-blank">
-                            <div class="category__item-img">
-                                {{ 'collection-4' | placeholder_svg_tag: 'placeholder-svg' }}
-                            </div>
-                            <a href="" class="category__item-name text__sub">Name Collection</a>
-                        </div>
-                    </div>
-                {%- endfor -%}
-
-            {%- elsif section.blocks != blank -%}         
-                {% for block in section.blocks %}
-                    <div class="col l-3 m-3 c-6">
-                        <div class="category__item mb40">
-                            <div class="category__item-img">
-                                <a href="{{ block.settings.collection.url }}">
+            {% for block in section.blocks %}
+                <div class="col l-3 m-3 c-6">
+                    <div class="category__item mb40">
+                        <div class="category__item-img">
+                            <a href="{{ block.settings.collection.url }}">
+                                {%- if block.settings.collection != blank -%}
                                     <img src="{{ block.settings.collection.image | img_url: 'master' }}"/>
-                                </a>
-                            </div>
-                            <a class="category__item-name text__sub" href="{{ block.settings.link }}">{{ block.settings.collection.title }}</a>
+                                {%- else -%}
+                                    {{ 'collection-4' | placeholder_svg_tag: 'placeholder-svg' }}
+                                {%- endif -%}
+                            </a>
                         </div>
+                        {%- if block.settings.collection != blank -%}
+                            <a class="category__item-name text__sub" href="{{ block.settings.link }}">{{ block.settings.collection.title }}</a>
+                        {%- else -%}
+                            <a class="category__item-name text__sub" href="{{ block.settings.link }}">Name Collection</a>
+                        {%- endif -%}
                     </div>
-                {% endfor %}
-            {% endif %}
+                </div>
+            {% endfor %}           
         </div>       
     </div>
 </div>
@@ -90,6 +83,9 @@
         {
             "name": "Category Vegetable",
             "blocks":[
+                {
+                    "type": "collection_item"
+                },
                 {
                     "type": "collection_item"
                 },
