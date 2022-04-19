@@ -364,42 +364,6 @@
       "settings": {
       }
     },
-    "16502773644c7e8df9": {
-      "type": "Vegetable-subcategory",
-      "blocks": {
-        "16502773642795de04-0": {
-          "type": "Subcategory",
-          "settings": {
-            "heading": "Fresh Fruit",
-            "description_text": "Fresh Summer With Just $200.99",
-            "button": "Shop now",
-            "link": ""
-          }
-        },
-        "16502773642795de04-1": {
-          "type": "Subcategory",
-          "settings": {
-            "heading": "Fresh Fruit",
-            "description_text": "Fresh Summer With Just $200.99",
-            "button": "Shop now",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "16502773642795de04-0",
-        "16502773642795de04-1"
-      ],
-      "settings": {
-      }
-    },
-    "16502775020c67fafa": {
-      "type": "Vegetable-feauted",
-      "settings": {
-        "feauted_header": "Feauted Product",
-        "collection": ""
-      }
-    },
     "16503540671209dd00": {
       "type": "Vegetable-category",
       "blocks": {
@@ -445,6 +409,81 @@
         "category_header": "Search by Category",
         "category_header_size": "h1"
       }
+    },
+    "16502773644c7e8df9": {
+      "type": "Vegetable-subcategory",
+      "blocks": {
+        "16502773642795de04-0": {
+          "type": "Subcategory",
+          "settings": {
+            "heading": "Fresh Fruit",
+            "description_text": "Fresh Summer With Just $200.99",
+            "button": "Shop now",
+            "link": ""
+          }
+        },
+        "16502773642795de04-1": {
+          "type": "Subcategory",
+          "settings": {
+            "heading": "Fresh Fruit",
+            "description_text": "Fresh Summer With Just $200.99",
+            "button": "Shop now",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16502773642795de04-0",
+        "16502773642795de04-1"
+      ],
+      "settings": {
+      }
+    },
+    "16502775020c67fafa": {
+      "type": "Vegetable-feauted",
+      "settings": {
+        "feauted_header": "Feauted Product",
+        "collection": ""
+      }
+    },
+    "16503541674cc7f6b0": {
+      "type": "Vegetable-sale",
+      "blocks": {
+        "1650354167f4cc5872-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Save",
+            "discount": "40%",
+            "subheading": "Off"
+          }
+        },
+        "1650354167f4cc5872-1": {
+          "type": "description",
+          "settings": {
+            "description": "Your daily dose of nutrition. No added suger. No Preservatives. No flavour & colour"
+          }
+        },
+        "1650354167f4cc5872-2": {
+          "type": "time",
+          "settings": {
+          }
+        },
+        "1650354167f4cc5872-3": {
+          "type": "text",
+          "settings": {
+            "button": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1650354167f4cc5872-0",
+        "1650354167f4cc5872-1",
+        "1650354167f4cc5872-2",
+        "1650354167f4cc5872-3"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -458,8 +497,9 @@
     "16501852764b8757fd",
     "16502773140b2826c8",
     "1650277335fb28b187",
+    "16503540671209dd00",
     "16502773644c7e8df9",
     "16502775020c67fafa",
-    "16503540671209dd00"
+    "16503541674cc7f6b0"
   ]
 }
