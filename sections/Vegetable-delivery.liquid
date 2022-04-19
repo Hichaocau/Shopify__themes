@@ -1,5 +1,12 @@
 <!-- delivery section start -->
-<div class="delivery container__full" id="vendor" style="background-image: url('{{ section.settings.image.src | img_url: 'master' }}');">
+<div class="delivery container__full" id="vendor">
+    <div class="delivery__img">
+        {%- if section.settings.image != blank -%}
+            <img src="{{ section.settings.image| img_url: 'master' }}" alt="">
+        {%- elsif section.settings.image == blank -%}
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%} 
+    </div>
     <div class="delivery__info-wrap container">
         <div class="delivery__info">
             {% for block in section.blocks %}

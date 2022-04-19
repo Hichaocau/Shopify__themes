@@ -35,12 +35,16 @@
                             <p class="text">{{ block.settings.description }}</p>
                         </div>
                         <div class="customer__item-user df df__unset">
-                            <img alt="" src="{{block.settings.img | img_url: 'compact'}}">
-                            <div class="customer__item-user--name df df__flex">
-                                <span class="text">{{ block.settings.name }}</span>
-                                <span class="text">{{ block.settings.career }}</span>
+                            {%- if block.settings.img != blank -%}
+                                <img alt="" src="{{block.settings.img | img_url: 'compact'}}">
+                            {%- elsif block.settings.img == blank -%}
+                                {{ 'collection-3' | placeholder_svg_tag: 'placeholder-svg' }}
+                            {%- endif -%}
+                                <div class="customer__item-user--name df df__flex">
+                                    <span class="text">{{ block.settings.name }}</span>
+                                    <span class="text">{{ block.settings.career }}</span>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             {% endfor %}

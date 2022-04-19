@@ -5,76 +5,122 @@
     </div>
     <div class="feauted__list">
         <div class="row category__list-slider">
-            {% for product in section.settings.collection.products %}
-            <div class="col l-3 m-3 c-3">
-                <div class="feauted__item-wrap">
-                    <div class="category__item feauted__item">
-                        <div class="category__item-img feauted__item-img">
-                            <img src="{{ product.featured_image | image_url: width: 300 }}">
-                        </div>    
-                        <div class="feauted__item-sale">
-                            <span class="text">{{  product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price }}%</span>
+            {%- if section.settings.collection.products == blank -%}
+                {%- for i in (1..5) -%}
+                    <div class="col l-3 m-3 c-3">
+                        <div class="feauted__item-wrap">
+                            <div class="category__item category__item-blank feauted__item">
+                                <div class="category__item-img feauted__item-img">
+                                    {{ 'collection-4' | placeholder_svg_tag: 'placeholder-svg' }}
+                                </div>    
+                            </div>
                         </div>
-                    </div>
-                    <div class="modal__cart-wrap df">
-                        <div class="modal__cart df">
-                            <button class="modal__cart-item modal__cart-plus df">
-                                <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/plus.svg" alt="">
+                        <div class="feauted__item-info">
+                            <h3 class="feauted__info-name text__sub">Product Name</h3>
+                            <div class="feauted__info-star--wrap df__center df">
+                                <div class="feauted__info-star--list df">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span class="text">(Num)</span>
+                            </div>
+                            <div class="feauted__info-price df__center df">
+                                <p class="text__style feauted__info-price--sale">$Sale</p>
+                                <p class="text__style feauted__info-price--old">$Price</p>
+                            </div>
+                            <button class="feauted__info-btn df__center df">
+                                <span class="text__style">Add to Cart</span>
                             </button>
-                            <input type="text" class="modal__cart-input df modal__cart-item text__sub" placeholder="1">
-                            <button class="modal__cart-item modal__cart-minus df">
-                                <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/minus.svg" alt="">
-                            </button>
                         </div>
-                    </div>  
-                </div>
-                <div class="feauted__item-info">
-                    <h3 class="feauted__info-name text__sub">{{ product.title }}</h3>
-                    <div class="feauted__info-star--wrap df__center df">
-                        <div class="feauted__info-star--list df">
-                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                    </div>
+                {%- endfor -%}
+            
+            {%- elsif section.settings.collection.products != blank -%}         
+                {% for product in section.settings.collection.products %}
+                    <div class="col l-3 m-3 c-3">
+                        <div class="feauted__item-wrap">
+                            <div class="category__item feauted__item">
+                                <div class="category__item-img feauted__item-img">
+                                    <img src="{{ product.featured_image | image_url: width: 300 }}">
+                                </div>    
+                                <div class="feauted__item-sale">
+                                    <span class="text">{{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price }}%</span>
+                                </div>
+                            </div>
+                            <div class="modal__cart-wrap df">
+                                <div class="modal__cart df">
+                                    <button class="modal__cart-item modal__cart-plus df">
+                                        <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/plus.svg" alt="">
+                                    </button>
+                                    <input type="text" class="modal__cart-input df modal__cart-item text__sub" placeholder="1">
+                                    <button class="modal__cart-item modal__cart-minus df">
+                                        <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/minus.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>  
                         </div>
-                        <span class="text">(121)</span>
+                        <div class="feauted__item-info">
+                            <h3 class="feauted__info-name text__sub">{{ product.title }}</h3>
+                            <div class="feauted__info-star--wrap df__center df">
+                                <div class="feauted__info-star--list df">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span class="text">(121)</span>
+                            </div>
+                            <div class="feauted__info-price df__center df">
+                                <p class="text__style feauted__info-price--sale">{{ product.price | money }}</p>
+                                <p class="text__style feauted__info-price--old">{{ product.compare_at_price | money }}</p>
+                            </div>
+                            <!-- form add to cart -->
+                            <form method="post" action="/cart/add">
+                                <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                                <input class="none" min="1" type="number" id="quantity" name="quantity" value="1"/>
+                                <button type="submit" name="add" class="feauted__info-btn df__center df">
+                                    <span class="text__style">Add to Cart</span>
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_102_534)">
+                                        <path d="M1.5 1H5.5L8.18 14.39C8.27144 14.8504 8.52191 15.264 8.88755 15.5583C9.25318 15.8526 9.7107 16.009 10.18 16H19.9C20.3693 16.009 20.8268 15.8526 21.1925 15.5583C21.5581 15.264 21.8086 14.8504 21.9 14.39L23.5 6H6.5M10.5 21C10.5 21.5523 10.0523 22 9.5 22C8.94772 22 8.5 21.5523 8.5 21C8.5 20.4477 8.94772 20 9.5 20C10.0523 20 10.5 20.4477 10.5 21ZM21.5 21C21.5 21.5523 21.0523 22 20.5 22C19.9477 22 19.5 21.5523 19.5 21C19.5 20.4477 19.9477 20 20.5 20C21.0523 20 21.5 20.4477 21.5 21Z" stroke="#131022" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_102_534">
+                                        <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
                     </div>
-                    <div class="feauted__info-price df__center df">
-                        <p class="text__style feauted__info-price--sale">{{ product.price | money }}</p>
-                        <p class="text__style feauted__info-price--old">{{ product.compare_at_price | money }}</p>
-                    </div>
-                    <!-- form add to cart -->
-                    <form method="post" action="/cart/add">
-                        <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                        <input class="none" min="1" type="number" id="quantity" name="quantity" value="1"/>
-                        <button type="submit" name="add" class="feauted__info-btn df__center df">
-                            <span class="text__style">Add to Cart</span>
-                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_102_534)">
-                                <path d="M1.5 1H5.5L8.18 14.39C8.27144 14.8504 8.52191 15.264 8.88755 15.5583C9.25318 15.8526 9.7107 16.009 10.18 16H19.9C20.3693 16.009 20.8268 15.8526 21.1925 15.5583C21.5581 15.264 21.8086 14.8504 21.9 14.39L23.5 6H6.5M10.5 21C10.5 21.5523 10.0523 22 9.5 22C8.94772 22 8.5 21.5523 8.5 21C8.5 20.4477 8.94772 20 9.5 20C10.0523 20 10.5 20.4477 10.5 21ZM21.5 21C21.5 21.5523 21.0523 22 20.5 22C19.9477 22 19.5 21.5523 19.5 21C19.5 20.4477 19.9477 20 20.5 20C21.0523 20 21.5 20.4477 21.5 21Z" stroke="#131022" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_102_534">
-                                <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-            </div>
-            {% endfor %}
+                {% endfor %}
+            {%- endif -%}
+
         </div>
     </div>
 </div>
