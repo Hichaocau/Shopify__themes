@@ -75,7 +75,9 @@ function buyProduct(){
                 i = 0;
             }
             number.placeholder = ++i;
-
+            // const price = priceList[index].innerHTML.slice(1,4)
+            // console.log(price)
+            // priceList[index].innerHTML = `$${i*price}.00`
             priceList[index].innerHTML = `$${i*200}.00`
         })
         iconMinus[index].addEventListener('click', function(e){

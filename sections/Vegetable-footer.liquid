@@ -14,7 +14,9 @@
                                         {% elsif block.settings.logo == blank and block.settings.heading == blank %}  
                                             {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
                                         {% else %}
-                                            <img class="header__logo-img" src="{{ block.settings.logo| img_url: '100x100' }}" alt="">
+                                            <a href="#">
+                                                <img class="header__logo-img" src="{{ block.settings.logo| img_url: '100x100' }}" alt="">
+                                            </a>
                                         {% endif %} 
                                     </div>
                                     <div class="footer__contact-des">
