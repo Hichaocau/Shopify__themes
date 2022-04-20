@@ -80,7 +80,11 @@
                                 <img src="{{ product.featured_media| image_url: width: 300 }}">
                             </div>
                             <div class="feauted__item-sale">
+                                {% if  product.compare_at_price > product.price %}
                                 <span class="text">{{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price }}%</span>
+                                {% else %}
+                                <span class="none" ></span>
+                                {% endif %}
                             </div>
                         </div>
                         <div class="modal__cart-wrap df">
