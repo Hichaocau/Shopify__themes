@@ -60,11 +60,12 @@
                                 <span class="text">(Num)</span>
                             </div>
                             <div class="feauted__info-price df__center df">
-                                <p class="text__style feauted__info-price--sale">$New</p>
-                                <p class="text__style feauted__info-price--old">$Old</p>
+                                <p class="text__style feauted__info-price--sale">$100.00</p>
+                                <p class="text__style feauted__info-price--old">$200.00</p>
                             </div>
                             <button class="feauted__info-btn df__center df">
                                 <span class="text__style">Add to Cart</span>
+                                <i class="bi bi-cart3"></i>
                             </button>
                         </div>
                     </div>
@@ -97,24 +98,26 @@
                     <div class="feauted__item-info">
                         <h3 class="feauted__info-name text__sub">{{ product.title }}</h3>
                         <div class="feauted__info-star--wrap df__center df">
+     
                             <div class="feauted__info-star--list df">
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="{% if block.settings.star == "four" or block.settings.star == "three" or block.settings.star == "two" or block.settings.star == "one" %} none {% endif %}" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="{% if block.settings.star == "three" or block.settings.star == "two" or block.settings.star == "one" %} none {% endif %}" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="{% if block.settings.star == "two" or block.settings.star == "one" %} none {% endif %}" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="{% if block.settings.star == "one" %} none {% endif %}" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9.50001 1.66663L12.075 6.88329L17.8333 7.72496L13.6667 11.7833L14.65 17.5166L9.50001 14.8083L4.35001 17.5166L5.33334 11.7833L1.16667 7.72496L6.92501 6.88329L9.50001 1.66663Z" fill="#B77B04" stroke="#B77B04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
-                            <span class="text">(121)</span>
+                            
+                            <span class="text">( {{ block.settings.number_star }} )</span>
                         </div>
                         <div class="feauted__info-price df__center df">
                             <p class="text__style feauted__info-price--sale">{{ product.price | money }}</p>
@@ -126,16 +129,7 @@
                             <input class="none" min="1" type="number" id="quantity" name="quantity" value="1"/>
                             <button type="submit" name="add" class="feauted__info-btn df__center df">
                                 <span class="text__style">Add to Cart</span>
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_102_534)">
-                                    <path d="M1.5 1H5.5L8.18 14.39C8.27144 14.8504 8.52191 15.264 8.88755 15.5583C9.25318 15.8526 9.7107 16.009 10.18 16H19.9C20.3693 16.009 20.8268 15.8526 21.1925 15.5583C21.5581 15.264 21.8086 14.8504 21.9 14.39L23.5 6H6.5M10.5 21C10.5 21.5523 10.0523 22 9.5 22C8.94772 22 8.5 21.5523 8.5 21C8.5 20.4477 8.94772 20 9.5 20C10.0523 20 10.5 20.4477 10.5 21ZM21.5 21C21.5 21.5523 21.0523 22 20.5 22C19.9477 22 19.5 21.5523 19.5 21C19.5 20.4477 19.9477 20 20.5 20C21.0523 20 21.5 20.4477 21.5 21Z" stroke="#131022" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_102_534">
-                                    <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
+                                <i class="bi bi-cart3"></i>
                             </button>
                         </form>       
                     </div>
@@ -174,7 +168,7 @@
     "blocks": [
         {
             "type": "text",
-            "name": "title button",
+            "name": "Select collection",
             "limit": 5,
             "settings": [
                 {
@@ -187,6 +181,39 @@
                     "type": "collection",
                     "id": "collection",
                     "label": "Collection"
+                },
+                {
+                    "type": "radio",
+                    "id": "star",
+                    "label": "Rate Star",
+                    "options": [
+                        {
+                            "label": "One Star",
+                            "value": "one"
+                        },
+                        {
+                            "label": "Two Star",
+                            "value": "two"
+                        },
+                        {
+                            "label": "Three Star",
+                            "value": "three"
+                        },
+                        {
+                            "label": "Four Star",
+                            "value": "four"
+                        },
+                        {
+                            "label": "Five Star",
+                            "value": "five"
+                        }
+                    ]
+                },
+                {
+                    "type": "number",
+                    "id": "number_star",
+                    "label": "Number Star",
+                    "default": 100
                 }
             ]
         }

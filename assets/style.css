@@ -436,6 +436,7 @@ main{
     background-color: var(--style-color);
 }
 
+.feauted__info-btn:hover i,
 .feauted__info-btn:hover span{
     color: var(--white-color);
 }
@@ -446,7 +447,9 @@ main{
     color: var(--header-color);
 }
 
-.feauted__info-btn svg{
+.feauted__info-btn i{
+    margin-bottom: 4px;
+    font-size: 2rem;
     margin-left: 8px;
 }
 
