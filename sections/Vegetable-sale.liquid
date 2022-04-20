@@ -41,7 +41,7 @@
                         </ul>
                     </div>
                     {% when 'text' %}
-                    <a class="sale__info-btn text__style"  href="{{ block.settings.button_link }}">
+                    <a class="sale__info-btn text__style {% if block.settings.button == blank %} none {% endif %}"  href="{{ block.settings.button_link }}">
                         {{ block.settings.button }}
                     </a>
                 {% endcase %}

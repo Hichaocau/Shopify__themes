@@ -3,7 +3,7 @@
     <div class="category__fresh">
         <div class="row">
             {% for block in section.blocks %}
-            <div class="col l-6 m-12 c-12 aos-init aos-animate" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="col l-6 m-6 c-12 aos-init aos-animate" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="category__fresh-item" >
                     <div class="category__fresh-item--img">
                         {%- if block.settings.Subcategory_image != blank -%}
@@ -15,7 +15,7 @@
                         <div class="category__fresh-item--text">
                             <span class="text">{{ block.settings.heading }}</span>
                             <p class="text__des">{{ block.settings.description_text }}</p>
-                            <a class="text" href="{{ block.settings.link }}">{{ block.settings.button }}</a>   
+                            <a class="text {% if block.settings.button == blank %} none {% endif %}" href="{{ block.settings.link }}">{{ block.settings.button }}</a>   
                         </div>
                 </div>           
             </div>

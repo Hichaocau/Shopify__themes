@@ -16,7 +16,7 @@
                     {% when 'description' %}
                         <p class="delivery__info-des text__style">{{ block.settings.description }}</p>
                     {% when 'text' %}
-                        <a href=" {{ block.settings.button_link }} " class="text__style delivery__info-btn">
+                        <a href=" {{ block.settings.button_link }} " class="text__style delivery__info-btn {% if block.settings.button == blank %} none {% endif %}">
                             {{ block.settings.button }}
                         </a>
                 {% endcase %}

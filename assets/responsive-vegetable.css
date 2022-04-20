@@ -236,10 +236,6 @@
     .category__fresh-item--text{
         bottom: 100px;
     }
-    .category__header::after{
-        left: 35%;
-        width: 30%;
-    }
     .slick-arrow{
         top: -15%;
     }
@@ -277,7 +273,6 @@
         bottom: 18px;
     }
     .category__header::after{
-        left: 23%;
         width: 53%;
     }
     .delivery__info h2{
