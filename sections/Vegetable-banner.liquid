@@ -9,7 +9,7 @@
                     {% when 'heading' %}
                         <p class="hero__text-header {{ block.settings.heading_size }}">{{ block.settings.heading }}</p>
                     {% when 'richtext' %}
-                        <div class="text hero__text-des {{ block.settings.description_size }}">{{ block.settings.description }}</div>
+                        <div class="text hero__text-des {{ block.settings.description_size }} {% if block.settings.description == blank %} none {% endif %}">{{ block.settings.description }}</div>
                     {% when 'button' %}
                         <a class="btn {% if block.settings.button == blank %} none {% endif %}" href="{{ block.settings.button_link}}">{{ block.settings.button }}</a>
                 {% endcase %}

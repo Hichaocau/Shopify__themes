@@ -22,6 +22,13 @@ main{
     margin-top: 6px;
 }
 
+.header__logo svg{
+    width: 110px;
+    height: 50px;
+    background: teal;
+    opacity: .7;
+}
+
 .header__logo a{
     font-family: 'Josefin Sans';
     font-weight: 600;
@@ -30,6 +37,12 @@ main{
     color: var(--logo-color);
     margin-right: 2px;
     display: block;
+}
+
+.header__logo-img{
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
 }
 
 .header__list-btn{
@@ -755,6 +768,11 @@ main{
 
 .footer__contact .header__logo{
     margin-bottom: 12px;
+}
+
+.footer__contact .header__logo .header__logo-img{
+    width: 30%;
+    height: auto;
 }
 
 .footer__contact-des{

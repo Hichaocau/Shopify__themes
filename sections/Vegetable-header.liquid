@@ -3,10 +3,14 @@
     <div class="header container">
         <div class="header__list-wrap df">
             <div class="header__logo df df__unset">
-                
-                <a href="{{ section.settings.menu.links[0].url }}">{{ section.settings.nameshop }}</a>
-                
-                <img src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-logo.svg" alt="">
+                {% if section.settings.logo == blank and section.settings.nameshop != blank %}
+                    <a href="{{ section.settings.menu.links[0].url }}">{{ section.settings.nameshop }}</a>
+                    <img class=" {% if section.settings.nameshop == blank %} none {% endif %}" src="https://hichaocau.github.io/Figma__vegetables/assets/imgs/icon-logo.svg" alt="">
+                {% elsif section.settings.logo == blank and section.settings.nameshop == blank %}  
+                    {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% else %}
+                    <img class="header__logo-img" src="{{ section.settings.logo| img_url: '100x100' }}" alt="">
+                {% endif %}           
             </div>
             <div class="header__list-btn translate100 df">
                 <ul class="header__list df">
@@ -40,10 +44,11 @@
                         </li>
                     {% endfor %}
                 </ul>
-                <div class="header__btn df">
-                    <a href="{{ routes.account_url }}"class="header__btn-first btn">Login</a>
-                    <a href="{{ routes.account_register_url  }}" class="header__btn-second btn">Sign Up</a>
-                </div>
+                <div class="header__btn df {% if section.settings.options_form == "hide" %} none {% endif %}">
+                    <a href="{{ routes.account_url }}" class="header__btn-first btn ">Login</a>
+                    <a href="{{ routes.account_register_url }}" class="header__btn-second btn">Sign Up</a>
+                </div>           
+        
             </div>
             <div class="header__menu hide-on-pc ">
                 <i class="fa-solid fa-bars"></i>
@@ -64,10 +69,32 @@
             "id": "nameshop"
         },
         {
+            "type": "image_picker",
+            "label": "Image logo",
+            "id": "logo"
+        },
+        {
             "type": "link_list",
             "id": "menu",
             "default": "main-menu",
             "label": "Menu"
+        },
+        {
+            "type": "radio",
+            "id": "options_form",
+            "label": "Validator form",
+            "options": [
+                {
+                    "value": "form",
+                    "label": "Login Register"
+                },
+                {
+                    "value": "hide",
+                    "label": "None"
+                }
+            ],
+            "default": "form"
+
         }
     ],
     "presets":[
