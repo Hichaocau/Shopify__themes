@@ -21,6 +21,7 @@
                     <p class="sale__info-des text__des">{{ block.settings.description }}</p>
                     {% when 'time' %}
                     <div class="sale__info-time">
+                        <p class="text none sale__info-time--text">{{ block.settings.time }}</p>
                         <ul class="sale__info-time--list df df__unset countdown">
                             <li class="sale__info-time--item sale__days">
                                 <div class="sale__info-number text__des days">68</div>
@@ -100,7 +101,15 @@
         },
         {
             "type": "time",
-            "name": "Time"
+            "name": "Time",
+            "settings":[
+                {
+                    "type": "text",
+                    "id": "time",
+                    "label": "Time Countdown (Example: June 18, 2022 00:00:00)",
+                    "default": "June 18, 2022 00:00:00"                  
+                }
+            ]
         },
         {
             "type": "text",

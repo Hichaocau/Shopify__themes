@@ -515,11 +515,12 @@ main{
 
 .sale__info-number{
     border: 1px solid var(--white-color);
-    padding: 15px 19px;
     margin-bottom: 4px;
     color: var(--header-color);
     width: 60px;
     height: 60px;
+    text-align: center;
+    line-height: 60px;
 }
 
 .sale__info-time--item span{

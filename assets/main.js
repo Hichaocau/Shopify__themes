@@ -67,35 +67,73 @@ function buyProduct(){
     const numberInput = document.querySelectorAll('.modal__cart-input')
     const priceList = document.querySelectorAll('.feauted__info-price--sale')
 
-    numberInput.forEach((number, index) => {
-        number.placeholder = 1
-        let i = 1;
-        iconPlus[index].addEventListener('click', function(e){
-            if( i === 9){
-                i = 0;
-            }
-            number.placeholder = ++i;
-            // const price = priceList[index].innerHTML.slice(1,4)
-            // console.log(price)
-            // priceList[index].innerHTML = `$${i*price}.00`
-            priceList[index].innerHTML = `$${i*200}.00`
-        })
-        iconMinus[index].addEventListener('click', function(e){
-            if( i != 0){
-                number.placeholder = --i;
-            }
-            priceList[index].innerHTML = `$${i*200}.00`
+    var count
+    
+    iconPlus.forEach((plus, index) => {
+        plus.addEventListener('click', function(e){
+            count = numberInput[index].placeholder
+            count++
+            
+            numberInput[index].placeholder = count
+            update(index)
+            
         })
     })
+   
+    var price = priceList[0].innerHTML.slice(1,4)
+    function update(index){
+        var calc = price*count
+        console.log(calc)
+        priceList[index].innerHTML = `$${calc}.00`
+    }
+
+    iconMinus.forEach((minus, index) => {
+        minus.addEventListener('click', function(e){
+            count = numberInput[index].placeholder
+            if( count != 0 ) {
+                count--
+            }
+            
+            numberInput[index].placeholder = count
+        })
+    })
+
+
+
+    // numberInput.forEach((number, index) => {
+    //     number.placeholder = 1
+    //     let i = 1;
+    //     iconPlus[index].addEventListener('click', function(e){
+    //         if( i === 9){
+    //             i = 0;
+    //         }
+    //         number.placeholder = ++i;
+    //         var price = priceList[index].innerHTML.slice(1,4)
+    //         console.log(price)
+
+    //         priceList[index].innerHTML = `$${i*price}.00`
+            
+
+    //         // priceList[index].innerHTML = `$${i*200}.00`
+    //     })
+    //     iconMinus[index].addEventListener('click', function(e){
+    //         if( i != 0){
+    //             number.placeholder = --i;
+    //         }
+    //         priceList[index].innerHTML = `$${i*200}.00`
+    //     })
+    // })
 }
 
-buyProduct()
+// buyProduct()
 
 
 // countdown
 function countdownDay() {
     const countdown  = () => {
-        const countDate = new Date('June 16, 2022 00:00:00').getTime()
+        const time = document.querySelector('.sale__info-time--text')
+        // const countDate = new Date('June 18, 2022 00:00:00').getTime()
+        const countDate = new Date(time.innerHTML).getTime()
         const now = new Date().getTime()
         const gap = countDate - now
     
