@@ -2,7 +2,7 @@
 <div class="product feauted container">
     <div class="product__header category__header df">
         <h2 class="text__header">{{ section.settings.heading }}</h2>
-        <a href="{{ section.settings.button_link }}" class="product__shop df">
+        <a href="{{ routes.all_products_collection_url  }}" class="product__shop df">
             <span class="text__style">Shop all</span>
             <button class="product__shop-icon df">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,11 +151,6 @@
             "label": "Heading",
             "id": "heading",
             "default": "Hot Product"
-        },
-        {
-            "type": "url",
-            "id": "button_link",
-            "label": "Button_link"
         }
     ],
     "blocks": [
