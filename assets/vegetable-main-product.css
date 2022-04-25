@@ -1,0 +1,114 @@
+.render__product{
+    display: flex;
+    margin-top: 40px;
+    gap: 40px;
+    padding: 0 55px;
+}
+
+.render__product-img{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+.render__product img{
+    width: 100%;
+}
+
+.render__product-heading{
+    font-size: 4rem;
+}
+
+.render__product-price{
+    font-size: 1.8rem;
+}
+.text__uppercase{
+    text-transform: uppercase;
+}
+
+.render__product-des{
+    margin-top: 10px;
+}
+
+.custom__product{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.custom__product-list{
+    width: 45%;
+    padding: 10px 0;
+    border: 1px solid #000;
+}
+
+.form__quantity-number:focus-visible,
+.custom__product-list:focus-visible{
+    border: 1px solid #000;
+    outline: none;
+    box-shadow: none;
+}
+
+.form__quantity{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.form__quantity button{
+    margin-top: 15px;
+}
+
+.form__quantity-number{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid #000;
+}
+
+.form__quantity-wrap {
+    padding: 0 25px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.form__quantity .feauted__info-btn{
+    margin: unset;
+    margin-top: 25px;
+    border-radius: 0;
+    border: 1px solid #000;
+}
+
+.form__quantity .feauted__info-btn:hover {
+    border: 1px solid #0D6EFD;
+}
+
+.form__quantity-number::-webkit-inner-spin-button,
+.form__quantity-number::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.form__quantity .but:after {
+    display: inline-block;
+    position: absolute;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: '\f077';
+    transform: translate(-50%, -50%) rotate(180deg);
+    cursor: pointer;
+}
+
+.form__quantity .but.plus:after {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.form__quantity .form__quantity-number {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-width: 0 2px;
+    font-size: 2rem;
+    text-align: center;
+}
