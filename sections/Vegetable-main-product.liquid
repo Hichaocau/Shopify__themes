@@ -1,0 +1,68 @@
+
+
+<style>
+    .render__product{
+        display: flex;
+    }
+    .render__product-img{
+        margin-right: 40px;
+    }
+    .render__product img{
+        width: 750px;
+        height: 700px;
+    }
+</style>
+
+<div class="render__product container">
+    <div class="render__product-img">
+        <img src="{{ product.featured_image | img_url: 'large' }}"/>
+    </div>
+    <div class="render__product-info">
+        {% for block in section.blocks %}
+        <p>{{ block.settings.vendor }}</p>
+        {%- endfor -%}
+        <h2 class="text">{{ product.title }}</h2>
+        <h2 class="text">{{ product.price | money }}USD</h2>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+{
+    "name": "Vegetable main product",
+    "blocks": [
+        {
+            "type": "text",
+            "name": "vendor",
+            "settings": [
+                {
+                    "type": "text",
+                    "label": "Name vendor",
+                    "id": "vendor",
+                    "default": "hichaocau"
+                }
+            ]
+        }
+    ],
+    
+
+    "presets":[
+        {
+            "name": "Vegetable Main Product"
+        }
+    ]
+}
+{% endschema %}

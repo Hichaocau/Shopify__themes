@@ -945,3 +945,19 @@ main{
     padding-left: 20px;
 }
 
+.custom__vegetable{
+    display: flex;
+    flex-direction: column;
+}
+
+.custom__vegetable label{
+    font-size: 13px;
+}
+
+.custom__vegetable-list{
+    width: 41%;
+    margin-top: 2px;
+    padding: 10px 0;
+    border: 1px solid #818189;
+}
+
