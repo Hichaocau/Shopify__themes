@@ -2,52 +2,55 @@
 
 
 <div class="render__product container">
-    <div class="render__product-img">
-        <img src="{{ product.featured_image | img_url: 'large' }}"/>
-    </div>
-    <div class="render__product-info">
-        {% for block in section.blocks %}
-            {% case block.type %}
-                {% when 'text' %}
-                    <p class=" {% if block.settings.style == "uppercase" %} text__uppercase {% endif %} ">{{ product.vendor }}</p>
-                {% when 'title' %}
-                    <h2 class="text render__product-heading">{{ product.title }}</h2>
-                {% when 'price' %}    
-                    <p class="text render__product-price">{{ product.price | money }} USD</p>
-                {% when 'description' %}    
-                    <p class="text render__product-des">{{ product.description }}</p>
-                {% when 'option' %}    
-                    <div class="custom__product">
-                        <label for="custom__vegetable-label">Options size</label>
-                        <select class="text custom__product-list">
-                            <option value="S">Size S</option>
-                            <option value="M">Size M</option>
-                            <option value="L">Size L</option>
-                        </select>
-                    </div>
-                {% when 'quantity' %}                    
-                    <form class="form__quantity" method="post" action="/cart/add">
-                        <label for="">Quantity</label>
-                        <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                        <div class="form__quantity-wrap df">
-                            <div onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus but"></div>
-                            <input class="form__quantity-number" min="1" type="number" id="quantity" name="quantity" value="1"/>
-                            <div onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus but"></div>
-                        </div>
-                        <button type="submit" name="add" class="feauted__info-btn df__center df">
-                            <span class="text__style">Add to Cart</span>
-                            <i class="bi bi-cart3"></i>
-                        </button>
-                        
-                    </form>
-            {% endcase %}
-        {% endfor %}
-    </div>
+  <div class="render__product-img">
+    <img src="{{ product.featured_image | img_url: 'large' }}"/>
+  </div>
+  <div class="render__product-info">
+    {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'text' %}
+            <p class=" {% if block.settings.style == "uppercase" %} text__uppercase {% endif %} ">{{ product.vendor }}</p>
+          {% when 'title' %}
+            <h2 class="text render__product-heading">{{ product.title }}</h2>
+          {% when 'price' %}    
+            <p class="text render__product-price">{{ product.price | money }} USD</p>
+          {% when 'description' %}    
+            <p class="text render__product-des">{{ product.description }}</p>
+          {% when 'option' %}    
+            <div class="custom__product">
+              {% for product_option in product.options_with_values %}
+                <label> {{ product_option.name }} </label>
+                  <ul class="text custom__product-list df">
+                    {% for value in product_option.values %}
+                      <li {% if product_option.selected_value == value %}selected{% endif %}>
+                        {{ value }}
+                      </li>
+                    {% endfor %}
+                  </ul>
+              {% endfor %}
+            </div>
+
+          {% when 'quantity' %}                    
+            <form class="form__quantity" method="post" action="/cart/add">
+              <label for="">Quantity</label>
+              <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+              <div class="form__quantity-wrap df">
+                <div onclick="this.parentNode.querySelector('.form__quantity-number').stepDown()" class="minus but"></div>
+                <input class="form__quantity-number" min="1" type="number" id="quantity" name="quantity" value="1"/>
+                <div onclick="this.parentNode.querySelector('.form__quantity-number').stepUp()" class="plus but"></div>
+              </div>
+              <button type="submit" name="add" class="feauted__info-btn df__center df">
+                <span class="text__style">Add to Cart</span>
+                <i class="bi bi-cart3"></i>
+              </button>
+            </form>   
+            
+          {% when 'materials' %}                    
+          
+        {% endcase %}
+      {% endfor %}
+  </div>
 </div>
-
-
-
-
 
 
 
@@ -101,6 +104,48 @@
         {
             "type": "quantity",
             "name": "quantity"
+        },
+        {
+            "type": "materials",
+            "name": "select",
+            "settings": [
+              {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading"
+              },
+              {
+                "type": "select",
+                "id": "options",
+                "default": "none",
+                "label": "Icon",
+                "options": [
+                    {
+                        "value": "none",
+                        "label": "test"
+                    },
+                    {
+                        "value": "apple",
+                        "label": "apple"
+                    },
+                    {
+                        "value": "washing",
+                        "label": "washing"
+                    }
+                ]
+                
+              },
+              {
+                "type": "richtext",
+                "id": "content",
+                "label": "content"
+              },
+              {
+                "type": "page",
+                "id": "page",
+                "label": "page"
+              }
+            ]
         }
     ],
     
