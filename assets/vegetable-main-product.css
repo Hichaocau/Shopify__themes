@@ -23,10 +23,24 @@
 
 .render__product-price{
     font-size: 1.8rem;
+    margin-right: 15px;
+}
+
+.render__product-price--old{
+  text-decoration: line-through;
+  margin-right: 15px;
 }
 
 .render__product-info{
     flex: 0 0 60%;
+}
+
+.render__price span{
+  display: block;
+  background-color: rgb( 25, 26, 40);
+  color: white;
+  border-radius: 20px;
+  padding: 2px 15px;
 }
 
 .text__uppercase{
@@ -79,13 +93,6 @@
     margin-top: 15px;
 }
 
-.form__quantity-number{
-    font-size: 1.8rem;
-    text-align: center;
-    padding: 10px 0;
-    border: 1px solid #000;
-}
-
 .form__quantity-wrap {
     padding: 0 12px;
     background-color: #fff;
@@ -129,4 +136,9 @@
     border-width: 0 2px;
     font-size: 2rem;
     text-align: center;
+}
+
+.render__material-heading{
+  font-size: 1.6rem;
+  margin-top: 15px;
 }

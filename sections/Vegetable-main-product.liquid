@@ -10,26 +10,36 @@
         {% case block.type %}
           {% when 'text' %}
             <p class=" {% if block.settings.style == "uppercase" %} text__uppercase {% endif %} ">{{ product.vendor }}</p>
+          
           {% when 'title' %}
             <h2 class="text render__product-heading">{{ product.title }}</h2>
-          {% when 'price' %}    
-            <p class="text render__product-price">{{ product.price | money }} USD</p>
+          
+          {% when 'price' %}   
+            <div class="render__price df df__unset">
+              <p class="text render__product-price">{{ product.price | money }} USD</p>
+              <p class="text render__product-price--old {% if product.compare_at_price == blank %} none {% endif %} ">{{ product.compare_at_price | money }} USD</p>
+              <span class="text {% if product.compare_at_price == blank %} none {% endif %}">Sale</span>
+            </div> 
+        
           {% when 'description' %}    
             <p class="text render__product-des">{{ product.description }}</p>
+        
+            <!-- option size -->
           {% when 'option' %}    
-            <div class="custom__product">
-              {% for product_option in product.options_with_values %}
-                <label> {{ product_option.name }} </label>
-                  <ul class="text custom__product-list df">
-                    {% for value in product_option.values %}
-                      <li {% if product_option.selected_value == value %}selected{% endif %}>
-                        {{ value }}
-                      </li>
-                    {% endfor %}
-                  </ul>
-              {% endfor %}
+          {% for product_option in product.options_with_values %}
+            <div class="custom__product {% if product_option.name == "Title" %} none {% endif %}">
+              <label> {{ product_option.name }} </label>
+              <ul class="text custom__product-list df">
+                {% for value in product_option.values %}
+                  <li >
+                    {{ value }}
+                  </li>
+                {% endfor %}
+              </ul>
             </div>
+          {% endfor %}
 
+            <!-- Form cart product -->
           {% when 'quantity' %}                    
             <form class="form__quantity" method="post" action="/cart/add">
               <label for="">Quantity</label>
@@ -44,9 +54,17 @@
                 <i class="bi bi-cart3"></i>
               </button>
             </form>   
+          
+          {% when 'review' %}                    
+            <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
             
           {% when 'materials' %}                    
-          
+            <div class="render__material">
+              <details>
+                <summary class="text render__material-heading">{{ block.settings.heading }}</summary>
+                <p class="text">{{ block.settings.content }}</p>
+              </details>
+            </div>
         {% endcase %}
       {% endfor %}
   </div>
@@ -103,47 +121,31 @@
         },
         {
             "type": "quantity",
-            "name": "quantity"
+            "name": "Quantity"
+        },
+        {
+            "type": "review",
+            "name": "Customer Review"
         },
         {
             "type": "materials",
-            "name": "select",
+            "name": "Materials",
             "settings": [
               {
                 "type": "text",
                 "id": "heading",
-                "label": "Heading"
-              },
-              {
-                "type": "select",
-                "id": "options",
-                "default": "none",
-                "label": "Icon",
-                "options": [
-                    {
-                        "value": "none",
-                        "label": "test"
-                    },
-                    {
-                        "value": "apple",
-                        "label": "apple"
-                    },
-                    {
-                        "value": "washing",
-                        "label": "washing"
-                    }
-                ]
-                
+                "label": "Heading",
+                "default": "Materials"
               },
               {
                 "type": "richtext",
                 "id": "content",
-                "label": "content"
+                "label": "Content"
               },
               {
                 "type": "page",
                 "id": "page",
-                "label": "page"
+                "label": "Page"
               }
             ]
         }
