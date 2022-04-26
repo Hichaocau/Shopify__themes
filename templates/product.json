@@ -177,11 +177,59 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "16509430801e5ac794": {
+      "type": "Vegetable-main-product",
+      "blocks": {
+        "1650943080beecee3a-0": {
+          "type": "text",
+          "settings": {
+            "vendor": "hichaocau",
+            "style": "body"
+          }
+        },
+        "1650943080beecee3a-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "1650943080beecee3a-2": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "1650943080beecee3a-3": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "1650943080beecee3a-4": {
+          "type": "option",
+          "settings": {
+          }
+        },
+        "1650943080beecee3a-5": {
+          "type": "quantity",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1650943080beecee3a-0",
+        "1650943080beecee3a-1",
+        "1650943080beecee3a-2",
+        "1650943080beecee3a-3",
+        "1650943080beecee3a-4",
+        "1650943080beecee3a-5"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "multicolumn",
-    "product-recommendations"
+    "product-recommendations",
+    "16509430801e5ac794"
   ]
 }
